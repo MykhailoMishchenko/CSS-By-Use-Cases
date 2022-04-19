@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Box shadow</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/skeletons.css" />
+  </head>
+  <body>
+    <header class="page-header">Box shadow</header>
+    <div class="container">
+      <section class="block-list">
+        <article class="block elevation">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Elevation
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="elevation-card">
+                  Flat
+                </div>
+                <div class="elevation-card elevation-card--elevated">
+                  Elevated
+                </div>
+                <div class="elevation-card">
+                  Flat
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.elevation {
+              background: #f7f7fe;
+            }
+
+            .block.elevation .block-title {
+              color: #4c4954;
+            }
+
+            .elevation-card {
+              min-width: 6rem;
+              padding: 1rem;
+              border-radius: 0.5rem;
+              text-align: center;
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+            }
+
+            .elevation-card--elevated {
+              transform: translateY(-1rem);
+              box-shadow: 0 35px 25px rgba(58, 35, 91, 0.12);
+            }
+          </style>
+        </article>
+        <article class="block overlapping-list">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Overlapping
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="overlapping-list-card">
+                  <h2 class="overlapping-list-h2">
+                    Technical skills
+                  </h2>
+                  <button class="overlapping-fab uil uil-bars"></button>
+                  <ul class="overlapping-list-ul">
+                    <li>
+                      Googling
+                    </li>
+                    <li>
+                      YouTubing
+                    </li>
+                    <li>
+                      Stack overflowing
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.overlapping-list {
+              background: #2c2d33;
+            }
+
+            .overlapping-list-card {
+              overflow: hidden;
+              display: flex;
+              flex-direction: column;
+              width: 18rem;
+              border-radius: 0.5rem;
+              background: #ffffff;
+              color: rgba(0, 0, 0, 0.75);
+            }
+
+            .overlapping-list-ul {
+              list-style: none;
+              margin: -2rem 0 1rem;
+              padding: 0;
+              padding-left: 1rem;
+            }
+
+            .overlapping-list-ul li:before {
+              content: "🔥";
+            }
+
+            .overlapping-list-h2 {
+              padding: 1rem;
+              font-size: 1.25rem;
+              background: #8f44fd;
+              color: white;
+            }
+
+            .overlapping-fab {
+              align-self: flex-end;
+              width: 3rem;
+              height: 3rem;
+              margin-right: 1rem;
+              border-radius: 50%;
+              font-size: 1.25rem;
+              background: #f03ec9;
+              color: rgba(255, 255, 255, 0.96);
+              transform: translateY(-50%);
+              box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+            }
+          </style>
+        </article>
+        <article class="block outline">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Outlined controls
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <button class="outline-button">
+                  <span class="outline-button-icon uil uil-plus"></span>
+                  <span class="outline-button-text">
+                    Click Me
+                  </span>
+                </button>
+                <input class="outline-input" placeholder="Start Typing" />
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.outline {
+              background: #2c2d33;
+            }
+
+            .outline-button,
+            .outline-input {
+              height: 4rem;
+              width: 11rem;
+              border-radius: 0.5rem;
+              background: #100f10;
+              transition: outline 0.35s;
+            }
+
+            .outline-button:focus,
+            .outline-input:focus {
+              box-shadow: 0 0 0 3px #8f44fd;
+            }
+
+            .outline-button {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+              justify-content: center;
+              height: 4rem;
+              padding: 1rem 1.75rem 1rem 1.5rem;
+              border-radius: 0.5rem;
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            .outline-button-icon {
+              font-size: 1.5rem;
+            }
+
+            .outline-button-text {
+              font-size: 1rem;
+            }
+
+            .outline-input {
+              padding: 0 1.5rem;
+              color: rgba(255, 255, 255, 0.96);
+            }
+          </style>
+        </article>
+        <article class="block pulse">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Pulse effect
+            </h2>
+            <div class="block-component">
+              <div class="pulse-badge">9</div>
+            </div>
+          </div>
+          <style>
+            .block.pulse {
+              background: #373942;
+            }
+
+            @keyframes pulse {
+              0% {
+                box-shadow: 0 0 0 0 rgba(241, 73, 100, 0.5);
+              }
+              100% {
+                box-shadow: 0 0 0 28px rgba(241, 73, 100, 0);
+              }
+            }
+
+            .pulse-badge {
+              position: relative;
+              display: grid;
+              place-items: center;
+              width: 2rem;
+              height: 2rem;
+              border-radius: 50%;
+              background: #f14964;
+              color: rgba(255, 255, 255, 0.96);
+              animation: pulse 2s infinite;
+            }
+          </style>
+        </article>
+        <article class="block floating-navs">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Floating navs
+            </h2>
+            <div class="block-component">
+              <div class="floating-nav-wrapper">
+                <nav class="floating-nav-bar">
+                  <button class="floating-nav-bar-button uil uil-bars"></button>
+                  <h2 class="floating-nav-bar-h2">
+                    App Title
+                  </h2>
+                </nav>
+                <section class="floating-nav-content">
+                  <span class="skeleton-rect-md"></span>
+                  <span class="skeleton-square"></span>
+                </section>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.floating-navs {
+              background: #f7f7ff;
+            }
+
+            .block.floating-navs .block-title {
+              color: #4c4954;
+            }
+
+            .floating-nav-wrapper {
+              overflow: hidden;
+              width: 20rem;
+              height: 12rem;
+              border-radius: 0.5rem;
+              color: #4c4954;
+              background: #eeeefa;
+            }
+
+            .floating-nav-bar {
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              height: 3rem;
+              padding: 0 1rem;
+              background: #ffffff;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+            }
+
+            .floating-nav-bar-h2 {
+              font-weight: 600;
+              font-size: 0.625rem;
+            }
+
+            .floating-nav-content {
+              padding: 1rem;
+            }
+          </style>
+        </article>
+        <article class="block floating-buttons">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Floating buttons
+            </h2>
+            <div class="block-component">
+              <div class="floating-button-wrapper">
+                <span class="skeleton-rect-md"></span>
+                <span class="skeleton-square"></span>
+                <span class="skeleton-square"></span>
+                <button class="floating-button uil uil-plus"></button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.floating-buttons {
+              background: #8f44fd;
+            }
+
+            .floating-button-wrapper {
+              position: relative;
+              overflow: hidden;
+              width: 20rem;
+              height: 12rem;
+              padding: 1rem;
+              border-radius: 0.5rem;
+              color: #4c4954;
+              background: #eeeefa;
+            }
+
+            .floating-button {
+              position: absolute;
+              bottom: 1.5rem;
+              right: 2rem;
+              width: 3rem;
+              height: 3rem;
+              border-radius: 50%;
+              font-size: 1.5rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+              box-shadow: 0 0.875rem 1.5rem rgba(0, 0, 0, 0.2);
+            }
+          </style>
+        </article>
+        <article class="block neumorphism">
+          <div class="block-inner">
+            <h2 class="block-title">Neumorphism</h2>
+            <div class="block-component">
+              <label class="neu-switch-label" for="neu-switch-input">
+                <input
+                  id="neu-switch-input"
+                  type="checkbox"
+                  class="neu-switch-input"
+                />
+                <span class="neu-switch-rail">
+                  <span class="neu-switch-handle"></span>
+                </span>
+                <span class="neu-switch-indicator"></span>
+              </label>
+            </div>
+          </div>
+          <style>
+            .block.neumorphism {
+              background: #6328b9;
+            }
+
+            .neu-switch-label {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 5rem;
+              padding: 0 1.5rem;
+              border-radius: 0.75rem;
+              background: #6328b9;
+              box-shadow: 12px 12px 30px #5623a1, -12px -12px 30px #702dd1;
+            }
+
+            .neu-switch-input {
+              position: absolute;
+              transform: scale(0);
+            }
+
+            .neu-switch-input:checked ~ .neu-switch-rail .neu-switch-handle {
+              transform: translate(3.75rem, -50%);
+            }
+
+            .neu-switch-input:checked ~ .neu-switch-indicator {
+              background: #46f608;
+            }
+
+            .neu-switch-rail {
+              position: relative;
+              display: block;
+              width: 6rem;
+              height: 1.75rem;
+              border-radius: 1rem;
+              background: rgba(255, 255, 255, 0.1);
+            }
+
+            .neu-switch-handle {
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+              display: block;
+              width: 2.25rem;
+              height: 2.25rem;
+              border-radius: 50%;
+              background: linear-gradient(45deg, #ffffff, #aeaeae);
+              transition: transform 0.45s;
+            }
+
+            .neu-switch-indicator {
+              width: 0.75rem;
+              height: 0.75rem;
+              margin-left: 1.5rem;
+              border-radius: 50%;
+              background: rgba(255, 255, 255, 0.1);
+              transition: background 0.45s;
+            }
+          </style>
+        </article>
+        <article class="block transitions">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Card transitions
+            </h2>
+            <div class="block-component">
+              <div class="transitions-card"></div>
+            </div>
+          </div>
+          <style>
+            .block.transitions {
+              background: #ffffff;
+            }
+
+            .block.transitions .block-title {
+              color: #4c4954;
+            }
+
+            .transitions-card {
+              position: relative;
+              margin: 0 1rem;
+              width: 14rem;
+              height: 8rem;
+              border-radius: 1rem;
+              box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.16);
+              background: url("assets/img/car.png");
+              background-size: cover;
+              background-position: bottom;
+              transition: transform 0.35s, box-shadow 0.35s;
+            }
+
+            .transitions-card:hover {
+              transform: translateY(-2rem);
+              box-shadow: 0 4rem 3.5rem rgba(0, 0, 0, 0.16);
+            }
+          </style>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>opacity</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/skeletons.css" />
+  </head>
+  <body>
+    <header class="page-header">opacity</header>
+    <div class="container">
+      <section class="block-list">
+        <article class="block inactive-links">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Inactive links
+            </h2>
+            <div class="block-component">
+              <header class="inactive-links-header">
+                <h2 class="inactive-links-h2">
+                  Home page
+                </h2>
+                <nav class="inactive-links-nav">
+                  <a class="inactive-links-link uil uil-estate"> </a>
+                  <a class="inactive-links-link uil uil-star"> </a>
+                  <a class="inactive-links-link uil uil-setting"> </a>
+                </nav>
+              </header>
+            </div>
+          </div>
+          <style>
+            .block.inactive-links {
+              background: #2c2d33;
+            }
+
+            .inactive-links-header {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 24rem;
+              height: 4rem;
+              padding: 0 1rem;
+              border-top-left-radius: 0.5rem;
+              border-top-right-radius: 0.5rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #151417;
+            }
+
+            .inactive-links-h2 {
+              font-size: 1rem;
+            }
+
+            .inactive-links-nav {
+              display: flex;
+              gap: 1rem;
+            }
+
+            .inactive-links-link {
+              font-size: 1.5rem;
+              color: rgba(255, 255, 255, 0.96);
+              opacity: 0.6;
+              transition: color 0.25s;
+            }
+
+            .inactive-links-link:hover {
+              opacity: 1;
+            }
+          </style>
+        </article>
+        <article class="block labels">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Dark mode labels
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="labels-card">
+                  <span class="labels-card-icon uil uil-user"></span>
+                  <div>
+                    <h4 class="labels-h4">
+                      Username
+                    </h4>
+                    <h3 class="labels-card-text">
+                      kevin88
+                    </h3>
+                  </div>
+                </div>
+                <div class="labels-card labels-card--black">
+                  <span class="labels-card-icon uil uil-user"></span>
+                  <div>
+                    <h4 class="labels-h4">
+                      Username
+                    </h4>
+                    <h3 class="labels-card-text">
+                      kevin88
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.labels {
+              background: #222227;
+            }
+
+            .labels-card {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+              width: 14rem;
+              height: 4rem;
+              padding: 1rem 1.75rem 1rem 1.5rem;
+              border-radius: 0.5rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+            }
+
+            .labels-card--black {
+              background: #151417;
+            }
+
+            .labels-card-icon {
+              font-size: 1.5rem;
+            }
+
+            .labels-h4 {
+              line-height: 1;
+              font-size: 0.75rem;
+              color: #ffffff;
+              opacity: 0.67;
+            }
+
+            .labels-h3 {
+              font-size: 1.25rem;
+            }
+          </style>
+        </article>
+        <article class="block areacharts">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Area charts
+            </h2>
+            <div class="block-component">
+              <div class="areacharts-card">
+                <div class="areacharts-wrapper">
+                  <svg
+                    class="areacharts-svg areacharts-1"
+                    viewBox="0 0 558 117"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M96.9514 58.2333C63.1059 58.2333 0.25 117 0.25 117H557.25C557.25 117 491.493 0.240234 463.45 0.240234C435.406 0.240234 401.561 58.2333 368.682 58.2333C335.804 58.2333 311.628 20.3445 281.651 20.3445C251.674 20.3445 224.597 86.588 192.63 86.588C152.932 86.588 130.797 58.2333 96.9514 58.2333Z"
+                    />
+                  </svg>
+                  <svg
+                    class="areacharts-svg areacharts-2"
+                    viewBox="0 0 558 191"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M94.9974 177.815C61.1519 177.815 0.25 191 0.25 191H557.25C557.25 191 490.526 163.945 462.483 163.945C434.439 163.945 402.528 0.330078 369.649 0.330078C336.771 0.330078 309.694 163.945 279.717 163.945C249.74 163.945 217.884 66.0338 185.917 66.0338C146.219 66.0338 128.843 177.815 94.9974 177.815Z"
+                      fill="#00B2FF"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.areacharts {
+              background: #f7f7fe;
+            }
+
+            .block.areacharts .block-title {
+              color: #4c4954;
+            }
+
+            .areacharts-card {
+              position: relative;
+              width: 20rem;
+              height: 8rem;
+              border-radius: 0.5rem;
+            }
+
+            .areacharts-wrapper {
+            }
+
+            .areacharts-svg {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+            }
+
+            .areacharts-1 {
+              fill: #955bfc;
+              fill-opacity: 0.5;
+            }
+
+            .areacharts-2 {
+              fill: #00b2ff;
+              fill-opacity: 0.5;
+            }
+          </style>
+        </article>
+        <article class="block carousels">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Carousel buttons
+            </h2>
+            <div class="block-component">
+              <div class="carousels-wrapper">
+                <img class="carousels-img" src="assets/img/street.png" />
+                <button
+                  class="carousels-button carousels-button--prev uil uil-angle-left"
+                ></button>
+                <button
+                  class="carousels-button carousels-button--next uil uil-angle-right"
+                ></button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.carousels {
+              background: #373942;
+            }
+
+            .carousels-wrapper {
+              position: relative;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .carousels-img {
+              width: 28rem;
+              height: 12rem;
+              object-fit: cover;
+            }
+
+            .carousels-button {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 2.5rem;
+              height: 2.5rem;
+              padding: 0;
+              font-size: 2rem;
+              border-radius: 50%;
+              background: rgba(255, 255, 255, 0.65);
+            }
+
+            .carousels-button--prev {
+              left: 1rem;
+            }
+
+            .carousels-button--next {
+              right: 1rem;
+            }
+          </style>
+        </article>
+        <article class="block modal">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Modal backgrounds
+            </h2>
+            <div class="block-component">
+              <div class="modal-page">
+                <div class="modal-background"></div>
+                <div class="modal-dialog">
+                  <div class="modal-text">
+                    Delete these items?
+                  </div>
+                  <div class="modal-buttons">
+                    <button class="modal-button">
+                      No
+                    </button>
+                    <button class="modal-button modal-button--primary">
+                      Yes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.modal {
+              background: #2c2d33;
+            }
+
+            .modal-page {
+              position: relative;
+              width: 24rem;
+              height: 12rem;
+              background: url("assets/img/dashboard.png") no-repeat;
+              background-size: cover;
+            }
+
+            .modal-background {
+              position: absolute;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: #000000;
+              opacity: 0.75;
+            }
+
+            .modal-dialog {
+              position: absolute;
+              z-index: 2;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 12rem;
+              padding: 1rem;
+              background: white;
+            }
+
+            .modal-text {
+              text-align: center;
+              font-size: 0.75rem;
+              margin-bottom: 1rem;
+            }
+
+            .modal-buttons {
+              display: flex;
+              gap: 0.5rem;
+            }
+
+            .modal-button {
+              flex: 1 1 auto;
+              font-size: 0.75rem;
+              background: #f7f7fe;
+            }
+
+            .modal-button--primary {
+              padding: 0.25rem;
+              border-radius: 0.25rem;
+              background: #37b9f1;
+              color: rgba(255, 255, 255, 0.96);
+            }
+          </style>
+        </article>
+        <article class="block tinted">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Tinted images
+            </h2>
+            <div class="block-component">
+              <div class="tinted-wrapper">
+                <img class="tinted-img" src="assets/img/street.png" />
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.tinted {
+              background: #222227;
+            }
+
+            .tinted-wrapper {
+              position: relative;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .tinted-wrapper::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: #8f44fd;
+              opacity: 0.35;
+            }
+
+            .tinted-img {
+              width: 28rem;
+              height: 12rem;
+              object-fit: cover;
+            }
+          </style>
+        </article>
+        <article class="block soft">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Soft colors
+            </h2>
+            <div class="block-component">
+              <div class="soft-card">
+                <div class="soft-alert soft-alert--success">
+                  <span class="soft-alert-icon uil uil-check-circle"></span>
+                  <span class="soft-alert-text">
+                    Payment received
+                  </span>
+                </div>
+                <div class="soft-alert soft-alert--danger">
+                  <span class="soft-alert-icon uil uil-times-square"></span>
+                  <span class="soft-alert-text">
+                    Payment rejected
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.soft {
+              background: #ffffff;
+            }
+
+            .block.soft .block-title {
+              color: #4c4954;
+            }
+
+            .soft-alert {
+              display: grid;
+              gap: 1rem;
+              grid-template-columns: auto 1fr;
+              align-items: center;
+              width: 16rem;
+              height: 3.5rem;
+              padding: 0 1rem;
+              border-radius: 0.5rem;
+              color: #4c4954;
+              background: #ffffff;
+              border-left: 0.5rem solid;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .soft-alert:not(:last-child) {
+              margin-bottom: 1rem;
+            }
+
+            .soft-alert-icon {
+              font-size: 1.5rem;
+              color: inherit;
+            }
+
+            .soft-alert--danger {
+              color: #d45759;
+              border-color: #d45759;
+              background: rgba(212, 87, 89, 0.1);
+            }
+
+            .soft-alert--success {
+              color: #1ac0a2;
+              border-color: #1ac0a2;
+              background: rgba(26, 192, 162, 0.15);
+            }
+          </style>
+        </article>
+        <article class="block fade">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Fade effects
+            </h2>
+            <div class="block-component">
+              <button class="fade-button" disabled>
+                <span class="fade-button-text">
+                  Fading in and out
+                </span>
+              </button>
+            </div>
+          </div>
+          <style>
+            .block.fade {
+              background: #2c2d33;
+            }
+
+            .fade-button {
+              overflow: hidden;
+              -webkit-mask-image: -webkit-radial-gradient(white, black);
+              position: relative;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              height: 4rem;
+              padding: 0 3rem;
+              font-size: 1.125rem;
+              color: rgba(255, 255, 255, 0.96);
+              cursor: wait;
+            }
+
+            @keyframes fade {
+              50% {
+                opacity: 0;
+              }
+            }
+
+            .fade-button-text {
+              position: relative;
+              z-index: 1;
+              animation: fade 2s infinite;
+            }
+          </style>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

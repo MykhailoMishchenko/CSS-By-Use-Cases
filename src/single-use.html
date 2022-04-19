@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Single-use</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/skeletons.css" />
+  </head>
+  <body>
+    <header class="page-header">Single-use</header>
+    <div class="container">
+      <section class="block-list">
+        <article class="block letter-spacing">
+          <div class="block-inner">
+            <h2 class="block-title">
+              letter-spacing
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <button class="ls-button">FOLLOW</button>
+                <button class="ls-button ls-button--correct">FOLLOW</button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.letter-spacing {
+              background: #2c2d33;
+            }
+
+            .ls-button {
+              width: 11rem;
+              height: 4.5rem;
+              border-radius: 0.5rem;
+              font-size: 1.125rem;
+              font-weight: 600;
+              background: #9044ff;
+              color: rgba(255, 255, 255, 0.95);
+            }
+
+            .ls-button--correct {
+              letter-spacing: 2px;
+            }
+          </style>
+        </article>
+        <article class="block line-height">
+          <div class="block-inner">
+            <h2 class="block-title">
+              line-height
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="lh-card">
+                  <label for="name" class="lh-label">
+                    <input
+                      name="name"
+                      id="name"
+                      type="checkbox"
+                      class="checkbox-input"
+                    />
+                    <span class="checkbox-background">
+                      <i class="checkbox-icon uil uil-check"></i>
+                    </span>
+                    You must agree to our terms and conditions to access this
+                    application.
+                  </label>
+                </div>
+                <div class="lh-card lh-card--correct">
+                  <label for="name2" class="lh-label">
+                    <input
+                      name="name2"
+                      id="name2"
+                      type="checkbox"
+                      class="checkbox-input"
+                    />
+                    <span class="checkbox-background">
+                      <i class="checkbox-icon uil uil-check"></i>
+                    </span>
+                    You must agree to our terms and conditions to access this
+                    application.
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.line-height {
+              background: #8f44fd;
+            }
+
+            .lh-card {
+              width: 16rem;
+              padding: 1rem;
+              line-height: 1;
+              border-radius: 0.75rem;
+              background: #ffffff;
+              color: rgba(0, 0, 0, 0.75);
+            }
+
+            .lh-card--correct {
+              line-height: 1.3;
+            }
+
+            .lh-label {
+              display: flex;
+              column-gap: 1rem;
+              align-items: center;
+              font-size: 0.875rem;
+            }
+
+            .checkbox-input {
+              position: absolute;
+              transform: scale(0);
+            }
+
+            .checkbox-input:checked ~ .checkbox-background {
+              background: #e7e7e7;
+            }
+
+            .checkbox-input:checked ~ .checkbox-background .checkbox-icon {
+              opacity: 0;
+            }
+
+            .checkbox-background {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 1.5rem;
+              height: 1.5rem;
+              border-radius: 0.25rem;
+              background: #8f44fd;
+            }
+
+            .checkbox-icon {
+              font-size: 1.5rem;
+              color: white;
+            }
+          </style>
+        </article>
+        <article class="block content">
+          <div class="block-inner">
+            <h2 class="block-title">
+              content
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="bubble">
+                  <span class="bubble-icon material-icons">person</span>
+                  <span class="bubble-label">100</span>
+                  <span class="bubble-icon material-icons">favorite</span>
+                  <span class="bubble-label">100</span>
+                </div>
+                <div class="bubble bubble--correct">
+                  <span class="bubble-icon material-icons">person</span>
+                  <span class="bubble-label">100</span>
+                  <span class="bubble-icon material-icons">favorite</span>
+                  <span class="bubble-label">100</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.content {
+              background: #222227;
+            }
+
+            .bubble {
+              position: relative;
+              display: flex;
+              gap: 1rem 0.75rem;
+              align-items: center;
+              justify-content: center;
+              padding: 0 1.5rem;
+              height: 3.25rem;
+              border-radius: 0.75rem;
+              background: #f12c50;
+              color: #f7f7f7;
+            }
+
+            .bubble::after {
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              width: 0.875rem;
+              height: 0.875rem;
+              border-bottom-right-radius: 0.25rem;
+              background: inherit;
+              transform-origin: 50% 100%;
+              transform: rotate(45deg) translate(-50%, 0.875rem);
+            }
+
+            .bubble--correct::after {
+              content: "";
+            }
+          </style>
+        </article>
+        <article class="block backgroud-clip">
+          <div class="block-inner">
+            <h2 class="block-title">
+              background-clip
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <button class="background-clip-button"></button>
+                <button
+                  class="background-clip-button background-clip-button--correct"
+                ></button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.backgroud-clip {
+              background: #253750;
+            }
+
+            .background-clip-button {
+              display: grid;
+              place-items: center;
+              height: 10rem;
+              width: 15rem;
+              white-space: nowrap;
+              border-radius: 1rem;
+              border: 3px dotted #f7f7f7;
+              opacity: 0.75;
+              background: url("assets/img/pool.png");
+              background-size: 150%;
+              background-position: center;
+              background-repeat: no-repeat;
+              cursor: grab;
+              transition: opacity 0.35s;
+            }
+
+            .background-clip-button:hover {
+              opacity: 1;
+            }
+
+            .background-clip-button--correct {
+              background-clip: padding-box;
+            }
+          </style>
+        </article>
+        <article class="block object-fit">
+          <div class="block-inner">
+            <h2 class="block-title">
+              object-fit
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="object-fit-wrapper">
+                  <img class="object-fit-img" src="assets/img/people.png" />
+                </div>
+                <div class="object-fit-wrapper">
+                  <img
+                    class="object-fit-img object-fit-img--correct"
+                    src="assets/img/people.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.object-fit {
+              background: #471787;
+            }
+
+            .object-fit-wrapper {
+              padding: 0.325rem;
+              width: 6rem;
+              height: 6rem;
+              border-radius: 50%;
+              border: 2px solid rgba(255, 255, 255, 0.25);
+            }
+
+            .object-fit-img {
+              width: 100%;
+              height: 100%;
+              border-radius: inherit;
+            }
+
+            .object-fit-img--correct {
+              object-fit: cover;
+            }
+          </style>
+        </article>
+        <article class="block word-break">
+          <div class="block-inner">
+            <h2 class="block-title">
+              word-break
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="wb-card">
+                  Cambridgeshire, Cumberland, Derbyshire, Gloucestershire,
+                  Herefordshire, Huntingdonshire
+                </div>
+                <div class="wb-card wb-card--correct">
+                  Cambridgeshire, Cumberland, Derbyshire, Gloucestershire,
+                  Herefordshire and Huntingdonshire
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.word-break {
+              background: #381467;
+            }
+
+            .wb-card {
+              width: 16rem;
+              padding: 1rem;
+              border-radius: 1rem;
+              line-height: 1.35;
+              background: #1b1c23;
+              color: rgba(255, 255, 255, 0.75);
+            }
+
+            .wb-card--correct {
+              word-break: break-all;
+            }
+          </style>
+        </article>
+        <article class="block hyphens">
+          <div class="block-inner">
+            <h2 class="block-title">
+              hyphens
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="hyphens-card hyphens-card--wrong">
+                  Cambridgeshire, Cumberland, Derbyshire, Gloucestershire,
+                  Herefordshire, Huntingdonshire
+                </div>
+                <div class="hyphens-card hyphens-card--correct">
+                  Cambridgeshire, Cumberland, Derbyshire, Gloucestershire,
+                  Herefordshire and Huntingdonshire
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.hyphens {
+              background: #31105f;
+            }
+
+            .hyphens-card {
+              width: 16rem;
+              padding: 1rem;
+              border-radius: 1rem;
+              line-height: 1.35;
+              background: #1b1c23;
+              color: rgba(255, 255, 255, 0.75);
+            }
+
+            .hyphens-card--wrong {
+              word-break: break-all;
+            }
+
+            .hyphens-card--correct {
+              hyphens: auto;
+            }
+          </style>
+        </article>
+        <article class="block columns">
+          <div class="block-inner">
+            <h2 class="block-title">
+              columns
+            </h2>
+            <div class="block-component">
+              <p class="columns-card">
+                Cambridgeshire, Cumberland, Derbyshire, Gloucestershire,
+                Herefordshire and Huntingdonshire
+              </p>
+            </div>
+          </div>
+          <style>
+            .block.columns {
+              background: #461787;
+            }
+
+            .columns-card {
+              width: 28rem;
+              padding: 1.5rem 1.25rem;
+              line-height: 1.35;
+              border-radius: 1rem;
+              columns: 2 auto;
+              background: #1b1c23;
+              color: rgba(255, 255, 255, 0.75);
+            }
+          </style>
+        </article>
+        <article class="block word-spacing">
+          <div class="block-inner">
+            <h2 class="block-title">
+              word-spacing
+            </h2>
+            <div class="block-component">
+              <p class="word-spacing-card">
+                Cambridgeshire Cumberland Derbyshire Gloucestershire
+                Herefordshire Huntingdonshire
+              </p>
+            </div>
+          </div>
+          <style>
+            .block.word-spacing {
+              background: #222227;
+            }
+
+            .word-spacing-card {
+              width: 24rem;
+              padding: 1.5rem 1.25rem;
+              line-height: 1.35;
+              border-radius: 1rem;
+              columns: 6rem 2;
+              word-spacing: 6rem;
+              background: #522b8c;
+              color: rgba(255, 255, 255, 0.75);
+            }
+          </style>
+        </article>
+        <article class="block column-span">
+          <div class="block-inner">
+            <h2 class="block-title">
+              column-span
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="col-span-card">
+                  <h2 class="col-span-h2">
+                    UK Counties
+                  </h2>
+                  <p class="col-span-card-p">
+                    Cambridgeshire Cumberland Derbyshire Gloucestershire
+                    Herefordshire Huntingdonshire
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.column-span {
+              background: #2c2d33;
+            }
+
+            .col-span-card {
+              overflow: hidden;
+              width: 24rem;
+              columns: 2;
+              border-radius: 0.5rem;
+              background: #1b1c23;
+              color: rgba(255, 255, 255, 0.75);
+            }
+
+            .col-span-card-p {
+              margin: 0 1rem;
+              padding-bottom: 1rem;
+              line-height: 1.75;
+            }
+
+            .col-span-h2 {
+              column-span: all;
+              padding: 1rem;
+              margin-bottom: 1rem;
+              font-size: 1.25rem;
+              background: #44a8fd;
+              color: white;
+            }
+          </style>
+        </article>
+        <article class="block direction">
+          <div class="block-inner">
+            <h2 class="block-title">
+              direction
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="direction-card">
+                  <h2 class="direction-h2">
+                    UK Counties
+                  </h2>
+                  <p class="direction-card-p">
+                    Cambridgeshire Cumberland Derbyshire Gloucestershire
+                    Herefordshire Huntingdonshire
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.direction {
+              background: #2c2d33;
+            }
+
+            .direction-card {
+              overflow: hidden;
+              width: 24rem;
+              columns: 2;
+              border-radius: 0.5rem;
+              background: #1b1c23;
+              color: rgba(255, 255, 255, 0.75);
+              direction: rtl;
+            }
+
+            .direction-card-p {
+              margin: 0 1rem;
+              padding-bottom: 1rem;
+              line-height: 1.75;
+            }
+
+            .direction-h2 {
+              column-span: all;
+              padding: 1rem;
+              margin-bottom: 1rem;
+              font-size: 1.25rem;
+              background: #44a8fd;
+              color: white;
+            }
+          </style>
+        </article>
+        <article class="block column-rule">
+          <div class="block-inner">
+            <h2 class="block-title">
+              column-rule
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="col-rule-card">
+                  <h2 class="col-rule-h2">
+                    UK Counties
+                  </h2>
+                  <p class="col-rule-card-p">
+                    Cambridgeshire Cumberland Derbyshire Gloucestershire
+                    Herefordshire Huntingdonshire
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.column-rule {
+              background: #222227;
+            }
+
+            .col-rule-card {
+              overflow: hidden;
+              width: 24rem;
+              padding-bottom: 1rem;
+              columns: 2;
+              column-rule: 1px solid rgba(0, 0, 0, 0.12);
+              border-radius: 0.5rem;
+              background: #ffffff;
+              color: rgba(0, 0, 0, 0.75);
+            }
+
+            .col-rule-card-p {
+              margin: 0 1rem;
+              line-height: 1.75;
+            }
+
+            .col-rule-h2 {
+              column-span: all;
+              padding: 1rem;
+              margin-bottom: 1rem;
+              font-size: 1.25rem;
+              background: #8f44fd;
+              color: white;
+            }
+          </style>
+        </article>
+        <article class="block column-gap">
+          <div class="block-inner">
+            <h2 class="block-title">
+              column-gap
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="col-gap-card">
+                  <h2 class="col-gap-h2">
+                    UK Counties
+                  </h2>
+                  <p class="col-gap-card-p">
+                    Cambridgeshire Cumberland Derbyshire Gloucestershire
+                    Herefordshire Huntingdonshire
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.column-gap {
+              background: #060607;
+            }
+
+            .col-gap-card {
+              overflow: hidden;
+              width: 24rem;
+              padding-bottom: 1rem;
+              columns: 2;
+              column-gap: 0;
+              border-radius: 0.5rem;
+              background: #ffffff;
+              color: rgba(0, 0, 0, 0.75);
+            }
+
+            .col-gap-card-p {
+              margin: 0 1rem;
+              line-height: 1.75;
+            }
+
+            .col-gap-h2 {
+              column-span: all;
+              padding: 1rem;
+              margin-bottom: 1rem;
+              font-size: 1.25rem;
+              background: #8f44fd;
+              color: white;
+            }
+          </style>
+        </article>
+        <article class="block list-style">
+          <div class="block-inner">
+            <h2 class="block-title">
+              list-style
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="list-style-card">
+                  <h2 class="list-style-h2">
+                    Mental skills
+                  </h2>
+                  <ul class="list-style-ul">
+                    <li>
+                      Practice
+                    </li>
+                    <li>
+                      Persistence
+                    </li>
+                    <li>
+                      Patience
+                    </li>
+                  </ul>
+                </div>
+                <div class="list-style-card">
+                  <h2 class="list-style-h2">
+                    Mental skills
+                  </h2>
+                  <ul class="list-style-ul list-style-ul--correct">
+                    <li>
+                      Practice
+                    </li>
+                    <li>
+                      Persistence
+                    </li>
+                    <li>
+                      Patience
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.list-style {
+              background: #060607;
+            }
+
+            .list-style-card {
+              overflow: hidden;
+              width: 14rem;
+              padding-bottom: 1rem;
+              border-radius: 0.5rem;
+              background: #ffffff;
+              color: rgba(0, 0, 0, 0.75);
+            }
+
+            .list-style-ul {
+              margin: 0;
+            }
+
+            .list-style-ul--correct {
+              list-style: none;
+              padding: 0;
+              padding-left: 1rem;
+            }
+
+            .list-style-ul--correct li:before {
+              content: "🔥";
+            }
+
+            .list-style-h2 {
+              padding: 1rem;
+              margin-bottom: 1rem;
+              font-size: 1.25rem;
+              background: #8f44fd;
+              color: white;
+            }
+          </style>
+        </article>
+        <article class="block filter">
+          <div class="block-inner">
+            <h2 class="block-title">
+              filter
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="normal-card"></div>
+                <div class="filter-card"></div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.filter {
+              background: #f7f7fe;
+            }
+
+            .block.filter .block-title {
+              color: #4c4954;
+            }
+
+            .normal-card,
+            .filter-card {
+              position: relative;
+              width: 12rem;
+              height: 12rem;
+              border-radius: 1rem;
+            }
+
+            .normal-card {
+              box-shadow: 0 2rem 1.5rem rgba(0, 0, 0, 0.12);
+              background: url("assets/img/car.png");
+              background-size: cover;
+              background-position: bottom;
+            }
+
+            .filter-card {
+              position: relative;
+              width: 12rem;
+              height: 12rem;
+              border-radius: 1rem;
+            }
+
+            .filter-card::before,
+            .filter-card::after {
+              content: "";
+              position: absolute;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              border-radius: inherit;
+              background: url("assets/img/car.png");
+              background-size: cover;
+              background-position: bottom;
+            }
+
+            .filter-card::after {
+              z-index: 0;
+              top: 2rem;
+              left: 0;
+              border-radius: inherit;
+              background: url("assets/img/car.png");
+              background-size: cover;
+              filter: blur(1rem);
+              opacity: 0.2;
+            }
+          </style>
+        </article>
+        <article class="block resize">
+          <div class="block-inner">
+            <h2 class="block-title">
+              resize
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="resize-card">
+                  <h2 class="resize-h2">
+                    Non Resize Textarea
+                  </h2>
+                  <textarea class="resize-textarea">
+                  Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit , morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro.
+                </textarea
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.resize {
+              background: #060607;
+            }
+
+            .resize-card {
+              overflow: hidden;
+              width: 24rem;
+              padding-bottom: 1rem;
+              border-radius: 0.5rem;
+              background: #ffffff;
+              color: rgba(0, 0, 0, 0.75);
+            }
+
+            .resize-textarea {
+              padding: 1rem;
+              width: 100%;
+              height: 8rem;
+              border: 0;
+              resize: none;
+              outline: none;
+              line-height: 1.5;
+              font-size: 1rem;
+              font-family: "Euclid Circular A", "Poppins";
+            }
+
+            .resize-h2 {
+              column-span: all;
+              padding: 1rem;
+              font-size: 1.25rem;
+              background: #8f44fd;
+              color: white;
+            }
+          </style>
+        </article>
+        <article class="block scroll-behaviour">
+          <div class="block-inner">
+            <h2 class="block-title">
+              scroll-behaviour
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="scroll-behaviour-card">
+                  <h2 class="scroll-behaviour-h2">
+                    Auto
+                  </h2>
+                  <div class="scroll-behaviour-content">
+                    Zombie ipsum reversus ab viral inferno, nam rick grimes
+                    malum cerebro. De carne lumbering animata corpora quaeritis.
+                    Summus brains sit , morbo vel maleficia? De apocalypsi
+                    gorger omero undead survivor dictum mauris. Hi mindless
+                    mortuis soulless creaturas, imo evil stalking monstra
+                    adventus resi dentevil vultus comedat cerebella viventium.
+                    Qui animated corpse, cricket bat max brucks terribilem
+                    incessu zomby. The voodoo sacerdos flesh eater, suscitat
+                    mortuos comedere carnem virus. Zonbi tattered for solum
+                    oculi eorum defunctis go lum cerebro.
+                  </div>
+                </div>
+                <div class="scroll-behaviour-card">
+                  <h2 class="scroll-behaviour-h2">
+                    Smooth
+                  </h2>
+                  <div
+                    class="scroll-behaviour-content scroll-behaviour-content--correct"
+                  >
+                    Zombie ipsum reversus ab viral inferno, nam rick grimes
+                    malum cerebro. De carne lumbering animata corpora quaeritis.
+                    Summus brains sit , morbo vel maleficia? De apocalypsi
+                    gorger omero undead survivor dictum mauris. Hi mindless
+                    mortuis soulless creaturas, imo evil stalking monstra
+                    adventus resi dentevil vultus comedat cerebella viventium.
+                    Qui animated corpse, cricket bat max brucks terribilem
+                    incessu zomby. The voodoo sacerdos flesh eater, suscitat
+                    mortuos comedere carnem virus. Zonbi tattered for solum
+                    oculi eorum defunctis go lum cerebro.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.scroll-behaviour {
+              background: #060607;
+            }
+
+            .scroll-behaviour-card {
+              overflow: hidden;
+              width: 16rem;
+              padding-bottom: 1rem;
+              border-radius: 0.5rem;
+              background: #ffffff;
+              color: rgba(0, 0, 0, 0.75);
+            }
+
+            .scroll-behaviour-content {
+              padding: 1rem;
+              width: 100%;
+              max-height: 7rem;
+              border: 0;
+              outline: none;
+              overflow: auto;
+              line-height: 1.5;
+              font-size: 1rem;
+              font-family: "Euclid Circular A", "Poppins";
+              scroll-behavior: auto;
+            }
+
+            .scroll-behaviour-content--correct {
+              scroll-behavior: smooth;
+            }
+
+            .scroll-behaviour-h2 {
+              column-span: all;
+              padding: 1rem;
+              font-size: 1.25rem;
+              background: #8f44fd;
+              color: white;
+            }
+          </style>
+        </article>
+        <article class="block vertical-align">
+          <div class="block-inner">
+            <h2 class="block-title">
+              vertical-align
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="vertical-align-card">
+                  <table class="vertical-align-table">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>
+                          User
+                        </th>
+                        <th>
+                          Age
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <span class="material-icons"
+                            >radio_button_unchecked</span
+                          >
+                        </td>
+                        <td>
+                          <h3>John Smith</h3>
+                          <h4>Developer</h4>
+                          <span class="vertical-align-chip">
+                            Active
+                          </span>
+                        </td>
+                        <td>
+                          32
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="material-icons"
+                            >radio_button_unchecked</span
+                          >
+                        </td>
+                        <td>
+                          <h3>Elvis Harris</h3>
+                          <h4>Designer</h4>
+                          <span class="vertical-align-chip">
+                            Active
+                          </span>
+                        </td>
+                        <td>
+                          24
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="vertical-align-card">
+                  <table
+                    class="vertical-align-table vertical-align-table--middle"
+                  >
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>
+                          User
+                        </th>
+                        <th>
+                          Age
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <span class="material-icons"
+                            >radio_button_unchecked</span
+                          >
+                        </td>
+                        <td>
+                          <h3>John Smith</h3>
+                          <h4>Developer</h4>
+                          <span class="vertical-align-chip">
+                            Active
+                          </span>
+                        </td>
+                        <td>
+                          32
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="material-icons"
+                            >radio_button_unchecked</span
+                          >
+                        </td>
+                        <td>
+                          <h3>Elvis Harris</h3>
+                          <h4>Designer</h4>
+                          <span class="vertical-align-chip">
+                            Active
+                          </span>
+                        </td>
+                        <td>
+                          24
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.vertical-align {
+              background: #5e2aab;
+            }
+
+            .vertical-align-card {
+              width: 16rem;
+              padding: 1rem;
+              line-height: 1;
+              border-radius: 0.75rem;
+              background: #ffffff;
+              color: #45424d;
+            }
+
+            .vertical-align-table {
+              width: 100%;
+              border-collapse: collapse;
+              background: white;
+            }
+
+            .vertical-align-table .material-icons {
+              color: #a19eab;
+            }
+
+            .vertical-align-table th {
+              font-weight: 400;
+              font-size: 0.875rem;
+              color: #a19eab;
+              height: 1.75rem;
+              vertical-align: top;
+            }
+
+            .vertical-align-table td {
+              height: 4rem;
+            }
+
+            .vertical-align-table--middle td {
+              vertical-align: top;
+            }
+
+            .vertical-align-table h3 {
+              font-size: 1rem;
+              font-weight: 600;
+            }
+
+            .vertical-align-table h4 {
+              margin-bottom: 0.25rem;
+              font-size: 0.875rem;
+              color: #a19eab;
+            }
+
+            .vertical-align-chip {
+              display: inline-grid;
+              place-items: center;
+              padding: 0.125rem 0.25rem;
+              border-radius: 0.25rem;
+              font-size: 0.75rem;
+              background: #1ac0a2;
+              color: #f7f7f7;
+            }
+          </style>
+        </article>
+        <article class="block white-space">
+          <div class="block-inner">
+            <h2 class="block-title">
+              white-space
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <button class="white-space-button">
+                  <span class="white-space-button-text">
+                    Get Started
+                  </span>
+                  <span class="uil uil-angle-right"></span>
+                </button>
+                <button class="white-space-button">
+                  <span
+                    class="white-space-button-text white-space-button-text--correct"
+                  >
+                    Get Started
+                  </span>
+                  <span class="uil uil-angle-right"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.white-space {
+              background: #1a5046;
+            }
+
+            .white-space-button {
+              display: grid;
+              grid-template-columns: auto auto;
+              gap: 1rem;
+              align-items: center;
+              padding: 0 1.5rem 0 2.125rem;
+              width: 13rem;
+              height: 5rem;
+              border-radius: 0.75rem;
+              background: #1ac0a2;
+              color: #f7f7f7;
+            }
+
+            .white-space-button .uil {
+              font-size: 2rem;
+            }
+
+            .white-space-button-text {
+              font-size: 1.25rem;
+            }
+
+            .white-space-button-text--correct {
+              white-space: nowrap;
+            }
+          </style>
+        </article>
+        <article class="block outline">
+          <div class="block-inner">
+            <h2 class="block-title">
+              outline
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <input class="outline-input" placeholder="Your name" />
+                <input
+                  class="outline-input outline-input--correct"
+                  placeholder="Your name"
+                />
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.outline {
+              background: #1d1825;
+            }
+
+            .outline-input {
+              height: 4rem;
+              width: 12rem;
+              border-radius: 0.5rem;
+              text-indent: 1rem;
+              font-size: 1rem;
+              background: #0d0b10;
+              color: #f7f7f7;
+            }
+
+            .outline-input:focus {
+              outline-style: solid;
+              outline-color: rgba(255, 255, 255, 0.12);
+              outline-width: 4px;
+            }
+
+            .outline-input--correct {
+              transition: box-shadow 0.35s;
+            }
+
+            .outline-input--correct:focus {
+              outline: none;
+              box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.12);
+            }
+          </style>
+        </article>
+        <article class="block user-select">
+          <div class="block-inner">
+            <h2 class="block-title">
+              user-select
+            </h2>
+            <div class="block-component">
+              <div class="user-select-alert">
+                <span class="user-select-icon uil uil-check"></span>
+                <span class="user-select-text">
+                  Payment Success!
+                </span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.user-select {
+              background: #f7f7fe;
+            }
+
+            .block.user-select .block-title {
+              color: #4c4954;
+            }
+
+            .user-select-alert {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+              padding: 1.25rem 3rem 1.25rem 1.25rem;
+              border-left: 0.5rem solid #4499fd;
+              background: white;
+              color: #4499fd;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+              user-select: none;
+            }
+
+            .user-select-icon {
+              font-size: 2rem;
+            }
+
+            .user-select-text {
+              font-size: 1.125rem;
+            }
+          </style>
+        </article>
+        <article class="block pointer-events">
+          <div class="block-inner">
+            <h2 class="block-title">
+              pointer-events
+            </h2>
+            <div class="block-component">
+              <div class="pointer-events-card">
+                <div class="pointer-events-ribbon">
+                  ELITE
+                </div>
+                <div class="pointer-events-content">
+                  <p class="pointer-events-p">
+                    Zombies reversus ab inferno, nam malum cerebro. De carne
+                    animata corpora quaeritis. Summus sit​​, morbo vel
+                    maleficia? De Apocalypsi undead dictum mauris. Hi mortuis
+                    soulless creaturas, imo monstra adventus vultus comedat
+                    cerebella viventium. Qui offenderit rapto, terribilem
+                    incessu. The voodoo sacerdos suscitat mortuos comedere
+                    carnem. Search for solum oculi eorum defunctis cerebro.
+                    Nescio an Undead zombies. Sicut malus movie horror.
+                    <br />
+                    <br />
+                    <button
+                      class="pointer-events-button"
+                      onclick="alert('You clicked the button through the ribbon!')"
+                    >
+                      Accept
+                    </button>
+                    <br />
+                    <br />
+                    Zombies reversus ab inferno, nam malum cerebro. De carne
+                    animata corpora quaeritis. Summus sit​​, morbo vel
+                    maleficia? De Apocalypsi undead dictum mauris. Hi mortuis
+                    soulless creaturas, imo monstra adventus vultus comedat
+                    cerebella viventium. Qui offenderit rapto, terribilem
+                    incessu. The voodoo sacerdos suscitat mortuos comedere
+                    carnem. Search for solum oculi eorum defunctis cerebro.
+                    Nescio an Undead zombies. Sicut malus movie horror.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.pointer-events {
+              background: #171619;
+            }
+
+            .pointer-events-card {
+              position: relative;
+              overflow: hidden;
+              width: 18rem;
+              padding: 1rem;
+              border-radius: 0.25rem;
+              background: #ffffff;
+            }
+
+            .pointer-events-ribbon {
+              position: absolute;
+              top: 0;
+              left: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 1.5rem;
+              padding: 0 2rem;
+              transform: rotate(-45deg) translate(-2rem, -0.75rem);
+              letter-spacing: 3px;
+              font-size: 0.75rem;
+              font-weight: 600;
+              color: #f7f7f7;
+              background: #8f44fd;
+              pointer-events: none;
+            }
+
+            .pointer-events-button {
+              width: 100%;
+              padding: 1rem;
+              font-size: 1rem;
+              color: #f7f7f7;
+              background: #5520a4;
+            }
+
+            .pointer-events-p {
+              overflow: auto;
+              max-height: 8rem;
+              margin: 0;
+              line-height: 1.4;
+              font-size: 1rem;
+            }
+          </style>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

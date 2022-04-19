@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>selectors</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/skeletons.css" />
+  </head>
+  <body>
+    <header class="page-header">selectors</header>
+    <div class="container">
+      <section class="block-list">
+        <article class="block class">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Class
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <input class="class-input form-control" placeholder="Input" />
+                <button class="class-button form-control">
+                  Button
+                </button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.class {
+              background: #f7f7fe;
+            }
+
+            .block.class .block-title {
+              color: #4c4954;
+            }
+
+            .form-control {
+              height: 3.5rem;
+              border-radius: 0.5rem;
+            }
+
+            .class-button {
+              min-width: 8rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .class-input {
+              min-width: 12rem;
+              text-indent: 1rem;
+              color: #4c4954;
+              background: #ffffff;
+              border: 2px solid #8f44fd;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+          </style>
+        </article>
+        <article class="block id-fix">
+          <div class="block-inner">
+            <h2 class="block-title">
+              ID
+            </h2>
+            <div class="block-component">
+              <div class="id-card">
+                <aside id="sidebar"></aside>
+                <main id="content">
+                  <span class="skeleton-rect-xl"></span>
+                  <span class="skeleton-rect-md"></span>
+                  <span class="skeleton-rect-sm"></span>
+                  <br />
+                  <span class="skeleton-rect-lg"></span>
+                  <span class="skeleton-rect-sm"></span>
+                </main>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.id-fix {
+              background: #373942;
+            }
+
+            .id-card {
+              position: relative;
+              width: 24rem;
+              height: 10rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            #sidebar {
+              position: absolute;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              width: 6rem;
+              height: 100%;
+              background: #000000;
+            }
+
+            #content {
+              padding: 1rem;
+              margin-left: 6rem;
+              font-size: 0.75rem;
+            }
+          </style>
+        </article>
+        <article class="block tag">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Tag
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="tag-card">
+                  <h3 class="tag-h3">
+                    Topics
+                  </h3>
+                  <ul class="tag-ul">
+                    <li>
+                      CSS
+                    </li>
+                    <li>
+                      HTML
+                    </li>
+                    <li>
+                      React
+                    </li>
+                  </ul>
+                </div>
+                <div class="tag-card tag-card--fixed">
+                  <h3 class="tag-h3">
+                    Topics
+                  </h3>
+                  <ul class="tag-ul">
+                    <li>
+                      CSS
+                    </li>
+                    <li>
+                      HTML
+                    </li>
+                    <li>
+                      React
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.tag {
+              background: #8f44fd;
+            }
+
+            .tag-card {
+              width: 10rem;
+              padding: 1rem;
+              border-radius: 0.5rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .tag-h3 {
+              color: #a19eab;
+            }
+
+            .tag-card--fixed .tag-ul {
+              padding: 0 0 0 1rem;
+            }
+          </style>
+        </article>
+        <article class="block pseudos">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Pseudo classes
+            </h2>
+            <div class="block-component">
+              <input
+                placeholder="Type something"
+                class="pseudos-textbox-input"
+              />
+            </div>
+          </div>
+          <style>
+            .block.pseudos {
+              background: #2c2d33s;
+            }
+
+            .pseudos-textbox-input {
+              width: 12rem;
+              height: 4rem;
+              padding: 0 1rem;
+              border-radius: 0.5rem;
+              border: 3px solid #d6cdd7;
+              background: #ffffff;
+            }
+
+            .pseudos-textbox-input:focus {
+              border-color: #1ac0a2;
+              background: #c3e2dc;
+            }
+          </style>
+        </article>
+        <article class="block chained">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Chained selectors
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <button class="chained-button">
+                  <span class="chained-button-icon uil uil-sync"></span>
+                  <span class="chained-button-text">
+                    Refresh
+                  </span>
+                </button>
+                <button class="chained-button primary chained-button-">
+                  <span class="chained-button-icon uil uil-sync"></span>
+                  <span class="chained-button-text">
+                    Refresh
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.chained {
+              background: #373942;
+            }
+
+            .chained-button {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+              justify-content: center;
+              width: 10rem;
+              height: 4rem;
+              padding: 1rem 1.75rem 1rem 1.5rem;
+              border-radius: 0.5rem;
+              color: #45424d;
+              background: #f7f7fe;
+            }
+
+            .chained-button.primary {
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+            }
+
+            .chained-button-icon {
+              font-size: 1.5rem;
+            }
+
+            .chained-button-text {
+              font-size: 1.25rem;
+            }
+          </style>
+        </article>
+        <article class="block chained-combo">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Chained Combinators
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <button class="chained-combo-button primary">
+                  <span class="chained-combo-button-icon uil uil-copy"></span>
+                  <span class="chained-combo-button-text">
+                    Copy Now
+                  </span>
+                </button>
+                <button disabled class="chained-combo-button primary">
+                  <span class="chained-combo-button-icon uil uil-copy"></span>
+                  <span class="chained-combo-button-text">
+                    Copy Now
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.chained-combo {
+              background: #222227;
+            }
+
+            .chained-combo-button {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+              justify-content: center;
+              height: 4rem;
+              padding: 1rem 1.75rem 1rem 1.5rem;
+              border-radius: 0.5rem;
+              color: #45424d;
+              background: #f7f7fe;
+            }
+
+            .chained-combo-button.primary {
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+            }
+
+            .chained-combo-button.primary:disabled {
+              color: rgba(0, 0, 0, 0.3);
+              background: #b0a5c1;
+              cursor: not-allowed;
+            }
+
+            .chained-combo-button-icon {
+              font-size: 1.5rem;
+            }
+
+            .chained-combo-button-text {
+              font-size: 1.25rem;
+            }
+          </style>
+        </article>
+        <article class="block descendant-datatables">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Descendants
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="descendant-datatable-card">
+                  <table class="descendant-datatable">
+                    <thead>
+                      <tr>
+                        <th>
+                          Language
+                        </th>
+                        <th>
+                          Price
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          CSS
+                        </td>
+                        <td>
+                          £9
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          React
+                        </td>
+                        <td>
+                          £3
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          HTML
+                        </td>
+                        <td>
+                          £6
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="descendant-datatable-card">
+                  <table
+                    class="descendant-datatable descendant-datatable--bordered"
+                  >
+                    <thead>
+                      <tr>
+                        <th>
+                          Language
+                        </th>
+                        <th>
+                          Price
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          CSS
+                        </td>
+                        <td>
+                          £9
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          React
+                        </td>
+                        <td>
+                          £3
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          HTML
+                        </td>
+                        <td>
+                          £6
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.descendant-datatables {
+              background: #222227;
+            }
+
+            .descendant-datatable-card {
+              overflow: auto;
+              width: 14rem;
+              padding: 1rem;
+              border-radius: 0.75rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #17171b;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .descendant-datatable {
+              width: 100%;
+              border-collapse: collapse;
+            }
+
+            .descendant-datatable th,
+            .descendant-datatable td {
+              border: 1px solid transparent;
+            }
+
+            .descendant-datatable th {
+              font-weight: 400;
+              font-size: 0.875rem;
+              color: rgba(255, 255, 255, 0.45);
+              padding: 0.5rem;
+            }
+
+            .descendant-datatable td {
+              padding: 0.5rem;
+            }
+
+            .descendant-datatable--bordered td,
+            .descendant-datatable--bordered th {
+              border-color: #2a2a31;
+            }
+          </style>
+        </article>
+        <article class="block adjacent-sibling">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Adjacent Sibling
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <span class="adjacent-sibling-textbox">
+                  <input
+                    type="password"
+                    value="Password1"
+                    class="adjacent-sibling-textbox-input"
+                  />
+                  <span
+                    class="adjacent-sibling-textbox-icon uil uil-user-circle"
+                  ></span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.adjacent-sibling {
+              background: #f7f7fe;
+            }
+
+            .block.adjacent-sibling .block-title {
+              color: #4c4954;
+            }
+
+            .adjacent-sibling-textbox {
+              position: relative;
+            }
+
+            .adjacent-sibling-textbox-icon {
+              position: absolute;
+              top: 50%;
+              left: 1rem;
+              transform: translateY(-50%);
+              display: grid;
+              place-items: center;
+              flex: 0 0 4rem;
+              font-size: 1.5rem;
+              color: #a19eab;
+            }
+
+            .adjacent-sibling-textbox-input {
+              width: 12rem;
+              height: 4rem;
+              padding-left: 3.5rem;
+              padding-right: 1rem;
+              border-radius: 0.5rem;
+              border: 2px solid #d6cdd7;
+              background: #ffffff;
+            }
+
+            .adjacent-sibling-textbox-input:focus {
+              border-color: #8f44fd;
+            }
+
+            .adjacent-sibling-textbox-input:focus
+              + .adjacent-sibling-textbox-icon {
+              color: #8f44fd;
+            }
+          </style>
+        </article>
+        <article class="block general-siblings">
+          <div class="block-inner">
+            <h2 class="block-title">
+              General Siblings
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <span class="general-siblings-textbox">
+                  <input
+                    placeholder="Your email address"
+                    class="general-siblings-textbox-input"
+                  />
+                  <span
+                    class="general-siblings-textbox-icon uil uil-envelope"
+                  ></span>
+                  <span class="general-siblings-textbox-border"></span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.general-siblings {
+              background: #373942;
+            }
+
+            .general-siblings-textbox {
+              overflow: hidden;
+              position: relative;
+              border-radius: 0.5rem;
+              background: #ffffff;
+            }
+
+            .general-siblings-textbox-icon {
+              position: absolute;
+              top: 50%;
+              left: 1rem;
+              transform: translateY(-50%);
+              display: grid;
+              place-items: center;
+              flex: 0 0 4rem;
+              margin-left: 6px;
+              font-size: 1.5rem;
+              color: #a19eab;
+              transition: color 0.35s;
+            }
+
+            .general-siblings-textbox-input {
+              width: 15 rem;
+              height: 4rem;
+              padding-left: 3.5rem;
+              padding-right: 1rem;
+            }
+
+            .general-siblings-textbox-border {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 6px;
+              height: 100%;
+              background: #a19eab;
+              transition: background 0.35s;
+            }
+
+            .general-siblings-textbox-input:focus
+              ~ .general-siblings-textbox-icon {
+              color: #37b9f1;
+            }
+
+            .general-siblings-textbox-input:focus
+              ~ .general-siblings-textbox-border {
+              background: #37b9f1;
+            }
+          </style>
+        </article>
+        <article class="block direct-descendant">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Direct Descendant
+            </h2>
+            <div class="block-component">
+              <div class="direct-descendant-card">
+                <h3>
+                  Topics
+                </h3>
+                <ul class="direct-descendant-ul">
+                  <li>
+                    CSS
+                    <ul>
+                      <li>
+                        Common Selectors
+                      </li>
+                      <li>
+                        Pseudos Classes
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    React
+                    <ul>
+                      <li>
+                        Hooks and Context API
+                      </li>
+                      <li>
+                        Redux, Router and CSS In JS
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.direct-descendant {
+              background: #8f44fd;
+            }
+
+            .direct-descendant-card {
+              padding: 1rem;
+              border-radius: 0.5rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .direct-descendant-card > ul {
+              padding: 0 0 0 1rem;
+            }
+
+            .direct-descendant-ul > li {
+              list-style: square;
+              margin-bottom: 0.5rem;
+            }
+
+            .direct-descendant-ul > li > ul {
+              padding: 0;
+            }
+
+            .direct-descendant-ul > li > ul > li {
+              list-style: none;
+              color: #a19eab;
+            }
+          </style>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

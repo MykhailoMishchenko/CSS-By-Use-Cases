@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flexbox</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/skeletons.css" />
+  </head>
+  <body>
+    <header class="page-header">Flexbox</header>
+    <div class="container">
+      <section class="block-list">
+        <article class="block menus">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Menus
+            </h2>
+            <div class="block-component">
+              <div class="menus-card">
+                <button class="menus-button">
+                  Home
+                </button>
+                <button class="menus-button">
+                  About
+                </button>
+                <button class="menus-button">
+                  Contact
+                </button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.menus {
+              background: #f7f7fe;
+            }
+
+            .block.menus .block-title {
+              color: #4c4954;
+            }
+
+            .menus-card {
+              display: flex;
+              padding: 1rem;
+              border-top-left-radius: 0.5rem;
+              border-top-right-radius: 0.5rem;
+              background: #100f10;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .menus-button {
+              width: 6rem;
+              color: rgba(255, 255, 255, 0.57);
+              transition: color 0.35s;
+            }
+
+            .menus-button:hover {
+              color: rgba(255, 255, 255, 0.96);
+            }
+          </style>
+        </article>
+        <article class="block navs">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Navs
+            </h2>
+            <div class="block-component">
+              <nav class="navs-card">
+                <button class="navs-burger uil uil-bars"></button>
+                <nav class="navs-menu">
+                  <button class="navs-menus-button">
+                    Home
+                  </button>
+                  <button class="navs-menus-button">
+                    About
+                  </button>
+                  <button class="navs-menus-button">
+                    Contact
+                  </button>
+                </nav>
+              </nav>
+            </div>
+          </div>
+          <style>
+            .block.navs {
+              background: #8f44fd;
+            }
+
+            .navs-card {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 26rem;
+              padding: 1rem;
+              border-radius: 0.5rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .navs-burger {
+              font-size: 1.5rem;
+            }
+
+            .navs-menu {
+              display: flex;
+              gap: 0.5rem;
+            }
+
+            .navs-menus-button {
+              color: #a19eab;
+              transition: color 0.35s;
+            }
+
+            .navs-menus-button:hover {
+              color: #45424d;
+            }
+          </style>
+        </article>
+        <article class="block advanced">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Advanced navs
+            </h2>
+            <div class="block-component">
+              <nav class="advanced-nav">
+                <button class="advanced-nav-button uil uil-bars"></button>
+                <h2 class="advanced-nav-h2">Page Title</h2>
+                <button
+                  class="advanced-nav-button uil uil-user-circle"
+                ></button>
+              </nav>
+            </div>
+          </div>
+          <style>
+            .block.advanced {
+              background: #222227;
+            }
+
+            .advanced-nav {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              height: 4rem;
+              width: 26rem;
+              border-radius: 0.5rem;
+              color: #4c4954;
+              background: #100f10;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .advanced-nav-button {
+              flex: 0 0 4rem;
+              font-size: 1.75rem;
+              color: rgba(255, 255, 255, 0.57);
+              transition: color 0.35s;
+            }
+
+            .advanced-nav-button:hover {
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            .advanced-nav-h2 {
+              font-size: 1rem;
+              color: rgba(255, 255, 255, 0.96);
+            }
+          </style>
+        </article>
+        <article class="block flex">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Icon buttons
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <button class="flex-button">
+                  <span class="flex-button-text">
+                    Get Started
+                  </span>
+                  <span class="flex-button-icon uil uil-angle-right"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.flex {
+              background: #2c2d33;
+            }
+
+            .flex-button {
+              display: flex;
+              gap: 0.875rem;
+              align-items: center;
+              justify-content: center;
+              padding: 1.25rem 1.5rem 1.25rem 1.75rem;
+              border-radius: 0.5rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+            }
+
+            .flex-button-icon {
+              font-size: 1.65rem;
+            }
+
+            .flex-button-text {
+              line-height: 1;
+              font-size: 1.25rem;
+            }
+          </style>
+        </article>
+        <article class="block search">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Search controls
+            </h2>
+            <div class="block-component">
+              <div class="search-wrapper">
+                <input class="search-input" placeholder="Search" />
+                <button class="search-button uil uil-search"></button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.search {
+              background: #f7f7fe;
+            }
+
+            .block.search .block-title {
+              color: #4c4954;
+            }
+
+            .search-wrapper {
+              display: flex;
+              width: 16rem;
+              height: 4rem;
+              border-top-left-radius: 0.5rem;
+              border-bottom-left-radius: 0.5rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .search-input {
+              width: 10rem;
+              flex: 1 1 auto;
+              font-size: 1.25rem;
+              padding: 0 1rem;
+            }
+
+            .search-button {
+              flex: 0 0 4rem;
+              font-size: 1.5rem;
+              border-top-right-radius: 0.5rem;
+              border-bottom-right-radius: 0.5rem;
+              background: #8f44fd;
+              color: rgba(255, 255, 255, 0.96);
+            }
+          </style>
+        </article>
+        <article class="block chips">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Chip list
+            </h2>
+            <div class="block-component">
+              <div class="chips-wrapper">
+                <span class="chip chip--purple">
+                  T-Shirts
+                </span>
+                <span class="chip chip--blue">
+                  Sweatshirts
+                </span>
+                <span class="chip chip--indigo">
+                  Boxers
+                </span>
+                <span class="chip chip--indigo">
+                  Trainers
+                </span>
+                <span class="chip chip--purple">
+                  Coats & Hoodies
+                </span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.chips {
+              background: #222227;
+            }
+
+            .chips-wrapper {
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+              gap: 0.75rem;
+              width: 24rem;
+              padding: 1rem;
+              border-radius: 0.5rem;
+              color: #4c4954;
+            }
+
+            .chip {
+              display: grid;
+              place-items: center;
+              height: 2rem;
+              padding: 0 1rem;
+              border-radius: 1rem;
+              font-size: 0.875rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+            }
+
+            .chip--blue {
+              background: #30a1ff;
+            }
+
+            .chip--purple {
+              background: #8438eb;
+            }
+
+            .chip--indigo {
+              background: #5c0ddd;
+            }
+          </style>
+        </article>
+        <article class="block dashboard">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Dashboard rows
+            </h2>
+            <div class="block-component">
+              <div class="dashboard-wrapper">
+                <img
+                  class="dashboard-img"
+                  src="assets/img/dashboard-card-1.png"
+                />
+                <img
+                  class="dashboard-img"
+                  src="assets/img/dashboard-card-2.png"
+                />
+                <img
+                  class="dashboard-img"
+                  src="assets/img/dashboard-card-3.png"
+                />
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.dashboard {
+              background: #373942;
+            }
+
+            .dashboard-wrapper {
+              display: flex;
+              justify-content: space-around;
+              padding: 1rem;
+              width: 28rem;
+              border-radius: 0.5rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .dashboard-img {
+              flex: 1 1 auto;
+              min-width: 0;
+            }
+          </style>
+        </article>
+        <article class="block stacked">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Stacking
+            </h2>
+            <div class="block-component">
+              <button class="stacked-button">
+                <span class="stacked-button-icon uil uil-apps"></span>
+                <span class="stacked-button-text">
+                  Apps
+                </span>
+              </button>
+            </div>
+          </div>
+          <style>
+            .block.stacked {
+              background: #2c2d33;
+            }
+
+            .stacked-button {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              width: 6rem;
+              height: 6rem;
+              border-radius: 0.5rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+            }
+
+            .stacked-button-icon {
+              font-size: 2rem;
+              color: rgba(255, 255, 255, 0.57);
+            }
+          </style>
+        </article>
+        <article class="block vertical-nav">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Vertical navs
+            </h2>
+            <div class="block-component">
+              <nav class="vertical-nav-wrapper">
+                <button class="vertical-nav-button uil uil-estate"></button>
+                <nav class="vertical-nav-subnav">
+                  <button class="vertical-nav-button uil uil-plus"></button>
+                  <button class="vertical-nav-button uil uil-pen"></button>
+                  <button class="vertical-nav-button uil uil-setting"></button>
+                </nav>
+                <button class="vertical-nav-button uil uil-power"></button>
+              </nav>
+            </div>
+          </div>
+          <style>
+            .block.vertical-nav {
+              background: #2c2d33;
+            }
+
+            .vertical-nav-wrapper {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              width: 3rem;
+              height: 14rem;
+              padding: 0.75rem 0;
+              border-radius: 0.25rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #222227;
+            }
+
+            .vertical-nav-button {
+              height: 2rem;
+              font-size: 0.875rem;
+              color: rgba(255, 255, 255, 0.57);
+              transition: color 0.35s;
+            }
+
+            .vertical-nav-button:hover {
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            .vertical-nav-subnav {
+              display: flex;
+              flex-direction: column;
+            }
+          </style>
+        </article>
+        <article class="block checkboxes">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Checkboxes
+            </h2>
+            <div class="block-component">
+              <label for="name">
+                <input
+                  name="name"
+                  id="name"
+                  type="checkbox"
+                  class="checkbox-input"
+                />
+                <span class="checkbox-background">
+                  <i class="checkbox-icon uil uil-check"></i>
+                </span>
+              </label>
+            </div>
+          </div>
+          <style>
+            .block.checkboxes {
+              background: #373942;
+            }
+
+            .checkbox-input {
+              position: absolute;
+              transform: scale(0);
+            }
+
+            .checkbox-input:checked ~ .checkbox-background {
+              background: #e7e7e7;
+            }
+
+            .checkbox-input:checked ~ .checkbox-background .checkbox-icon {
+              opacity: 0;
+            }
+
+            .checkbox-background {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 4rem;
+              height: 4rem;
+              border-radius: 0.75rem;
+              background: #1ac0a2;
+            }
+
+            .checkbox-icon {
+              font-size: 2.75rem;
+              color: white;
+            }
+          </style>
+        </article>
+        <article class="block author">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Authors
+            </h2>
+            <div class="block-component">
+              <div class="author-card">
+                <img
+                  class="author-img"
+                  src="assets/img/frontendjoe-border.png"
+                />
+                <div>
+                  <h2 class="author-h2">
+                    Joe Harrison
+                  </h2>
+                  <h3 class="author-h3">
+                    @frontendjoe
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.author {
+              background: #f7f7fe;
+            }
+
+            .block.author .block-title {
+              color: #4c4954;
+            }
+
+            .author-card {
+              display: flex;
+              align-items: center;
+              gap: 0.75rem;
+              padding: 1rem;
+              min-width: 16rem;
+              border-radius: 0.5rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .author-img {
+              width: 3rem;
+              height: 3rem;
+            }
+
+            .author-h2 {
+              margin: 0 0 2px;
+              line-height: 1;
+              font-weight: 600;
+              font-size: 1.175rem;
+            }
+
+            .author-h3 {
+              margin: 0;
+              line-height: 1;
+              font-weight: 600;
+              font-size: 1.075rem;
+              color: #a19eab;
+            }
+          </style>
+        </article>
+        <article class="block ratings">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Ratings
+            </h2>
+            <div class="block-component">
+              <div class="ratings-wrapper">
+                <span class="ratings-icon material-icons">
+                  star
+                </span>
+                <span class="ratings-icon material-icons">
+                  star
+                </span>
+                <span class="ratings-icon material-icons">
+                  star
+                </span>
+                <span
+                  class="ratings-icon ratings-icon--disabled material-icons"
+                >
+                  star
+                </span>
+                <span
+                  class="ratings-icon ratings-icon--disabled material-icons"
+                >
+                  star
+                </span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.ratings {
+              background: #222227;
+            }
+
+            .ratings-wrapper {
+              display: flex;
+              gap: 1rem;
+            }
+
+            .ratings-icon {
+              font-size: 2.25rem;
+              color: #bdb287;
+            }
+
+            .ratings-icon--disabled {
+              opacity: 0.25;
+            }
+          </style>
+        </article>
+        <article class="block split-button">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Split buttons
+            </h2>
+            <div class="block-component">
+              <div class="split-button-wrapper">
+                <button class="split-button-lg">
+                  <span class="split-button-lg-icon uil uil-save"></span>
+                  <span class="split-button-lg-text">Save All</span>
+                </button>
+                <button class="split-button-sm uil uil-angle-down"></button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.split-button {
+              background: #373942;
+            }
+
+            .block.search .block-title {
+              color: #4c4954;
+            }
+
+            .split-button-wrapper {
+              display: flex;
+              width: 14rem;
+              height: 4rem;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .split-button-lg {
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+              flex: 1 1 auto;
+              font-size: 1.25rem;
+              padding: 0 1rem;
+              border-top-left-radius: 0.5rem;
+              border-bottom-left-radius: 0.5rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #1ac0a2;
+            }
+
+            .split-button-lg-icon {
+              font-size: 1.5rem;
+            }
+
+            .split-button-lg-text {
+            }
+
+            .split-button-sm {
+              flex: 0 0 4rem;
+              font-size: 2rem;
+              border-top-right-radius: 0.5rem;
+              border-bottom-right-radius: 0.5rem;
+              background: #169c84;
+              color: rgba(255, 255, 255, 0.96);
+            }
+          </style>
+        </article>
+        <article class="block rows">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Simple rows
+            </h2>
+            <div class="block-component">
+              <div class="row">
+                <div class="row-text">
+                  Dark Mode
+                </div>
+                <span class="row-icon material-icons">
+                  toggle_on
+                </span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.rows {
+              background: #2c2d33;
+            }
+
+            .row {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 24rem;
+              height: 3rem;
+              padding: 0 1rem;
+              background: #222227;
+            }
+
+            .row-text {
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            .row-icon {
+              font-size: 2.5rem;
+              color: #8f44fd;
+            }
+          </style>
+        </article>
+        <article class="block timeline">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Timelines
+            </h2>
+            <div class="block-component">
+              <div class="timeline-wrapper">
+                <button class="timeline-button">
+                  <span class="timeline-step">
+                    <span>1</span>
+                  </span>
+                </button>
+                <button class="timeline-button">
+                  <span class="timeline-step">
+                    <span>2</span>
+                  </span>
+                </button>
+                <button class="timeline-button">
+                  <span class="timeline-step">
+                    <span>3</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.timeline {
+              background: #222227;
+            }
+
+            .timeline-wrapper {
+              display: flex;
+              align-items: center;
+              width: 16rem;
+            }
+
+            .timeline-button {
+              position: relative;
+              flex: 1 1 auto;
+              display: flex;
+              justify-content: center;
+            }
+
+            .timeline-step {
+              position: relative;
+              z-index: 1;
+              display: grid;
+              place-items: center;
+              width: 3rem;
+              height: 3rem;
+              border-radius: 50%;
+              font-size: 1.25rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #1ac0a2;
+            }
+
+            .timeline-button::after {
+              content: "";
+              position: absolute;
+              z-index: 0;
+              top: 50%;
+              left: 50%;
+              transform: translateY(-50%);
+              height: 4px;
+              width: 100%;
+              background: #1ac0a2;
+            }
+
+            .timeline-button:last-child::after {
+              display: none;
+            }
+
+            .timeline-button:disabled .timeline-step {
+              color: #a19eab;
+            }
+          </style>
+        </article>
+        <article class="block tiles">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Tiles
+            </h2>
+            <div class="block-component">
+              <div class="tiles-wrapper">
+                <img class="tiles-img" src="assets/img/frontendjoe.png" />
+                <img class="tiles-img" src="assets/img/dan.png" />
+                <img class="tiles-img" src="assets/img/mike.png" />
+                <img class="tiles-img" src="assets/img/eugene.png" />
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.tiles {
+              background: #f7f7fe;
+            }
+
+            .block.tiles .block-title {
+              color: #4c4954;
+            }
+
+            .tiles-wrapper {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 1rem;
+              width: 10rem;
+              padding-left: 1rem;
+            }
+
+            .tiles-img {
+              width: 4rem;
+              height: 4rem;
+            }
+          </style>
+        </article>
+        <article class="block scroll">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Scroll cards
+            </h2>
+            <div class="block-component">
+              <div class="scroll-card">
+                <span class="scroll-icon uil uil-notes"></span>
+                <div class="scroll-content">
+                  <h2 class="scroll-content-h2">
+                    Notes
+                  </h2>
+                  <p class="scroll-content-p">
+                    He was wondering through the dark enchanted forest when he
+                    came across a strange purple coloured tree. This was not any
+                    kind of tree for it was magical and amazing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.scroll {
+              background: #373942;
+            }
+
+            .scroll-card {
+              overflow: hidden;
+              display: flex;
+              height: 8rem;
+              border-radius: 0.5rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .scroll-icon {
+              display: grid;
+              place-items: center;
+              width: 8rem;
+              font-size: 2.5rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+            }
+
+            .scroll-content {
+              overflow: auto;
+              padding: 1rem;
+              max-width: 16rem;
+              background: white;
+            }
+
+            .scroll-content-h2 {
+              font-size: 1.25rem;
+              margin-bottom: 0.5rem;
+            }
+
+            .scroll-content-p {
+              margin: 0;
+              color: #a19eab;
+            }
+          </style>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

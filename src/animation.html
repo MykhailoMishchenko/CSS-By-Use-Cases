@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>animation</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/skeletons.css" />
+  </head>
+  <body>
+    <header class="page-header">animation</header>
+    <div class="container">
+      <section class="block-list">
+        <article class="block move">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Move
+            </h2>
+            <div class="block-component">
+              <button class="move-button" disabled>
+                <span class="move-button-text">
+                  Deleting
+                </span>
+              </button>
+            </div>
+          </div>
+          <style>
+            .block.move {
+              background: #373942;
+            }
+
+            .move-button {
+              overflow: hidden;
+              -webkit-mask-image: -webkit-radial-gradient(white, black);
+              position: relative;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              height: 4rem;
+              padding: 0 3rem;
+              font-size: 1.125rem;
+              border-radius: 0.5rem;
+              color: #ffffff;
+              cursor: wait;
+            }
+
+            @keyframes move {
+              0% {
+                transform: translateX(0);
+              }
+              100% {
+                transform: translateX(-1.75rem);
+              }
+            }
+
+            .move-button::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 120rem;
+              height: 100%;
+              border-radius: inherit;
+              background: #d45759
+                repeating-linear-gradient(
+                  60deg,
+                  transparent,
+                  transparent 0.75rem,
+                  #b74a4c 0.75rem,
+                  #b74a4c 1.5rem
+                );
+
+              animation: move 1s infinite linear;
+            }
+
+            .move-button-text {
+              position: relative;
+              z-index: 1;
+            }
+          </style>
+        </article>
+        <article class="block oscillate">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Oscillate
+            </h2>
+            <div class="block-component">
+              <button class="oscillate-button">
+                <span class="oscillate-button-icon uil uil-wrench"></span>
+              </button>
+            </div>
+          </div>
+          <style>
+            .block.oscillate {
+              background: #2c2d33;
+            }
+
+            .oscillate-button {
+              display: grid;
+              place-items: center;
+              width: 3.5rem;
+              height: 3.5rem;
+              border-top-left-radius: 100%;
+              border-bottom-left-radius: 100%;
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+            }
+
+            @keyframes oscillate {
+              0% {
+                transform: rotate(-70deg);
+              }
+              50% {
+                transform: rotate(-20deg);
+              }
+              100% {
+                transform: rotate(-70deg);
+              }
+            }
+
+            .oscillate-button-icon {
+              font-size: 1.5rem;
+              animation: oscillate 2.25s infinite;
+            }
+          </style>
+        </article>
+        <article class="block blink">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Blink
+            </h2>
+            <div class="block-component">
+              <div class="blink-wrapper">
+                67<span class="blink-apostrophe">'</span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.blink {
+              background: #222227;
+            }
+
+            .blink-wrapper {
+              font-size: 3rem;
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            @keyframes blink {
+              49.99% {
+                opacity: 1;
+              }
+              50% {
+                opacity: 0;
+              }
+              100% {
+                opacity: 0;
+              }
+            }
+
+            .blink-apostrophe {
+              animation: blink 1s infinite linear;
+            }
+          </style>
+        </article>
+        <article class="block rock">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Rock
+            </h2>
+            <div class="block-component">
+              <div class="rock-mouse"></div>
+            </div>
+          </div>
+          <style>
+            .block.rock {
+              background: #8f44fd;
+            }
+
+            @keyframes rock {
+              50% {
+                transform: translateY(-1rem);
+              }
+            }
+
+            .rock-mouse {
+              position: relative;
+              width: 2.25rem;
+              height: 4rem;
+              border-radius: 2.25rem;
+              border: 2px solid rgba(255, 255, 255, 0.96);
+              animation: rock 2s infinite linear;
+            }
+
+            .rock-mouse::after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 0.175rem;
+              height: 0.75rem;
+              border-radius: 0.25rem;
+              background: #ffffff;
+            }
+          </style>
+        </article>
+        <article class="block waves">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Waves
+            </h2>
+            <div class="block-component">
+              <div class="waves-wrapper">
+                <div class="waves-badge"></div>
+                <div class="waves-wave"></div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.waves {
+              background: #2c2d33;
+            }
+
+            .waves-wrapper {
+              position: relative;
+            }
+
+            .waves-badge {
+              display: block;
+              position: absolute;
+              z-index: 2;
+              top: 1.1rem;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 1rem;
+              height: 1rem;
+              border-radius: 50%;
+              background: #315cfc;
+            }
+
+            .waves-wave {
+              position: relative;
+              display: block;
+              width: 2.5rem;
+              height: 2.5rem;
+              border-radius: 50%;
+              border: 0.25rem solid transparent;
+              border-top: 0.25rem solid white;
+              animation: waves 1s infinite linear;
+            }
+
+            @keyframes waves {
+              0% {
+                transform: translateY(0) scale(0.75);
+                opacity: 1;
+              }
+              50% {
+                opacity: 1;
+              }
+              100% {
+                transform: translateY(-10px) scale(1.25);
+                opacity: 0;
+              }
+            }
+
+            .waves-wave::before {
+              content: "";
+              position: absolute;
+              top: 0.25rem;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 60%;
+              height: 60%;
+              border-radius: inherit;
+              border: inherit;
+              border-top: 0.25rem solid white;
+            }
+          </style>
+        </article>
+        <article class="block pulse">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Pulse 1
+            </h2>
+            <div class="block-component">
+              <div class="pulse1-badge"></div>
+            </div>
+          </div>
+          <style>
+            .block.pulse {
+              background: #222227;
+            }
+
+            .pulse1-badge {
+              position: relative;
+              width: 2rem;
+              height: 2rem;
+            }
+
+            .pulse1-badge::before,
+            .pulse1-badge::after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+            }
+
+            .pulse1-badge::before {
+              z-index: 1;
+              top: 0;
+              left: 0;
+              background: #1ac0a2;
+            }
+
+            @keyframes pulse1 {
+              0% {
+                opacity: 0.5;
+                transform: scale(0.5);
+              }
+              100% {
+                opacity: 0;
+                transform: scale(2.5);
+              }
+            }
+
+            .pulse1-badge::after {
+              z-index: 0;
+              top: -4px;
+              left: -4px;
+              border: 4px solid #1ac0a2;
+              transform: scale(0.5);
+              animation: pulse1 2s infinite;
+            }
+          </style>
+        </article>
+        <article class="block pulse2">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Pulse 2
+            </h2>
+            <div class="block-component">
+              <div class="pulse2-badge">3</div>
+            </div>
+          </div>
+          <style>
+            .block.pulse2 {
+              background: #373942;
+            }
+
+            @keyframes pulse2 {
+              0% {
+                box-shadow: 0 0 0 0 rgba(241, 73, 100, 0.5);
+              }
+              100% {
+                box-shadow: 0 0 0 28px rgba(241, 73, 100, 0);
+              }
+            }
+
+            .pulse2-badge {
+              position: relative;
+              display: grid;
+              place-items: center;
+              width: 2rem;
+              height: 2rem;
+              border-radius: 50%;
+              background: #f14964;
+              color: rgba(255, 255, 255, 0.96);
+              animation: pulse2 2s infinite;
+            }
+          </style>
+        </article>
+        <article class="block spin">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Spin
+            </h2>
+            <div class="block-component">
+              <button disabled class="spin-button">
+                <span class="spin-button-text">
+                  Refreshing
+                </span>
+                <span class="spin-button-icon uil uil-redo"></span>
+              </button>
+            </div>
+          </div>
+          <style>
+            .block.spin {
+              background: #2c2d33;
+            }
+
+            .spin-button {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+              justify-content: center;
+              height: 4rem;
+              padding: 1rem 1.5rem 1rem 1.75rem;
+              border-radius: 0.5rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+            }
+
+            .spin-button:disabled {
+              cursor: not-allowed;
+            }
+
+            @keyframes spin {
+              100% {
+                transform: rotate(360deg);
+              }
+            }
+
+            .spin-button-icon {
+              font-size: 1.25rem;
+              animation: spin 2s infinite linear;
+            }
+
+            .spin-button-text {
+              font-size: 1.25rem;
+            }
+          </style>
+        </article>
+        <article class="block shake">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Shake
+            </h2>
+            <div class="block-component">
+              <button class="shake-button">
+                <span class="shake-button-icon uil uil-bell"></span>
+              </button>
+            </div>
+          </div>
+          <style>
+            .block.shake {
+              background: #222227;
+            }
+
+            .shake-button {
+              display: grid;
+              place-items: center;
+              width: 5rem;
+              height: 5rem;
+              border-radius: 50%;
+              color: rgba(255, 255, 255, 0.96);
+              background: #2c5ccc;
+            }
+
+            @keyframes shake {
+              0% {
+                transform: rotate(-8deg);
+              }
+              4% {
+                transform: rotate(8deg);
+              }
+              8% {
+                transform: rotate(-8deg);
+              }
+              12% {
+                transform: rotate(8deg);
+              }
+              16% {
+                transform: rotate(-8deg);
+              }
+              20% {
+                transform: rotate(8deg);
+              }
+              24% {
+                transform: rotate(0);
+              }
+              100% {
+                transform: rotate(0);
+              }
+            }
+
+            .shake-button-icon {
+              font-size: 2.5rem;
+              animation: shake 3.5s infinite;
+            }
+          </style>
+        </article>
+        <article class="block move2">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Move 2
+            </h2>
+            <div class="block-component">
+              <button class="move2-button" disabled>
+                <span class="move2-button-text">
+                  Processing
+                </span>
+              </button>
+            </div>
+          </div>
+          <style>
+            .block.move2 {
+              background: #373942;
+            }
+
+            .move2-button {
+              overflow: hidden;
+              -webkit-mask-image: -webkit-radial-gradient(white, black);
+              position: relative;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              height: 4rem;
+              padding: 0 3rem;
+              font-size: 1.125rem;
+              background: #ffffff;
+              color: #45424d;
+              cursor: wait;
+            }
+
+            @keyframes move2 {
+              0% {
+                transform: translateX(100%);
+              }
+              100% {
+                transform: translateX(-200%);
+              }
+            }
+
+            .move2-button::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 200%;
+              height: 5px;
+              border-radius: inherit;
+              background: #1ac0a2;
+              animation: move2 2s infinite linear;
+            }
+
+            .move2-button-text {
+              position: relative;
+              z-index: 1;
+            }
+          </style>
+        </article>
+        <article class="block fade">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Fade
+            </h2>
+            <div class="block-component">
+              <button class="fade-button" disabled>
+                <span class="fade-button-text">
+                  Building
+                </span>
+              </button>
+            </div>
+          </div>
+          <style>
+            .block.fade {
+              background: #2c2d33;
+            }
+
+            .fade-button {
+              overflow: hidden;
+              -webkit-mask-image: -webkit-radial-gradient(white, black);
+              position: relative;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              height: 4rem;
+              padding: 0 3rem;
+              font-size: 1.125rem;
+              color: rgba(255, 255, 255, 0.96);
+              cursor: wait;
+            }
+
+            @keyframes fade {
+              50% {
+                opacity: 0;
+              }
+            }
+
+            .fade-button-text {
+              position: relative;
+              z-index: 1;
+              animation: fade 1s infinite;
+            }
+          </style>
+        </article>
+        <article class="block combinations">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Combinations
+            </h2>
+            <div class="block-component">
+              <button class="combinations-button" disabled>
+                <span class="combinations-button-text">
+                  Building
+                </span>
+              </button>
+            </div>
+          </div>
+          <style>
+            .block.combinations {
+              background: #222227;
+            }
+
+            .combinations-button {
+              overflow: hidden;
+              -webkit-mask-image: -webkit-radial-gradient(white, black);
+              position: relative;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              height: 4rem;
+              padding: 0 3rem;
+              font-size: 1.125rem;
+              background: #ffffff;
+              color: #45424d;
+              cursor: wait;
+            }
+
+            @keyframes combinationsmove {
+              0% {
+                transform: translateX(-100%);
+              }
+              100% {
+                transform: translateX(200%);
+              }
+            }
+
+            .combinations-button::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 200%;
+              height: 5px;
+              border-radius: inherit;
+              background: #37b9f1;
+              animation: combinationsmove 2s infinite linear;
+            }
+
+            @keyframes combinationsfade {
+              50% {
+                opacity: 0;
+              }
+            }
+
+            .combinations-button-text {
+              position: relative;
+              z-index: 1;
+              animation: combinationsfade 1s infinite;
+            }
+          </style>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

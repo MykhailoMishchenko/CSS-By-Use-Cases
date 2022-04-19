@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>pseudo elements</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/skeletons.css" />
+  </head>
+  <body>
+    <header class="page-header">pseudo elements</header>
+    <div class="container">
+      <section class="block-list">
+        <article class="block col-resize">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Selectable borders
+            </h2>
+            <div class="block-component">
+              <div class="col-resize-card">
+                <table class="col-resize-table col-resize-table--collapse">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>
+                        User
+                      </th>
+                      <th>
+                        Age
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span class="material-icons"
+                          >radio_button_unchecked</span
+                        >
+                      </td>
+                      <td>
+                        <h3>John Smith</h3>
+                        <h4>Developer</h4>
+                      </td>
+                      <td>
+                        32
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="material-icons"
+                          >radio_button_unchecked</span
+                        >
+                      </td>
+                      <td>
+                        <h3>Elvis Harris</h3>
+                        <h4>Designer</h4>
+                      </td>
+                      <td>
+                        24
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.col-resize {
+              background: #2c2d33;
+            }
+
+            .col-resize-card {
+              width: 16rem;
+              padding: 1rem;
+              border-radius: 0.75rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #222227;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .col-resize-table {
+              width: 100%;
+            }
+
+            .col-resize-table--collapse {
+              border-collapse: collapse;
+            }
+
+            .col-resize-table .material-icons {
+              color: #a19eab;
+            }
+
+            .col-resize-table th {
+              font-weight: 400;
+              font-size: 0.875rem;
+              color: rgba(255, 255, 255, 0.45);
+              height: 1.75rem;
+              vertical-align: top;
+            }
+
+            .col-resize-table td {
+              position: relative;
+              height: 4rem;
+              padding: 0.5rem;
+              border: 1px solid #2c2d32;
+            }
+
+            .col-resize-table td::before {
+              display: block;
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              transform: translateX(-50%);
+              width: 5px;
+              height: 100%;
+              cursor: col-resize;
+            }
+
+            .col-resize-table h3 {
+              font-size: 1rem;
+              font-weight: 600;
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            .col-resize-table h4 {
+              margin-bottom: 0.25rem;
+              font-size: 0.875rem;
+              color: rgba(255, 255, 255, 0.57);
+            }
+          </style>
+        </article>
+        <article class="block timeline">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Timelines
+            </h2>
+            <div class="block-component">
+              <div class="timeline-wrapper">
+                <button class="timeline-button">
+                  <span class="timeline-step">
+                    <span>1</span>
+                  </span>
+                </button>
+                <button class="timeline-button">
+                  <span class="timeline-step">
+                    <span>2</span>
+                  </span>
+                </button>
+                <button class="timeline-button">
+                  <span class="timeline-step">
+                    <span>3</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.timeline {
+              background: #222227;
+            }
+
+            .timeline-wrapper {
+              display: flex;
+              align-items: center;
+              width: 16rem;
+            }
+
+            .timeline-button {
+              position: relative;
+              flex: 1 1 auto;
+              display: flex;
+              justify-content: center;
+            }
+
+            .timeline-step {
+              position: relative;
+              z-index: 1;
+              display: grid;
+              place-items: center;
+              width: 3rem;
+              height: 3rem;
+              border-radius: 50%;
+              font-size: 1.25rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+            }
+
+            .timeline-button::after {
+              content: "";
+              position: absolute;
+              z-index: 0;
+              top: 50%;
+              left: 50%;
+              transform: translateY(-50%);
+              height: 4px;
+              width: 100%;
+              background: #8f44fd;
+            }
+
+            .timeline-button:last-child::after {
+              display: none;
+            }
+
+            .timeline-button:disabled .timeline-step {
+              color: #a19eab;
+            }
+          </style>
+        </article>
+        <article class="block filter">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Realistic shadows
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="normal-card"></div>
+                <div class="filter-card"></div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.filter {
+              background: #f7f7fe;
+            }
+
+            .block.filter .block-title {
+              color: #4c4954;
+            }
+
+            .normal-card,
+            .filter-card {
+              position: relative;
+              margin: 0 1rem;
+              width: 12rem;
+              height: 12rem;
+              border-radius: 1rem;
+            }
+
+            .normal-card {
+              box-shadow: 0 2rem 1.5rem rgba(0, 0, 0, 0.12);
+              background: url("assets/img/car.png");
+              background-size: cover;
+              background-position: bottom;
+            }
+
+            .filter-card {
+              position: relative;
+              margin: 0 0.5rem;
+              width: 12rem;
+              height: 12rem;
+              border-radius: 1rem;
+            }
+
+            .filter-card::before,
+            .filter-card::after {
+              content: "";
+              position: absolute;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              border-radius: inherit;
+              background: url("assets/img/car.png");
+              background-size: cover;
+              background-position: bottom;
+            }
+
+            .filter-card::after {
+              z-index: 0;
+              top: 2rem;
+              left: 0;
+              border-radius: inherit;
+              background: url("assets/img/car.png");
+              background-size: cover;
+              filter: blur(1rem);
+              opacity: 0.2;
+            }
+          </style>
+        </article>
+        <article class="block emoji-list">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Emoji bullets
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="emoji-list-card">
+                  <h2 class="emoji-list-h2">
+                    Mental skills
+                  </h2>
+                  <ul class="emoji-list-ul">
+                    <li>
+                      Practice
+                    </li>
+                    <li>
+                      Persistence
+                    </li>
+                    <li>
+                      Patience
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.emoji-list {
+              background: #373942;
+            }
+
+            .emoji-list-card {
+              overflow: hidden;
+              width: 18rem;
+              padding-bottom: 1rem;
+              border-radius: 0.5rem;
+              background: #ffffff;
+              color: rgba(0, 0, 0, 0.75);
+            }
+
+            .emoji-list-ul {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+              padding-left: 1rem;
+            }
+
+            .emoji-list-ul li:before {
+              content: "🔥";
+            }
+
+            .emoji-list-h2 {
+              padding: 1rem;
+              margin-bottom: 1rem;
+              font-size: 1.25rem;
+              background: #8f44fd;
+              color: white;
+            }
+          </style>
+        </article>
+        <article class="block pulse">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Ring pulse
+            </h2>
+            <div class="block-component">
+              <div class="pulse1-badge"></div>
+            </div>
+          </div>
+          <style>
+            .block.pulse {
+              background: #222227;
+            }
+
+            .pulse1-badge {
+              position: relative;
+              width: 2rem;
+              height: 2rem;
+            }
+
+            .pulse1-badge::before,
+            .pulse1-badge::after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+            }
+
+            .pulse1-badge::before {
+              z-index: 1;
+              top: 0;
+              left: 0;
+              background: #1ac0a2;
+            }
+
+            @keyframes pulse1 {
+              0% {
+                opacity: 0.5;
+                transform: scale(0.5);
+              }
+              100% {
+                opacity: 0;
+                transform: scale(2.5);
+              }
+            }
+
+            .pulse1-badge::after {
+              z-index: 0;
+              top: -4px;
+              left: -4px;
+              border: 4px solid #1ac0a2;
+              transform: scale(0.5);
+              animation: pulse1 2s infinite;
+            }
+          </style>
+        </article>
+        <article class="block status-indicators">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Borders
+            </h2>
+            <div class="block-component">
+              <div class="status-card">
+                <span class="status-text">
+                  Payment rejected
+                </span>
+                <span class="status-icon uil uil-times-circle"></span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.status-indicators {
+              background: #f7f7fe;
+            }
+
+            .status-indicators .block-title {
+              color: #45424d;
+            }
+
+            .status-card {
+              position: relative;
+              display: flex;
+              align-items: center;
+              width: 18rem;
+              height: 4.5rem;
+              padding: 0 1.5rem;
+              background: white;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .status-card::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 0.5rem;
+              height: inherit;
+              background: #d45759;
+            }
+
+            .status-text {
+              flex: 1 1 auto;
+              color: #d45759;
+              font-size: 1.175rem;
+            }
+
+            .status-icon {
+              color: #d45759;
+              font-size: 1.5rem;
+            }
+          </style>
+        </article>
+        <article class="block tinted">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Image overlays
+            </h2>
+            <div class="block-component">
+              <div class="tinted-wrapper">
+                <img class="tinted-img" src="assets/img/street.png" />
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.tinted {
+              background: #373942;
+            }
+
+            .tinted-wrapper {
+              position: relative;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .tinted-wrapper::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: #8f44fd;
+              opacity: 0.35;
+            }
+
+            .tinted-img {
+              width: 28rem;
+              height: 12rem;
+              object-fit: cover;
+            }
+          </style>
+        </article>
+        <article class="block underline">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Custom underlines
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <a class="underline-a">
+                  Hyperlink 1
+                </a>
+                <a class="underline-a underline-a--fromleft">
+                  Hyperlink 2
+                </a>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.underline {
+              background: #2c2d33;
+            }
+
+            .underline-a {
+              position: relative;
+              margin: 0 1rem;
+              font-size: 1.25rem;
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            .underline-a:hover {
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            .underline-a::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -3px;
+              width: 100%;
+              height: 1px;
+              background: #ffffff;
+              transform: scaleX(0);
+              transition: transform 0.35s;
+            }
+
+            .underline-a--fromleft::after {
+              transform-origin: left;
+            }
+
+            .underline-a:hover::after {
+              transform: scaleX(1);
+            }
+          </style>
+        </article>
+        <article class="block tooltip">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Custom tooltips
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <a class="tooltip-a">
+                  Hover for a tooltip
+                </a>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.tooltip {
+              background: #222227;
+            }
+
+            .tooltip-a {
+              position: relative;
+              margin: 0 1rem;
+              font-size: 1.25rem;
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            .tooltip-a:hover {
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            .tooltip-a::after {
+              content: "Extra info here";
+              position: absolute;
+              left: 50%;
+              bottom: 150%;
+              padding: 0.5rem;
+              transform: translate(-50%, 1rem);
+              visibility: hidden;
+              opacity: 0;
+              font-size: 0.875rem;
+              white-space: nowrap;
+              background: #040404;
+              border-radius: 0.25rem;
+              transition-property: transform, visibility, opacity;
+              transition-duration: 0.35s;
+            }
+
+            .tooltip-a:hover::after {
+              visibility: visible;
+              opacity: 1;
+              transform: translate(-50%, 0);
+            }
+          </style>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

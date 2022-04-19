@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>margin</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/skeletons.css" />
+  </head>
+  <body>
+    <header class="page-header">margin</header>
+    <div class="container">
+      <section class="block-list">
+        <article class="block author">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Reset elements
+            </h2>
+            <div class="block-component">
+              <div class="author-card">
+                <img
+                  class="author-img"
+                  src="assets/img/frontendjoe-border.png"
+                />
+                <div>
+                  <h2 class="author-h2">
+                    Joe Harrison
+                  </h2>
+                  <h3 class="author-h3">
+                    @frontendjoe
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.author {
+              background: #f7f7fe;
+            }
+
+            .block.author .block-title {
+              color: #4c4954;
+            }
+
+            .author-card {
+              display: flex;
+              align-items: center;
+              gap: 0.75rem;
+              padding: 1rem;
+              min-width: 16rem;
+              border-radius: 0.5rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .author-img {
+              width: 3rem;
+              height: 3rem;
+            }
+
+            .author-h2 {
+              margin: 0 0 2px;
+              line-height: 1;
+              font-weight: 600;
+              font-size: 1.175rem;
+            }
+
+            .author-h3 {
+              margin: 0;
+              line-height: 1;
+              font-weight: 600;
+              font-size: 1.075rem;
+              color: #a19eab;
+            }
+          </style>
+        </article>
+        <article class="block stacked">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Stacked alerts
+            </h2>
+            <div class="block-component">
+              <div>
+                <div class="stacked-alert stacked-alert--success">
+                  <span class="stacked-alert-icon uil uil-check-circle"></span>
+                  <span class="stacked-alert-text">
+                    Payment received
+                  </span>
+                </div>
+                <div class="stacked-alert stacked-alert--danger">
+                  <span class="stacked-alert-icon uil uil-times-square"></span>
+                  <span class="stacked-alert-text">
+                    Payment rejected
+                  </span>
+                </div>
+                <div class="stacked-alert stacked-alert--warning">
+                  <span
+                    class="stacked-alert-icon uil uil-exclamation-triangle"
+                  ></span>
+                  <span class="stacked-alert-text">
+                    Payment failed
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.stacked {
+              background: #373942;
+            }
+
+            .stacked-alert {
+              display: grid;
+              gap: 1rem;
+              grid-template-columns: auto 1fr;
+              align-items: center;
+              width: 16rem;
+              height: 3.5rem;
+              padding: 0 1rem;
+              border-radius: 0.5rem;
+              color: #4c4954;
+              background: #ffffff;
+              border-left: 0.5rem solid;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .stacked-alert:not(:last-child) {
+              margin-bottom: 1rem;
+            }
+
+            .stacked-alert-icon {
+              font-size: 1.5rem;
+              color: inherit;
+            }
+
+            .stacked-alert-text {
+              color: #45424d;
+            }
+
+            .stacked-alert--danger {
+              color: #d45759;
+              border-color: #d45759;
+            }
+
+            .stacked-alert--warning {
+              color: #e87f4d;
+              border-color: #e87f4d;
+            }
+
+            .stacked-alert--success {
+              color: #1ac0a2;
+              border-color: #1ac0a2;
+            }
+          </style>
+        </article>
+        <article class="block flexbox-gaps">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Flexbox gaps
+            </h2>
+            <div class="block-component">
+              <div class="flexbox-gap-card">
+                <img class="flexbox-gap-img" src="assets/img/mike.png" />
+                <div>
+                  <h2 class="flexbox-gap-h2">
+                    mikevdijssel
+                  </h2>
+                  <h3 class="flexbox-gap-h3">
+                    15 July 2021 · 9pm
+                  </h3>
+                </div>
+                <i class="flexbox-gap-icon uil uil-ellipsis-v"></i>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.flexbox-gaps {
+              background: #3d2069;
+            }
+
+            .flexbox-gap-card {
+              display: grid;
+              grid-template-columns: auto auto auto;
+              align-items: center;
+              padding: 1.25rem;
+              border-radius: 0.5rem;
+              background: #160d25;
+            }
+
+            .flexbox-gap-img {
+              width: 3.75rem;
+              height: 3.75rem;
+              margin-right: 1rem;
+            }
+
+            .flexbox-gap-h2 {
+              font-size: 1.25rem;
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            .flexbox-gap-h3 {
+              font-size: 1rem;
+              color: rgba(255, 255, 255, 0.57);
+            }
+
+            .flexbox-gap-icon {
+              margin-left: 1.5rem;
+              margin-right: 0.5rem;
+              font-size: 1.5rem;
+              color: #f7f7f7;
+            }
+          </style>
+        </article>
+        <article class="block grid-gaps">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Grid gaps
+            </h2>
+            <div class="block-component">
+              <div class="grid-gap-card">
+                <img class="grid-gap-img" src="assets/img/dan.png" />
+                <div>
+                  <h2 class="grid-gap-h2">
+                    bydanromero
+                  </h2>
+                  <h3 class="grid-gap-h3">
+                    15 July 2021 · 9pm
+                  </h3>
+                </div>
+                <i class="grid-gap-icon uil uil-ellipsis-v"></i>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.grid-gaps {
+              background: #2c2d33;
+            }
+
+            .grid-gap-card {
+              display: grid;
+              grid-template-columns: auto auto auto;
+              align-items: center;
+              padding: 1.25rem;
+              border-radius: 0.5rem;
+              background: #141415;
+            }
+
+            .grid-gap-img {
+              width: 3.75rem;
+              height: 3.75rem;
+              margin-right: 1rem;
+            }
+
+            .grid-gap-h2 {
+              font-size: 1.25rem;
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            .grid-gap-h3 {
+              font-size: 1rem;
+              color: rgba(255, 255, 255, 0.57);
+            }
+
+            .grid-gap-icon {
+              margin-left: 1.5rem;
+              margin-right: 0.5rem;
+              font-size: 1.5rem;
+              color: #f7f7f7;
+            }
+          </style>
+        </article>
+        <article class="block body-alignment-fix">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Body alignment
+            </h2>
+            <div class="block-component">
+              <div class="body-alignment-card">
+                <aside class="body-alignment-sidebar"></aside>
+                <main class="body-alignment">
+                  <span class="skeleton-rect-xl"></span>
+                  <span class="skeleton-rect-md"></span>
+                  <span class="skeleton-rect-sm"></span>
+                  <br />
+                  <span class="skeleton-rect-lg"></span>
+                  <span class="skeleton-rect-sm"></span>
+                </main>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.body-alignment-fix {
+              background: #222227;
+            }
+
+            .body-alignment-card {
+              position: relative;
+              width: 24rem;
+              height: 10rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .body-alignment-sidebar {
+              position: absolute;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              width: 6rem;
+              height: 100%;
+              background: #000000;
+            }
+
+            .body-alignment {
+              padding: 1rem;
+              margin-left: 6rem;
+              font-size: 0.75rem;
+            }
+          </style>
+        </article>
+        <article class="block responsive-containers">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Center containers
+            </h2>
+            <div class="block-component">
+              <div class="responsive-container-card">
+                <aside class="responsive-container-sidebar"></aside>
+                <main class="responsive-body">
+                  <section class="responsive-container">
+                    <span class="skeleton-rect-xl"></span>
+                    <span class="skeleton-rect-md"></span>
+                    <span class="skeleton-rect-sm"></span>
+                    <br />
+                    <span class="skeleton-rect-lg"></span>
+                    <span class="skeleton-rect-sm"></span>
+                  </section>
+                </main>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.responsive-containers {
+              background: #373942;
+            }
+
+            .responsive-container-card {
+              overflow: hidden;
+              position: relative;
+              width: 24rem;
+              height: 10rem;
+              color: #4c4954;
+              background: #e7e7e7;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .responsive-container-sidebar {
+              position: absolute;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              width: 2rem;
+              height: 100%;
+              background: #000000;
+            }
+
+            .responsive-body {
+              margin-left: 2rem;
+              font-size: 0.75rem;
+            }
+
+            .responsive-container {
+              width: 16rem;
+              margin: 0 auto;
+              padding: 1rem;
+              background: #ffffff;
+            }
+          </style>
+        </article>
+        <article class="block negative-margin-list">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Negative margins
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="negative-margin-list-card">
+                  <h2 class="negative-margin-list-h2">
+                    Technical skills
+                  </h2>
+                  <button class="negative-margin-fab uil uil-bars"></button>
+                  <ul class="negative-margin-list-ul">
+                    <li>
+                      Googling
+                    </li>
+                    <li>
+                      YouTubing
+                    </li>
+                    <li>
+                      Stack overflowing
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.negative-margin-list {
+              background: #2c2d33;
+            }
+
+            .negative-margin-list-card {
+              overflow: hidden;
+              display: flex;
+              flex-direction: column;
+              width: 18rem;
+              border-radius: 0.5rem;
+              background: #ffffff;
+              color: rgba(0, 0, 0, 0.75);
+            }
+
+            .negative-margin-list-ul {
+              list-style: none;
+              margin: -2rem 0 1rem;
+              padding: 0;
+              padding-left: 1rem;
+            }
+
+            .negative-margin-list-ul li:before {
+              content: "🔥";
+            }
+
+            .negative-margin-list-h2 {
+              padding: 1rem;
+              font-size: 1.25rem;
+              background: #8f44fd;
+              color: white;
+            }
+
+            .negative-margin-fab {
+              align-self: flex-end;
+              width: 3rem;
+              height: 3rem;
+              margin-right: 1rem;
+              border-radius: 50%;
+              font-size: 1.25rem;
+              background: #f03ec9;
+              color: rgba(255, 255, 255, 0.96);
+              transform: translateY(-50%);
+            }
+          </style>
+        </article>
+        <article class="block margin-left-dividers">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Space between borders
+            </h2>
+            <div class="block-component">
+              <header class="margin-left-header">
+                <div class="margin-left-logo">
+                  <span class="margin-left-logo-icon uil uil-estate"></span>
+                  <span class="margin-left-logo-text">
+                    Home
+                  </span>
+                </div>
+                <nav class="margin-left-nav">
+                  <a href="#" class="margin-left-link active">Movies</a>
+                  <a href="#" class="margin-left-link">Music</a>
+                  <a href="#" class="margin-left-link">Apps</a>
+                </nav>
+              </header>
+            </div>
+          </div>
+          <style>
+            .block.margin-left-dividers {
+              background: #222227;
+            }
+
+            .margin-left-header {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 25rem;
+              height: 4rem;
+              padding: 0 2rem;
+              border-radius: 0.5rem;
+              background: white;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .margin-left-logo {
+              display: flex;
+              align-items: center;
+              font-size: 0.875rem;
+            }
+
+            .margin-left-logo-text {
+              line-height: 1;
+              margin-left: 0.5rem;
+            }
+
+            .margin-left-logo-icon {
+              font-size: 1.25rem;
+            }
+
+            .margin-left-link {
+              padding-left: 0.5rem;
+              margin-left: 0.5rem;
+              border-left: 1px solid #d5d3da;
+              font-size: 0.875rem;
+            }
+
+            .margin-left-link:link {
+              color: #d5d3da;
+            }
+
+            .margin-left-link.active {
+              color: #45424d;
+            }
+
+            .margin-left-link:first-child {
+              border: 0;
+            }
+          </style>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

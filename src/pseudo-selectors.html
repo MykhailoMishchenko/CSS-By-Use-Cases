@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>pseudo selectors</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/skeletons.css" />
+  </head>
+  <body>
+    <header class="page-header">pseudo selectors</header>
+    <div class="container">
+      <section class="block-list">
+        <article class="block hover">
+          <div class="block-inner">
+            <h2 class="block-title">
+              hover
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <button class="hover-button">
+                  <span class="hover-button-icon uil uil-search"></span>
+                  <span class="hover-button-text">
+                    Search
+                  </span>
+                </button>
+                <button class="hover-button hover-button-hovered">
+                  <span class="hover-button-icon uil uil-search"></span>
+                  <span class="hover-button-text">
+                    Search
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.hover {
+              background: #373942;
+            }
+
+            .hover-button {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+              justify-content: center;
+              width: 10rem;
+              height: 4rem;
+              padding: 1rem 1.5rem;
+              border-radius: 0.5rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #6c35bb;
+              transition: background 0.35s;
+            }
+
+            .hover-button:hover,
+            .hover-button-hovered {
+              background: #8f44fd;
+            }
+
+            .hover-button-icon {
+              font-size: 1.5rem;
+            }
+
+            .hover-button-text {
+              margin-right: 0.5rem;
+              font-size: 1.25rem;
+            }
+          </style>
+        </article>
+        <article class="block focus">
+          <div class="block-inner">
+            <h2 class="block-title">
+              focus
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <span class="focus-textbox">
+                  <input
+                    type="password"
+                    value="Password1"
+                    class="focus-textbox-input"
+                  />
+                  <span class="focus-textbox-icon uil uil-user-circle"></span>
+                </span>
+                <span class="focus-textbox">
+                  <input
+                    type="password"
+                    value="Password1"
+                    class="focus-textbox-input input-focused"
+                  />
+                  <span
+                    class="focus-textbox-icon uil uil-user-circle icon-focused"
+                  ></span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.focus {
+              background: #f7f7fe;
+            }
+
+            .block.focus .block-title {
+              color: #4c4954;
+            }
+
+            .focus-textbox {
+              position: relative;
+            }
+
+            .focus-textbox-icon {
+              position: absolute;
+              top: 50%;
+              left: 1rem;
+              transform: translateY(-50%);
+              display: grid;
+              place-items: center;
+              flex: 0 0 4rem;
+              font-size: 1.5rem;
+              color: #a19eab;
+            }
+
+            .focus-textbox-input {
+              width: 12rem;
+              height: 4rem;
+              padding-left: 3.5rem;
+              padding-right: 1rem;
+              border-radius: 0.5rem;
+              border: 2px solid #d6cdd7;
+              background: #ffffff;
+            }
+
+            .focus-textbox-input:focus,
+            .input-focused {
+              border-color: #8f44fd;
+            }
+
+            .focus-textbox-input:focus ~ .focus-textbox-icon,
+            .icon-focused {
+              color: #8f44fd;
+            }
+          </style>
+        </article>
+        <article class="block disabled">
+          <div class="block-inner">
+            <h2 class="block-title">
+              disabled
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <button class="disabled-button primary">
+                  <span class="disabled-button-icon uil uil-copy"></span>
+                  <span class="disabled-button-text">
+                    Copy Now
+                  </span>
+                </button>
+                <button disabled class="disabled-button primary">
+                  <span class="disabled-button-icon uil uil-copy"></span>
+                  <span class="disabled-button-text">
+                    Copy Now
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.disabled {
+              background: #222227;
+            }
+
+            .disabled-button {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+              justify-content: center;
+              height: 4rem;
+              padding: 1rem 1.75rem 1rem 1.5rem;
+              border-radius: 0.5rem;
+              color: #45424d;
+              background: #f7f7fe;
+            }
+
+            .disabled-button.primary {
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+            }
+
+            .disabled-button.primary:disabled {
+              color: rgba(0, 0, 0, 0.3);
+              background: #b0a5c1;
+              cursor: not-allowed;
+            }
+
+            .disabled-button-icon {
+              font-size: 1.5rem;
+            }
+
+            .disabled-button-text {
+              font-size: 1.25rem;
+            }
+          </style>
+        </article>
+        <article class="block placeholder">
+          <div class="block-inner">
+            <h2 class="block-title">
+              placeholder
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <span class="placeholder-textbox">
+                  <input
+                    placeholder="Your name"
+                    class="placeholder-textbox-input"
+                  />
+                  <span class="placeholder-textbox-icon uil uil-pen"></span>
+                </span>
+                <span class="placeholder-textbox">
+                  <input
+                    placeholder="Your name"
+                    class="placeholder-textbox-input placeholder-textbox-input--correct"
+                  />
+                  <span class="placeholder-textbox-icon uil uil-pen"></span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.placeholder {
+              background: #373942;
+            }
+
+            .placeholder-textbox {
+              position: relative;
+            }
+
+            .placeholder-textbox-icon {
+              position: absolute;
+              top: 50%;
+              left: 1rem;
+              transform: translateY(-50%);
+              display: grid;
+              place-items: center;
+              flex: 0 0 4rem;
+              font-size: 1.5rem;
+              color: #d6cdd7;
+            }
+
+            .placeholder-textbox-input {
+              width: 12rem;
+              height: 4rem;
+              padding-left: 3.5rem;
+              padding-right: 1rem;
+              border-radius: 0.5rem;
+              background: #ffffff;
+            }
+
+            .placeholder-textbox-input--correct::placeholder {
+              color: #b7adb9;
+            }
+          </style>
+        </article>
+        <article class="block first-child">
+          <div class="block-inner">
+            <h2 class="block-title">
+              first-child
+            </h2>
+            <div class="block-component">
+              <nav class="first-child-header">
+                <header class="first-child-nav">
+                  <button class="first-child-menu-button">
+                    Home
+                  </button>
+                  <button class="first-child-menu-button">
+                    About
+                  </button>
+                  <button class="first-child-menu-button">
+                    Contact
+                  </button>
+                </header>
+                <button class="first-child-search uil uil-search"></button>
+              </nav>
+            </div>
+          </div>
+          <style>
+            .block.first-child {
+              background: #8f44fd;
+            }
+
+            .first-child-header {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 26rem;
+              padding: 1rem 1.5rem;
+              border-radius: 2rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .first-child-search {
+              font-size: 1.25rem;
+            }
+
+            .first-child-nav {
+              display: flex;
+              gap: 1.5rem;
+            }
+
+            .first-child-menu-button {
+              color: #a19eab;
+              transition: color 0.35s;
+            }
+
+            .first-child-menu-button:first-child {
+              color: #8f44fd;
+            }
+
+            .first-child-menu-button:hover {
+              color: #45424d;
+            }
+          </style>
+        </article>
+        <article class="block last-child">
+          <div class="block-inner">
+            <h2 class="block-title">
+              last-child
+            </h2>
+            <div class="block-component">
+              <nav class="last-child-card">
+                <button class="last-child-burger uil uil-bars"></button>
+                <nav class="last-child-menu">
+                  <button class="last-child-nav-button">
+                    Home
+                  </button>
+                  <button class="last-child-nav-button">
+                    About
+                  </button>
+                  <button class="last-child-nav-button">
+                    Contact
+                  </button>
+                </nav>
+              </nav>
+            </div>
+          </div>
+          <style>
+            .block.last-child {
+              background: #2c2d33;
+            }
+
+            .last-child-card {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 26rem;
+              padding: 1rem 1.5rem;
+              border-radius: 2rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .last-child-burger {
+              font-size: 1.5rem;
+            }
+
+            .last-child-menu {
+              display: flex;
+              gap: 1rem;
+            }
+
+            .last-child-nav-button {
+              padding-right: 1rem;
+              border-right: 1px solid #dddbe4;
+              color: #a19eab;
+              transition: color 0.35s;
+            }
+
+            .last-child-nav-button:last-child {
+              padding: 0;
+              border: 0;
+            }
+
+            .last-child-nav-button:hover {
+              color: #45424d;
+            }
+          </style>
+        </article>
+        <article class="block not">
+          <div class="block-inner">
+            <h2 class="block-title">
+              not
+            </h2>
+            <div class="block-component">
+              <nav class="not-card">
+                <button class="not-burger uil uil-bars"></button>
+                <nav class="not-menu">
+                  <button class="not-nav-button">
+                    Home
+                  </button>
+                  <button class="not-nav-button">
+                    About
+                  </button>
+                  <button class="not-nav-button">
+                    Contact
+                  </button>
+                </nav>
+              </nav>
+            </div>
+          </div>
+          <style>
+            .block.not {
+              background: #222227;
+            }
+
+            .not-card {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 26rem;
+              padding: 1rem 1.5rem;
+              border-radius: 2rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .not-burger {
+              font-size: 1.5rem;
+            }
+
+            .not-menu {
+              display: flex;
+              gap: 1rem;
+            }
+
+            .not-nav-button {
+              color: #a19eab;
+              transition: color 0.35s;
+            }
+
+            .not-nav-button:not(:last-child) {
+              padding-right: 1rem;
+              border-right: 1px solid #dddbe4;
+            }
+
+            .not-nav-button:hover {
+              color: #45424d;
+            }
+          </style>
+        </article>
+        <article class="block nth-child">
+          <div class="block-inner">
+            <h2 class="block-title">
+              nth-child
+            </h2>
+            <div class="block-component">
+              <div class="nth-child-card">
+                <table class="nth-child-table nth-child-table--collapse">
+                  <thead>
+                    <tr>
+                      <th>
+                        User
+                      </th>
+                      <th>
+                        Age
+                      </th>
+                      <th>
+                        Grade
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Elvis Harris</td>
+                      <td>
+                        24
+                      </td>
+                      <td>
+                        87%
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Claire Hatcliffe</td>
+                      <td>
+                        31
+                      </td>
+                      <td>
+                        83%
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Kerry Keenan</td>
+                      <td>
+                        43
+                      </td>
+                      <td>
+                        80%
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.nth-child {
+              background: #f7f7fe;
+            }
+
+            .block.nth-child .block-title {
+              color: #4c4954;
+            }
+
+            .nth-child-card {
+              width: 26rem;
+              line-height: 1;
+              padding: 1rem 0;
+              border-radius: 0.75rem;
+              border: 2px solid #dedede;
+              background: #ffffff;
+              color: #45424d;
+            }
+
+            .nth-child-table {
+              width: 100%;
+              border-collapse: collapse;
+            }
+
+            .nth-child-table .material-icons {
+              color: #a19eab;
+            }
+
+            .nth-child-table tbody tr:nth-child(odd) {
+              background: #f7f7fe;
+            }
+
+            .nth-child-table th {
+              font-weight: 400;
+              font-size: 0.875rem;
+              color: #a19eab;
+              height: 1.75rem;
+              vertical-align: top;
+            }
+
+            .nth-child-table th,
+            .nth-child-table td {
+              padding: 0.5rem;
+            }
+          </style>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

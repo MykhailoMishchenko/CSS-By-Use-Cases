@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>height</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/skeletons.css" />
+  </head>
+  <body>
+    <header class="page-header">height</header>
+    <div class="container">
+      <section class="block-list">
+        <article class="block height">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Consistent controls
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <input class="height-input" placeholder="Input" />
+                <button class="height-button">
+                  Button
+                </button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.height {
+              background: #f7f7fe;
+            }
+
+            .block.height .block-title {
+              color: #4c4954;
+            }
+
+            .height-button,
+            .height-input {
+              height: 3.5rem;
+              border-radius: 0.5rem;
+            }
+
+            .height-button {
+              min-width: 8rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .height-input {
+              min-width: 12rem;
+              text-indent: 1rem;
+              color: #4c4954;
+              background: #ffffff;
+              border: 2px solid #8f44fd;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+          </style>
+        </article>
+        <article class="block collapsibles">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Collapsible panels
+            </h2>
+            <div class="block-component">
+              <label for="collapse-input">
+                <input
+                  type="checkbox"
+                  id="collapse-input"
+                  class="collapsibles-input"
+                />
+                <span class="collapsibles-card">
+                  <h3 class="collabsibles-header">Expand/collapse</h3>
+                  <p>
+                    You have just built your first custom made collapsible panel
+                    in pure CSS.
+                  </p>
+                </span>
+              </label>
+            </div>
+          </div>
+          <style>
+            .block.collapsibles {
+              background: #8f44fd;
+            }
+
+            .collapsibles-input {
+              position: absolute;
+              transform: scale(0);
+            }
+
+            .collapsibles-input:checked + .collapsibles-card {
+              max-height: 10rem;
+            }
+
+            .collapsibles-card {
+              display: block;
+              overflow: hidden;
+              max-width: 16rem;
+              max-height: 3.5rem;
+              padding: 0 1rem;
+              border-radius: 0.5rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+              transition: max-height 0.35s;
+            }
+
+            .collabsibles-header {
+              display: flex;
+              align-items: center;
+              height: 3.5rem;
+            }
+          </style>
+        </article>
+        <article class="block fixtures">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Size images of varied width
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="fixture-wrapper">
+                  <div class="fixture-img-wrapper">
+                    <img
+                      class="fixture-img fixture-img--wrong"
+                      src="assets/img/football-team-coleshill.png"
+                    />
+                  </div>
+                  <div class="fixture-vs">
+                    VS
+                  </div>
+                  <div class="fixture-img-wrapper">
+                    <img
+                      class="fixture-img fixture-img--wrong"
+                      src="assets/img/football-team-chelmsley.png"
+                    />
+                  </div>
+                </div>
+                <div class="fixture-wrapper">
+                  <div class="fixture-img-wrapper">
+                    <img
+                      class="fixture-img fixture-img--correct"
+                      src="assets/img/football-team-coleshill.png"
+                    />
+                  </div>
+                  <div class="fixture-vs">
+                    VS
+                  </div>
+                  <div class="fixture-img-wrapper">
+                    <img
+                      class="fixture-img fixture-img--correct"
+                      src="assets/img/football-team-chelmsley.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.fixtures {
+              background: #373942;
+            }
+
+            .fixture-wrapper {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 15rem;
+              height: 6rem;
+              border-radius: 0.75rem;
+              background: white;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .fixture-img-wrapper {
+              position: relative;
+              flex: 1 1 4rem;
+              max-width: 4rem;
+              height: 4rem;
+            }
+
+            .fixture-img {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+
+            .fixture-img--wrong {
+              width: 4rem;
+            }
+
+            .fixture-img--correct {
+              height: 4rem;
+            }
+
+            .fixture-vs {
+              flex: 0 0 4rem;
+              text-align: center;
+              font-weight: 600;
+              font-size: 1.5rem;
+            }
+          </style>
+        </article>
+        <article class="block scroll-max-height">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Scrollable content
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="scroll-max-height-card">
+                  <h2 class="scroll-max-height-h2">
+                    Zombie ipsum
+                  </h2>
+                  <div class="scroll-max-height-content">
+                    Zombie ipsum reversus ab viral inferno, nam rick grimes
+                    malum cerebro. De carne lumbering animata corpora quaeritis.
+                    Summus brains sit , morbo vel maleficia? De apocalypsi
+                    gorger omero undead survivor dictum mauris. Hi mindless
+                    mortuis soulless creaturas, imo evil stalking monstra
+                    adventus resi dentevil vultus comedat cerebella viventium.
+                    Qui animated corpse, cricket bat max brucks terribilem
+                    incessu zomby. The voodoo sacerdos flesh eater, suscitat
+                    mortuos comedere carnem virus. Zonbi tattered for solum
+                    oculi eorum defunctis go lum cerebro.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.scroll-max-height {
+              background: #222227;
+            }
+
+            .scroll-max-height-card {
+              overflow: hidden;
+              width: 16rem;
+              padding-bottom: 1rem;
+              border-radius: 0.5rem;
+              background: #ffffff;
+              color: rgba(0, 0, 0, 0.75);
+            }
+
+            .scroll-max-height-content {
+              overflow: auto;
+              width: 100%;
+              max-height: 7rem;
+              padding: 1rem;
+              border: 0;
+              outline: none;
+              line-height: 1.5;
+              font-size: 1rem;
+              font-family: "Euclid Circular A", "Poppins";
+              scroll-behavior: auto;
+            }
+
+            .scroll-max-height-content--correct {
+              scroll-behavior: smooth;
+            }
+
+            .scroll-max-height-h2 {
+              column-span: all;
+              padding: 1rem;
+              font-size: 1.25rem;
+              background: #8f44fd;
+              color: white;
+            }
+          </style>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

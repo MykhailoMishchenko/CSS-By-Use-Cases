@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Border radius</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/skeletons.css" />
+  </head>
+  <body>
+    <header class="page-header">Border radius</header>
+    <div class="container">
+      <section class="block-list">
+        <article class="block cards">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Clean cards
+            </h2>
+            <div class="block-component">
+              <div class="card">
+                <span class="card-text">
+                  Free burgers
+                </span>
+                <span class="card-icon">
+                  <span class="card-emoji">
+                    🍔
+                  </span>
+                  <span class="card-badge"></span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.cards {
+              background: #f7f7fe;
+            }
+
+            .block.cards .block-title {
+              color: #4c4954;
+            }
+
+            .card {
+              display: flex;
+              gap: 1.25rem;
+              align-items: center;
+              justify-content: space-between;
+              width: 14rem;
+              padding: 1rem 1.5rem;
+              border-radius: 0.5rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .card-text {
+              font-size: 1.125rem;
+              font-weight: 200;
+            }
+
+            .card-icon {
+              flex: 0 0 3rem;
+              position: relative;
+              display: grid;
+              place-items: center;
+              width: 3rem;
+              height: 3rem;
+              border-radius: 0.5rem;
+              background: #f7f7fe;
+            }
+
+            .card-emoji {
+              font-size: 1.25rem;
+            }
+
+            .card-badge {
+              display: block;
+              position: absolute;
+              top: -0.25rem;
+              right: -0.25rem;
+              width: 1rem;
+              height: 1rem;
+              border-radius: 50%;
+              border: 2px solid #ffffff;
+              background: #8f44fd;
+            }
+          </style>
+        </article>
+        <article class="block progress-bars">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Progress bars
+            </h2>
+            <div class="block-component">
+              <div class="progress-rail">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.progress-bars {
+              background: #222227;
+            }
+
+            .progress-rail {
+              display: flex;
+              width: 16rem;
+              height: 1rem;
+              border-radius: 0.5rem;
+              background: rgba(255, 255, 255, 0.1);
+            }
+
+            @keyframes move {
+              0% {
+                width: 0%;
+              }
+              33% {
+                width: 33%;
+              }
+              66% {
+                width: 66%;
+              }
+              100% {
+                width: 100%;
+              }
+            }
+
+            .progress-bar {
+              width: 25%;
+              height: 1rem;
+              border-radius: 0.5rem;
+              background: #1ac0a2;
+              animation: move 5s infinite;
+            }
+          </style>
+        </article>
+        <article class="block clean">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Clean controls
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <button class="clean-button">
+                  <span class="clean-button-text">
+                    Import
+                  </span>
+                  <span class="clean-button-icon uil uil-import"></span>
+                </button>
+                <span class="clean-textbox">
+                  <span class="clean-textbox-icon uil uil-lock"></span>
+                  <input
+                    type="password"
+                    value="Password1"
+                    class="clean-textbox-input"
+                    placeholder="Search"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.clean {
+              background: #373942;
+            }
+
+            .clean-button,
+            .clean-textbox {
+              height: 4rem;
+              border-radius: 0.5rem;
+            }
+
+            .clean-button {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+              justify-content: center;
+              width: 11rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #1ac0a2;
+            }
+
+            .clean-button-icon {
+              font-size: 1.75rem;
+            }
+
+            .clean-button-text {
+              font-size: 1rem;
+            }
+
+            .clean-textbox {
+              display: flex;
+              align-items: center;
+              width: 14rem;
+              padding-right: 1rem;
+              background: transparent;
+              color: #1ac0a2;
+              border: 2px solid #1ac0a2;
+            }
+
+            .clean-textbox-icon {
+              display: grid;
+              place-items: center;
+              flex: 0 0 4rem;
+              font-size: 1.5rem;
+            }
+
+            .clean-textbox-input {
+              flex: 1 1 auto;
+              align-self: stretch;
+              min-width: 0;
+              color: #1ac0a2;
+            }
+          </style>
+        </article>
+
+        <article class="block abstract">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Abstract controls
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <button class="abstract-button">
+                  <span class="abstract-button-text">
+                    Continue
+                  </span>
+                  <span class="abstract-button-icon uil uil-arrow-right"></span>
+                </button>
+                <span class="abstract-textbox">
+                  <span class="abstract-textbox-icon uil uil-search"></span>
+                  <input class="abstract-textbox-input" placeholder="Search" />
+                </span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.abstract {
+              background: #2c2d33;
+            }
+
+            .abstract-button,
+            .abstract-textbox {
+              height: 4rem;
+              border-radius: 1.5rem 0.25rem;
+            }
+
+            .abstract-button {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+              justify-content: center;
+              width: 11rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+            }
+
+            .abstract-button-icon {
+              font-size: 1.75rem;
+            }
+
+            .abstract-button-text {
+              font-size: 1rem;
+            }
+
+            .abstract-textbox {
+              display: flex;
+              align-items: center;
+              width: 14rem;
+              padding-right: 1rem;
+              background: #ffffff;
+              border: 2px solid #8f44fd;
+            }
+
+            .abstract-textbox-icon {
+              display: grid;
+              place-items: center;
+              flex: 0 0 4rem;
+              font-size: 1.5rem;
+            }
+
+            .abstract-textbox-input {
+              flex: 1 1 auto;
+              min-width: 0;
+            }
+          </style>
+        </article>
+        <article class="block rounded">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Rounded controls
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <button class="rounded-button">
+                  <span class="rounded-button-text">
+                    Continue
+                  </span>
+                  <span class="rounded-button-icon uil uil-arrow-right"></span>
+                </button>
+                <span class="rounded-textbox">
+                  <span class="rounded-textbox-icon uil uil-lock"></span>
+                  <input
+                    type="password"
+                    value="Password1"
+                    class="rounded-textbox-input"
+                    placeholder="Search"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.rounded {
+              background: #222227;
+            }
+
+            .rounded-button,
+            .rounded-textbox {
+              height: 4rem;
+              border-radius: 2rem;
+            }
+
+            .rounded-button {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+              justify-content: center;
+              width: 11rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+            }
+
+            .rounded-button-icon {
+              font-size: 1.75rem;
+            }
+
+            .rounded-button-text {
+              font-size: 1rem;
+              margin-left: 0.5rem;
+            }
+
+            .rounded-textbox {
+              display: flex;
+              align-items: center;
+              width: 14rem;
+              padding-right: 1rem;
+              background: #ffffff;
+              border: 2px solid #8f44fd;
+            }
+
+            .rounded-textbox-icon {
+              display: grid;
+              place-items: center;
+              flex: 0 0 4rem;
+              font-size: 1.5rem;
+            }
+
+            .rounded-textbox-input {
+              flex: 1 1 auto;
+              align-self: stretch;
+              min-width: 0;
+            }
+          </style>
+        </article>
+        <article class="block active">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Active nav items
+            </h2>
+            <div class="block-component">
+              <nav class="active-nav">
+                <button class="active-nav-button">
+                  About
+                </button>
+                <button class="active-nav-button active-nav-button--active">
+                  Portfolio
+                </button>
+                <button class="active-nav-button">
+                  Skills
+                </button>
+              </nav>
+            </div>
+          </div>
+          <style>
+            .block.active {
+              background: #f7f7fe;
+            }
+
+            .block.active .block-title {
+              color: #4c4954;
+            }
+
+            .active-nav {
+              width: 12rem;
+            }
+
+            .active-nav-button {
+              position: relative;
+              display: block;
+              width: 100%;
+              height: 3rem;
+              padding: 0 1rem;
+              text-align: left;
+            }
+
+            .active-nav-button--active {
+              border-top-right-radius: 1.5rem;
+              border-bottom-right-radius: 1.5rem;
+              color: #8f44fd;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .active-nav-button--active::after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              right: 1.25rem;
+              transform: translateY(-50%);
+              width: 0.625rem;
+              height: 0.625rem;
+              border-radius: 50%;
+              background: #8f44fd;
+            }
+          </style>
+        </article>
+        <article class="block labels">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Labels
+            </h2>
+            <div class="block-component">
+              <div class="labels-card">
+                <div class="labels-card-label">
+                  FREE
+                </div>
+
+                <span class="labels-icon uil uil-rocket"></span>
+                <span class="labels-text">Build Dashboards</span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.labels {
+              background: #5e29ab;
+            }
+
+            .labels-card {
+              position: relative;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 1rem;
+              width: 18rem;
+              height: 6rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #381a64;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .labels-card-label {
+              position: absolute;
+              top: 0;
+              left: 0;
+              display: grid;
+              place-items: center;
+              height: 2rem;
+              padding-left: 0.5rem;
+              padding-right: 1.5rem;
+              border-bottom-right-radius: 2rem;
+              font-size: 0.875rem;
+              font-weight: 600;
+              letter-spacing: 2px;
+              background: #8f44fd;
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            .labels-icon {
+              font-size: 1.5rem;
+            }
+          </style>
+        </article>
+        <article class="block chat-bubbles">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Chat bubbles
+            </h2>
+            <div class="block-component">
+              <div class="chat-bubble">
+                What can I teach you?
+
+                <button class="chat-close uil uil-multiply"></button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.chat-bubbles {
+              background: #373942;
+            }
+
+            .chat-bubble {
+              position: relative;
+              display: grid;
+              place-items: center;
+              width: 14rem;
+              height: 4rem;
+              border-radius: 2rem 2rem 0;
+              color: rgba(255, 255, 255, 0.96);
+              background: #1ac0a2;
+            }
+
+            .chat-close {
+              position: absolute;
+              top: 0;
+              right: 0;
+              transform: translate(40%, -40%);
+              display: grid;
+              place-items: center;
+              width: 2.25rem;
+              height: 2.25rem;
+              border-radius: 50%;
+              font-size: 1.25rem;
+              background: #222227;
+              color: rgba(255, 255, 255, 0.96);
+            }
+          </style>
+        </article>
+        <article class="block notches">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Notches
+            </h2>
+            <div class="block-component">
+              <nav class="notches-nav">
+                <span class="notches-cutout"></span>
+                <button class="notches-button uil uil-estate"></button>
+                <button class="notches-button uil uil-setting"></button>
+              </nav>
+            </div>
+          </div>
+          <style>
+            .block.notches {
+              background: #2aab8c;
+            }
+
+            .notches-nav {
+              position: relative;
+              display: flex;
+              justify-content: space-between;
+              width: 14rem;
+              padding: 0.75rem 1.5rem;
+              border-radius: 1rem;
+              color: #4c4954;
+              background: #222227;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .notches-cutout {
+              display: block;
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 3.5rem;
+              height: 1.75rem;
+              border-bottom-right-radius: 1.75rem;
+              border-bottom-left-radius: 1.75rem;
+              background: #2aab8c;
+            }
+
+            .notches-button {
+              font-size: 2rem;
+              color: #ffffff;
+              opacity: 0.5;
+              transition: opacity 0.35s;
+            }
+
+            .notches-button:hover {
+              opacity: 1;
+            }
+          </style>
+        </article>
+        <article class="block charts">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Charts
+            </h2>
+            <div class="block-component">
+              <div class="charts-wrapper">
+                <div class="charts-fill">
+                  75%
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.charts {
+              background: #f7f7fe;
+            }
+
+            .block.charts .block-title {
+              color: #4c4954;
+            }
+
+            .charts-wrapper {
+              position: relative;
+              overflow: hidden;
+              width: 10rem;
+              height: 5rem;
+              border-bottom-left-radius: 5rem;
+              border-bottom-right-radius: 5rem;
+              background: #d5e9f6;
+            }
+
+            .charts-fill {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              height: 75%;
+              display: grid;
+              place-items: center;
+              font-weight: 600;
+              font-size: 1.25rem;
+              background: #90d2fb;
+            }
+          </style>
+        </article>
+        <article class="block responsive">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Responsive
+            </h2>
+            <div class="block-component">
+              <button class="responsive-badge uil uil-react"></button>
+            </div>
+          </div>
+          <style>
+            .block.responsive {
+              background: #222227`;
+            }
+
+            .responsive-badge {
+              display: grid;
+              place-items: center;
+              padding: 1rem;
+              border-radius: 2.5vw;
+              width: 10vw;
+              height: 10vw;
+              transform: rotate(45deg);
+              font-size: 5.5vw;
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+            }
+          </style>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

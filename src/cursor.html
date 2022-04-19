@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>cursor</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/skeletons.css" />
+  </head>
+  <body>
+    <header class="page-header">cursor</header>
+    <div class="container">
+      <section class="block-list">
+        <article class="block pointer">
+          <div class="block-inner">
+            <h2 class="block-title">
+              pointer
+            </h2>
+            <div class="block-component">
+              <button class="pointer-button">
+                <span class="pointer-button-icon uil uil-clock-eight"></span>
+                <span class="pointer-button-text">
+                  See Times
+                </span>
+              </button>
+            </div>
+          </div>
+          <style>
+            .block.pointer {
+              background: #373942;
+            }
+
+            .pointer-button {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+              justify-content: center;
+              height: 4rem;
+              padding: 1rem 1.75rem 1rem 1.5rem;
+              border-radius: 0.5rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+            }
+
+            .pointer-button-icon {
+              font-size: 1.5rem;
+            }
+
+            .pointer-button-text {
+              font-size: 1.25rem;
+            }
+          </style>
+        </article>
+        <article class="block not-allowed">
+          <div class="block-inner">
+            <h2 class="block-title">
+              disabled
+            </h2>
+            <div class="block-component">
+              <button disabled class="not-allowed-button">
+                <span class="not-allowed-button-text">
+                  Downloads
+                </span>
+                <span class="not-allowed-button-icon uil uil-angle-down"></span>
+              </button>
+            </div>
+          </div>
+          <style>
+            .block.not-allowed {
+              background: #2c2d33;
+            }
+
+            .not-allowed-button {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+              justify-content: center;
+              height: 4rem;
+              padding: 1rem 1.5rem 1rem 1.75rem;
+              border-radius: 0.5rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+            }
+
+            .not-allowed-button:disabled {
+              color: rgba(0, 0, 0, 0.3);
+              background: #67636f;
+              cursor: not-allowed;
+            }
+
+            .not-allowed-button-icon {
+              font-size: 1.75rem;
+            }
+
+            .not-allowed-button-text {
+              font-size: 1.25rem;
+            }
+          </style>
+        </article>
+        <article class="block grab">
+          <div class="block-inner">
+            <h2 class="block-title">
+              grab
+            </h2>
+            <div class="block-component">
+              <div class="grab-card">
+                <span class="grab-label">
+                  Deposit
+                </span>
+                <span class="grab-value">
+                  £250
+                </span>
+                <span class="grab-slider"></span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.grab {
+              background: #f7f7fe;
+            }
+
+            .block.grab .block-title {
+              color: #4c4954;
+            }
+
+            .grab-card {
+              display: grid;
+              grid-template-columns: auto auto;
+              grid-template-rows: 2rem 1rem;
+
+              padding: 1rem;
+              width: 20rem;
+              border-radius: 0.5rem;
+              color: #4c4954;
+              background: #1ac0a2;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .grab-label {
+              color: rgba(255, 255, 255, 0.57);
+            }
+
+            .grab-value {
+              display: flex;
+              justify-content: flex-end;
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            .grab-slider {
+              position: relative;
+              grid-column: 1 / span 2;
+              display: block;
+              width: 100%;
+              height: 6px;
+              border-radius: 3px;
+              background: rgba(255, 255, 255, 0.2);
+            }
+
+            .grab-slider::before,
+            .grab-slider::after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              border-radius: inherit;
+            }
+
+            .grab-slider::before {
+              left: 0;
+              width: 50%;
+              height: 100%;
+              background: white;
+            }
+
+            .grab-slider::after {
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 2rem;
+              height: 2rem;
+              border-radius: 50%;
+              background: #ffffff;
+              cursor: grab;
+              cursor: grabbing;
+            }
+          </style>
+        </article>
+        <article class="block default">
+          <div class="block-inner">
+            <h2 class="block-title">
+              default
+            </h2>
+            <div class="block-component">
+              <nav class="default-wrapper">
+                <button class="default-button">
+                  About
+                </button>
+                <button class="default-button default-button--active">
+                  Portfolio
+                </button>
+                <button class="default-button">
+                  Skills
+                </button>
+              </nav>
+            </div>
+          </div>
+          <style>
+            .block.default {
+              background: #8f44fd;
+            }
+
+            .default-wrapper {
+              width: 12rem;
+            }
+
+            .default-button {
+              position: relative;
+              display: block;
+              width: 100%;
+              height: 3rem;
+              padding: 0 1rem;
+              text-align: left;
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            .default-button--active {
+              border-top-right-radius: 1.5rem;
+              border-bottom-right-radius: 1.5rem;
+              color: #8f44fd;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+              cursor: default;
+            }
+
+            .default-button--active::after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              right: 1.25rem;
+              transform: translateY(-50%);
+              width: 0.625rem;
+              height: 0.625rem;
+              border-radius: 50%;
+              background: #8f44fd;
+            }
+          </style>
+        </article>
+        <article class="block move">
+          <div class="block-inner">
+            <h2 class="block-title">
+              move
+            </h2>
+            <div class="block-component">
+              <div class="move-card">
+                <div>
+                  <h2 class="move-card-h2">
+                    CSS Masterclass
+                  </h2>
+                  <h3 class="move-card-h3">
+                    Learn styling in 2 days
+                  </h3>
+                </div>
+                <span class="move-card-icon uil uil-draggabledots"></span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.move {
+              background: #373942;
+            }
+
+            .move-card {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap: 3rem;
+              padding: 1rem;
+              border-radius: 0.5rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+              cursor: move;
+            }
+
+            .move-card-h2 {
+              font-size: 1rem;
+            }
+
+            .move-card-h3 {
+              font-size: 0.875rem;
+              color: rgba(255, 255, 255, 0.57);
+            }
+
+            .move-card-icon {
+              font-size: 2rem;
+            }
+          </style>
+        </article>
+        <article class="block col-resize">
+          <div class="block-inner">
+            <h2 class="block-title">
+              col-resize
+            </h2>
+            <div class="block-component">
+              <div class="col-resize-card">
+                <table class="col-resize-table col-resize-table--collapse">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>
+                        User
+                      </th>
+                      <th>
+                        Age
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span class="material-icons"
+                          >radio_button_unchecked</span
+                        >
+                      </td>
+                      <td>
+                        <h3>John Smith</h3>
+                        <h4>Developer</h4>
+                      </td>
+                      <td>
+                        32
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="material-icons"
+                          >radio_button_unchecked</span
+                        >
+                      </td>
+                      <td>
+                        <h3>Elvis Harris</h3>
+                        <h4>Designer</h4>
+                      </td>
+                      <td>
+                        24
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.col-resize {
+              background: #f7f7fe;
+            }
+
+            .block.col-resize .block-title {
+              color: #4c4954;
+            }
+
+            .col-resize-card {
+              width: 16rem;
+              padding: 1rem;
+              border-radius: 0.75rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .col-resize-table {
+              width: 100%;
+            }
+
+            .col-resize-table--collapse {
+              border-collapse: collapse;
+            }
+
+            .col-resize-table .material-icons {
+              color: #a19eab;
+            }
+
+            .col-resize-table th {
+              font-weight: 400;
+              font-size: 0.875rem;
+              color: #a19eab;
+              height: 1.75rem;
+              vertical-align: top;
+            }
+
+            .col-resize-table td {
+              position: relative;
+              height: 4rem;
+              padding: 0.5rem;
+              border: 1px solid #e5e3ec;
+            }
+
+            .col-resize-table td::before {
+              display: block;
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              transform: translateX(-50%);
+              width: 5px;
+              height: 100%;
+              cursor: col-resize;
+            }
+
+            .col-resize-table h3 {
+              font-size: 1rem;
+              font-weight: 600;
+            }
+
+            .col-resize-table h4 {
+              margin-bottom: 0.25rem;
+              font-size: 0.875rem;
+              color: #a19eab;
+            }
+          </style>
+        </article>
+        <article class="block wait">
+          <div class="block-inner">
+            <h2 class="block-title">
+              wait
+            </h2>
+            <div class="block-component">
+              <button class="wait-button" disabled>
+                <span class="wait-button-text">
+                  Waiting ...
+                </span>
+              </button>
+            </div>
+          </div>
+          <style>
+            .block.wait {
+              background: #2c2d33;
+            }
+
+            .wait-button {
+              overflow: hidden;
+              -webkit-mask-image: -webkit-radial-gradient(white, black);
+              position: relative;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              height: 4rem;
+              padding: 0 3rem;
+              font-size: 1.125rem;
+              border-radius: 0.5rem;
+              color: #ffffff;
+              cursor: wait;
+            }
+
+            @keyframes wait {
+              0% {
+                transform: translateX(0);
+              }
+              100% {
+                transform: translateX(-1.75rem);
+              }
+            }
+
+            .wait-button::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 120rem;
+              height: 100%;
+              border-radius: inherit;
+              background: #d45759
+                repeating-linear-gradient(
+                  60deg,
+                  transparent,
+                  transparent 0.75rem,
+                  #b74a4c 0.75rem,
+                  #b74a4c 1.5rem
+                );
+
+              animation: wait 1s infinite linear;
+            }
+
+            .wait-button-text {
+              position: relative;
+              z-index: 1;
+            }
+          </style>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>padding</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/skeletons.css" />
+  </head>
+  <body>
+    <header class="page-header">padding</header>
+    <div class="container">
+      <section class="block-list">
+        <article class="block cards">
+          <div class="block-inner">
+            <h2 class="block-title">
+              White space
+            </h2>
+            <div class="block-component">
+              <div class="card">
+                I am a simple card with a small amount of text and padding
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.cards {
+              background: #f7f7fe;
+            }
+
+            .block.cards .block-title {
+              color: #4c4954;
+            }
+
+            .card {
+              display: flex;
+              gap: 1.25rem;
+              align-items: center;
+              justify-content: space-between;
+              width: 14rem;
+              padding: 1rem 1.5rem;
+              border-radius: 0.5rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .card-text {
+              font-size: 1.125rem;
+              font-weight: 200;
+            }
+
+            .card-icon {
+              flex: 0 0 3rem;
+              position: relative;
+              display: grid;
+              place-items: center;
+              width: 3rem;
+              height: 3rem;
+              border-radius: 0.5rem;
+              background: #f7f7fe;
+            }
+
+            .card-emoji {
+              font-size: 1.25rem;
+            }
+
+            .card-badge {
+              display: block;
+              position: absolute;
+              top: -0.25rem;
+              right: -0.25rem;
+              width: 1rem;
+              height: 1rem;
+              border-radius: 50%;
+              border: 2px solid #ffffff;
+              background: #8f44fd;
+            }
+          </style>
+        </article>
+        <article class="block outline-illusions">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Outline illusions
+            </h2>
+            <div class="block-component">
+              <span class="outline-illusion">
+                <img
+                  class="outline-illusion-img"
+                  src="assets/img/frontendjoe.png"
+                />
+              </span>
+            </div>
+          </div>
+          <style>
+            .block.outline-illusions {
+              background: #222227;
+            }
+
+            .outline-illusion {
+              display: block;
+              width: 4.5rem;
+              height: 4.5rem;
+              padding: 0.125rem;
+              border-radius: 50%;
+              background: linear-gradient(45deg, #732fdf, #bd00ff);
+            }
+
+            .outline-illusion-img {
+              width: 100%;
+              border-radius: 50%;
+              border: 0.25rem solid #1a1a1a;
+            }
+          </style>
+        </article>
+        <article class="block tiles">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Flex wrap alignment
+            </h2>
+            <div class="block-component">
+              <div class="tiles-wrapper">
+                <img class="tiles-img" src="assets/img/frontendjoe.png" />
+                <img class="tiles-img" src="assets/img/dan.png" />
+                <img class="tiles-img" src="assets/img/mike.png" />
+                <img class="tiles-img" src="assets/img/eugene.png" />
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.tiles {
+              background: #2c2d33;
+            }
+
+            .tiles-wrapper {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 1rem;
+              width: 10rem;
+              padding-left: 1rem;
+            }
+
+            .tiles-img {
+              width: 4rem;
+              height: 4rem;
+            }
+          </style>
+        </article>
+        <article class="block border-spacing">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Clickable link spacing
+            </h2>
+            <div class="block-component">
+              <nav class="border-spacing-card">
+                <button class="border-spacing-burger uil uil-bars"></button>
+                <nav class="border-spacing-menu">
+                  <button class="border-spacing-nav-button">
+                    Home
+                  </button>
+                  <button class="border-spacing-nav-button">
+                    About
+                  </button>
+                  <button class="border-spacing-nav-button">
+                    Contact
+                  </button>
+                </nav>
+              </nav>
+            </div>
+          </div>
+          <style>
+            .block.border-spacing {
+              background: #1ac0a2;
+            }
+
+            .border-spacing-card {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 26rem;
+              padding: 1rem 1.5rem;
+              border-radius: 2rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .border-spacing-burger {
+              font-size: 1.5rem;
+            }
+
+            .border-spacing-menu {
+              display: flex;
+              gap: 1rem;
+            }
+
+            .border-spacing-nav-button {
+              color: #a19eab;
+              transition: color 0.35s;
+            }
+
+            .border-spacing-nav-button:not(:last-child) {
+              padding-right: 1rem;
+              border-right: 1px solid #dddbe4;
+            }
+
+            .border-spacing-nav-button:hover {
+              color: #45424d;
+            }
+          </style>
+        </article>
+        <article class="block responsive-squares">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Responsive Squares
+            </h2>
+            <div class="block-component">
+              <div class="responsive-squares-wrapper">
+                <div class="responsive-squares-square purple">
+                  <div class="responsive-squares-square-inner"></div>
+                </div>
+                <div class="responsive-squares-square purple-dark">
+                  <div class="responsive-squares-square-inner"></div>
+                </div>
+                <div class="responsive-squares-square purple-dark">
+                  <div class="responsive-squares-square-inner"></div>
+                </div>
+                <div class="responsive-squares-square purple">
+                  <div class="responsive-squares-square-inner"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.responsive-squares {
+              background: #222227;
+            }
+
+            .block.responsive-squares .block-component {
+              background: blue;
+              width: 50%;
+              height: 50%;
+            }
+
+            .responsive-squares-wrapper {
+              display: flex;
+              flex-wrap: wrap;
+              width: 100%;
+            }
+
+            .responsive-squares-square {
+              position: relative;
+              width: 50%;
+              padding-top: 50%;
+            }
+
+            .responsive-squares-square.purple {
+              background: #8f44fd;
+            }
+
+            .responsive-squares-square.purple-dark {
+              background: #5a26a5;
+            }
+
+            .responsive-squares-square-inner {
+              position: absolute;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              padding: 1rem;
+              width: 100%;
+              height: 100%;
+              display: grid;
+              place-items: center;
+            }
+          </style>
+        </article>
+        <article class="block textboxes">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Textboxes
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <input
+                  class="textboxes-input"
+                  value="Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch"
+                />
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.textboxes {
+              background: #373942;
+            }
+
+            .textboxes-input {
+              height: 4rem;
+              width: 14rem;
+              border-radius: 0.5rem;
+              background: transparent;
+            }
+
+            .textboxes-input {
+              padding-left: 1rem;
+              border: 3px solid rgba(255, 255, 255, 0.96);
+              color: rgba(255, 255, 255, 0.96);
+            }
+          </style>
+        </article>
+        <article class="block autoheight">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Auto height buttons
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <button class="autoheight-button">
+                  <span
+                    class="autoheight-button-icon uil uil-history-alt"
+                  ></span>
+                  <span class="autoheight-button-text">
+                    Rewind
+                  </span>
+                </button>
+                <button class="autoheight-button large">
+                  <span
+                    class="autoheight-button-icon uil uil-history-alt"
+                  ></span>
+                  <span class="autoheight-button-text">
+                    Rewind
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.autoheight {
+              background: #2c2d33;
+            }
+
+            .autoheight-button {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+              justify-content: center;
+              width: 8rem;
+              padding: 1rem 0;
+              border-radius: 0.5rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+            }
+
+            .autoheight-button.large {
+              width: 10.5rem;
+              font-size: 1.55rem;
+            }
+
+            .autoheight-button-icon {
+              font-size: inherit;
+            }
+
+            .autoheight-button-text {
+              font-size: inherit;
+            }
+          </style>
+        </article>
+        <article class="block autowidth">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Auto width buttons
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <button class="autowidth-button">
+                  <span class="autowidth-button-icon uil uil-mountains"></span>
+                  <span class="autowidth-button-text">
+                    See more
+                  </span>
+                </button>
+                <button class="autowidth-button large">
+                  <span class="autowidth-button-icon uil uil-mountains"></span>
+                  <span class="autowidth-button-text">
+                    See more
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.autowidth {
+              background: #222227;
+            }
+
+            .autowidth-button {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+              justify-content: center;
+              padding: 1rem 1.5rem 1rem 1.25rem;
+              border-radius: 0.5rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #1ac0a2;
+            }
+
+            .autowidth-button.large {
+              font-size: 1.55rem;
+            }
+
+            .autowidth-button-icon {
+              font-size: inherit;
+            }
+
+            .autowidth-button-text {
+              font-size: inherit;
+            }
+          </style>
+        </article>
+        <article class="block body-padding-fix">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Body padding
+            </h2>
+            <div class="block-component">
+              <div class="body-padding-card">
+                <aside class="body-padding-sidebar"></aside>
+                <main class="body-padding">
+                  <span class="skeleton-rect-xl"></span>
+                  <span class="skeleton-rect-md"></span>
+                  <span class="skeleton-rect-sm"></span>
+                  <br />
+                  <span class="skeleton-rect-lg"></span>
+                  <span class="skeleton-rect-sm"></span>
+                </main>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.body-padding-fix {
+              background: #373942;
+            }
+
+            .body-padding-card {
+              position: relative;
+              width: 24rem;
+              height: 10rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .body-padding-sidebar {
+              position: absolute;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              width: 6rem;
+              height: 100%;
+              background: #000000;
+            }
+
+            .body-padding {
+              padding: 1rem;
+              margin-left: 6rem;
+              font-size: 0.75rem;
+            }
+          </style>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

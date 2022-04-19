@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>position absolute & relative</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/skeletons.css" />
+  </head>
+  <body>
+    <header class="page-header">position absolute & relative</header>
+    <div class="container">
+      <section class="block-list">
+        <article class="block dropdown">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Select Country
+            </h2>
+            <div class="block-component">
+              <label for="country-input" class="dropdown-wrapper">
+                <input
+                  checked
+                  type="checkbox"
+                  class="dropdown-input"
+                  id="country-input"
+                />
+                <header class="dropdown-button">
+                  <span class="dropdown-button-text">
+                    Select Country
+                  </span>
+                  <span class="dropdown-button-icon uil uil-angle-down"></span>
+                </header>
+
+                <span class="dropdown-menu">
+                  <button class="dropdown-menu-button">
+                    <img
+                      class="dropdown-flag"
+                      src="https://www.countryflags.io/ar/flat/64.png"
+                    />
+                    <span class="dropdown-flag-label">Argentina</span>
+                  </button>
+                  <button class="dropdown-menu-button">
+                    <img
+                      class="dropdown-flag"
+                      src="https://www.countryflags.io/gb/flat/64.png"
+                    />
+                    <span class="dropdown-flag-label">Great Britain</span>
+                  </button>
+                  <button class="dropdown-menu-button">
+                    <img
+                      class="dropdown-flag"
+                      src="https://www.countryflags.io/it/flat/64.png"
+                    />
+                    <span class="dropdown-flag-label">Italy</span>
+                  </button>
+                </span>
+              </label>
+            </div>
+          </div>
+          <style>
+            .block.dropdown {
+              background: #2c2d33;
+            }
+
+            .dropdown-wrapper {
+              position: absolute;
+            }
+
+            .dropdown-input {
+              position: absolute;
+              transform: scale(0);
+            }
+
+            .dropdown-menu,
+            .dropdown-button {
+              border-radius: 0.5rem;
+            }
+
+            .dropdown-button {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+              justify-content: space-between;
+              width: 18rem;
+              height: 4rem;
+              padding: 1rem 1.5rem 1rem 1.75rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #8f44fd;
+            }
+
+            .dropdown-button-icon {
+              font-size: 1.875rem;
+            }
+
+            .dropdown-button-text {
+              font-size: 1.25rem;
+            }
+
+            .dropdown-menu {
+              position: absolute;
+              z-index: 1;
+              top: 4.5rem;
+              left: 0;
+              display: block;
+              width: 100%;
+              padding: 1rem 0;
+              background: #5e2ea7;
+              opacity: 0;
+              visibility: hidden;
+              transform: translateY(1rem);
+              transition-property: transform, opacity, visibility;
+              transition-duration: 0.35s;
+            }
+
+            .dropdown-input:checked ~ .dropdown-menu {
+              visibility: visible;
+              opacity: 1;
+              transform: translateY(0);
+            }
+
+            .dropdown-menu-button {
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+              height: 3rem;
+              padding: 0 1rem;
+              font-size: 1.125rem;
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            .dropdown-flag {
+              width: 2.75rem;
+            }
+          </style>
+        </article>
+        <article class="block ribbons">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Ribbons
+            </h2>
+            <div class="block-component">
+              <div class="ribbon-card">
+                <div class="ribbon">
+                  ELITE
+                </div>
+                <h2 class="ribbon-card-h2">
+                  React Course
+                </h2>
+                <h4 class="ribbon-card-h4">
+                  Learn React in 7 days
+                </h4>
+                <h3 class="ribbon-card-h3">
+                  £33
+                </h3>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.ribbons {
+              background: #222227;
+            }
+
+            .ribbon-card {
+              position: relative;
+              overflow: hidden;
+              width: 18rem;
+              padding: 1.5rem;
+              border-radius: 0.25rem;
+              background: #ffffff;
+            }
+
+            .ribbon-card-h2 {
+              font-size: 1.25rem;
+            }
+
+            .ribbon-card-h3 {
+              font-weight: 600;
+              font-size: 1.5rem;
+              color: #8f44fd;
+            }
+
+            .ribbon-card-h4 {
+              margin-bottom: 0.5rem;
+              font-size: 0.875rem;
+              color: #a19eab;
+            }
+
+            .ribbon {
+              position: absolute;
+              top: 0;
+              right: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 1.5rem;
+              padding: 0 2rem;
+              transform: rotate(45deg) translate(2rem, -0.75rem);
+              letter-spacing: 3px;
+              font-size: 0.75rem;
+              font-weight: 600;
+              color: #f7f7f7;
+              background: #8f44fd;
+              ribbon: none;
+            }
+          </style>
+        </article>
+        <article class="block floating-buttons">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Floating buttons
+            </h2>
+            <div class="block-component">
+              <div class="floating-button-card">
+                Success!
+                <button class="floating-button uil uil-times"></button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.floating-buttons {
+              background: #f7f7fe;
+            }
+
+            .block.floating-buttons .block-title {
+              color: #4c4954;
+            }
+
+            .floating-button-card {
+              position: relative;
+              width: 14rem;
+              padding: 1rem;
+              text-align: center;
+              color: rgba(255, 255, 255, 0.96);
+              background: #1ac0a2;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .floating-button {
+              position: absolute;
+              top: 50%;
+              right: 0.5rem;
+              transform: translateY(-50%);
+              font-size: 1.75rem;
+              color: inherit;
+            }
+          </style>
+        </article>
+        <article class="block checkboxes">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Hidden inputs
+            </h2>
+            <div class="block-component">
+              <label for="name">
+                <input
+                  name="name"
+                  id="name"
+                  type="checkbox"
+                  class="checkbox-input"
+                />
+                <span class="checkbox-background">
+                  <i class="checkbox-icon uil uil-check"></i>
+                </span>
+              </label>
+            </div>
+          </div>
+          <style>
+            .block.checkboxes {
+              background: #2c2d33;
+            }
+
+            .checkbox-input {
+              position: absolute;
+              transform: scale(0);
+            }
+
+            .checkbox-input:checked ~ .checkbox-background {
+              background: #e7e7e7;
+            }
+
+            .checkbox-input:checked ~ .checkbox-background .checkbox-icon {
+              opacity: 0;
+            }
+
+            .checkbox-background {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 4rem;
+              height: 4rem;
+              border-radius: 0.75rem;
+              background: #8f44fd;
+            }
+
+            .checkbox-icon {
+              font-size: 2.75rem;
+              color: white;
+            }
+          </style>
+        </article>
+        <article class="block badges">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Badges
+            </h2>
+            <div class="block-component">
+              <div class="badge-wrapper">
+                <img class="badge-img" src="assets/img/frontendjoe.png" />
+                <span class="badge"></span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.badges {
+              background: #222227;
+            }
+
+            .badge-wrapper {
+              position: relative;
+              width: 5rem;
+              height: 5rem;
+            }
+
+            .badge-img {
+              width: 100%;
+              height: 100%;
+            }
+
+            .badge {
+              display: block;
+              position: absolute;
+              z-index: 1;
+              top: 0.5rem;
+              right: 0.5rem;
+              transform: translate(50%, -50%);
+              width: 1.25rem;
+              height: 1.25rem;
+              border-radius: 50%;
+              border: 4px solid #222227;
+              box-sizing: content-box;
+              background: #10b718;
+            }
+          </style>
+        </article>
+        <article class="block layers">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Layers
+            </h2>
+            <div class="block-component">
+              <img class="layers-img" src="assets/img/frontendjoe.png" />
+              <img class="layers-img" src="assets/img/dan.png" />
+              <img class="layers-img" src="assets/img/mike.png" />
+            </div>
+          </div>
+          <style>
+            .block.layers {
+              background: #373942;
+            }
+
+            .layers-img {
+              position: relative;
+              background-clip: content-box;
+              width: 5rem;
+              height: 5rem;
+              border-radius: 50%;
+              border: 4px solid #373942;
+            }
+
+            .layers-img:nth-child(1) {
+              margin-left: 2rem;
+              z-index: 1;
+              transform: translateX(0);
+            }
+
+            .layers-img:nth-child(2) {
+              z-index: 2;
+              transform: translateX(-1rem);
+            }
+
+            .layers-img:nth-child(3) {
+              z-index: 3;
+              transform: translateX(-2rem);
+            }
+          </style>
+        </article>
+        <article class="block underline">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Custom underlines
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <a class="underline-a">
+                  Hyperlink 1
+                </a>
+                <a class="underline-a underline-a--fromleft">
+                  Hyperlink 2
+                </a>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.underline {
+              background: #2c2d33;
+            }
+
+            .underline-a {
+              position: relative;
+              margin: 0 1rem;
+              font-size: 1.25rem;
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            .underline-a:hover {
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            .underline-a::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -3px;
+              width: 100%;
+              height: 1px;
+              background: #ffffff;
+              transform: scaleX(0);
+              transition: transform 0.35s;
+            }
+
+            .underline-a--fromleft::after {
+              transform-origin: left;
+            }
+
+            .underline-a:hover::after {
+              transform: scaleX(1);
+            }
+          </style>
+        </article>
+        <article class="block shapes">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Custom shapes
+            </h2>
+            <div class="block-component">
+              <div class="shapes-wrapper">
+                <div class="shapes-block">
+                  <span class="shapes-block-text">
+                    1
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.shapes {
+              background: #8f44fd;
+            }
+
+            .shapes-wrapper {
+              position: relative;
+              display: flex;
+              justify-content: space-around;
+              width: 10rem;
+            }
+
+            .shapes-block {
+              display: grid;
+              place-items: center;
+              width: 4rem;
+              height: 4rem;
+              border-radius: 50%;
+              background: #222227;
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            .shapes-block-text {
+              position: relative;
+              z-index: 1;
+              font-weight: 600;
+              font-size: 1.5rem;
+            }
+
+            .shapes-block::before,
+            .shapes-block::after {
+              content: "";
+              display: block;
+              position: absolute;
+              z-index: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 50%;
+              height: 6px;
+              border-radius: 3px;
+              background: #222227;
+            }
+
+            .shapes-block::before {
+              left: 0;
+            }
+
+            .shapes-block::after {
+              right: 0;
+              background: rgba(34, 34, 39, 0.25);
+            }
+          </style>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

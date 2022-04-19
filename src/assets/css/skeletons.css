@@ -1,0 +1,31 @@
+.skeleton-rect-xl,
+.skeleton-rect-lg,
+.skeleton-rect-md,
+.skeleton-rect-sm,
+.skeleton-square {
+  display: block;
+  height: 0.875rem;
+  margin-bottom: 0.75rem;
+  background: #dddde9;
+}
+
+.skeleton-rect-xl {
+  width: 12rem;
+}
+
+.skeleton-rect-lg {
+  width: 9rem;
+}
+
+.skeleton-rect-md {
+  width: 6rem;
+}
+
+.skeleton-rect-sm {
+  width: 3rem;
+}
+
+.skeleton-square {
+  width: 100%;
+  padding-top: 100%;
+}

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>font and text</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/skeletons.css" />
+  </head>
+  <header class="page-header">font and text</header>
+  <div class="container">
+    <section class="block-list">
+      <article class="block font-family">
+        <div class="block-inner">
+          <h2 class="block-title">
+            font-family
+          </h2>
+          <div class="block-component">
+            <div class="block-vs">
+              <button class="font-family-button font-family-button--single">
+                Arial
+              </button>
+              <button class="font-family-button font-family-button--multiple">
+                Euclid
+              </button>
+            </div>
+          </div>
+        </div>
+        <style>
+          .block.font-family {
+            background: #2c2d33;
+          }
+
+          .font-family-button {
+            width: 12rem;
+            height: 4.5rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-size: 1.25rem;
+            color: #f7f7f7;
+            background: #d45759;
+            box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+          }
+
+          .font-family-button--single {
+            font-family: Arial;
+          }
+
+          .font-family-button--multiple {
+            background: #ffffff;
+            color: #4c4954;
+            font-family: "Euclid Circular A", Poppins, Arial;
+          }
+        </style>
+      </article>
+      <article class="block font-weight">
+        <div class="block-inner">
+          <h2 class="block-title">
+            font-weight
+          </h2>
+          <div class="block-component">
+            <div class="block-vs">
+              <button class="font-weight-button font-weight-button--semibold">
+                RELOAD
+              </button>
+              <button class="font-weight-button font-weight-button--light">
+                RELOAD
+              </button>
+            </div>
+          </div>
+        </div>
+        <style>
+          .block.font-weight {
+            background: #f7f7fe;
+          }
+
+          .block.font-weight .block-title {
+            color: #4c4954;
+          }
+
+          .font-weight-button {
+            width: 12rem;
+            height: 4.5rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-size: 1.25rem;
+            letter-spacing: 3px;
+            color: #f7f7f7;
+            background: #8f44fd;
+            box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+          }
+
+          .font-weight-button--semibold {
+            font-weight: 600;
+          }
+
+          .font-weight-button--light {
+            font-weight: 200;
+            color: #4c4954;
+            background: #fff;
+          }
+        </style>
+      </article>
+      <article class="block font-size">
+        <div class="block-inner">
+          <h2 class="block-title">
+            font-size
+          </h2>
+          <div class="block-component">
+            <div class="block-vs">
+              <button class="font-size-button font-size-button--big">
+                RELOAD
+              </button>
+              <button class="font-size-button font-size-button--small">
+                RELOAD
+              </button>
+              <button class="font-size-button font-size-button--tiny">
+                RELOAD
+              </button>
+            </div>
+          </div>
+        </div>
+        <style>
+          .block.font-size {
+            background: #222227;
+          }
+
+          .font-size-button {
+            padding: 1rem 1.75rem;
+            border-radius: 0.5rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: 3px;
+            color: #f7f7f7;
+            background: #8f44fd;
+            box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+          }
+
+          .font-size-button--big {
+            font-size: 1.5rem;
+          }
+
+          .font-size-button--small {
+            font-size: 1rem;
+          }
+
+          .font-size-button--tiny {
+            font-size: 0.625rem;
+          }
+        </style>
+      </article>
+      <article class="block font-style">
+        <div class="block-inner">
+          <h2 class="block-title">
+            font-style
+          </h2>
+          <div class="block-component">
+            <div class="block-vs">
+              <div class="font-style-wrapper">
+                <span class="font-style-icon uil uil-user"></span>
+                <input class="font-style-input" placeholder="Username" />
+              </div>
+              <div class="font-style-wrapper">
+                <span class="font-style-icon uil uil-user"></span>
+                <input
+                  class="font-style-input font-style-input--italic"
+                  placeholder="Username"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <style>
+          .block.font-style {
+            background: #6c30c5;
+          }
+
+          .font-style-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            height: 4rem;
+            padding: 0 1rem;
+            border-radius: 0.25rem;
+            background: #fff;
+            box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+          }
+
+          .font-style-input {
+            height: 100%;
+          }
+
+          .font-style-input--italic {
+            font-style: italic;
+          }
+
+          .font-style-icon {
+            font-size: 1.5rem;
+          }
+        </style>
+      </article>
+      <article class="block color">
+        <div class="block-inner">
+          <h2 class="block-title">
+            color
+          </h2>
+          <div class="block-component">
+            <div class="block-vs">
+              <button class="color-button color-button">
+                Color
+              </button>
+              <button class="color-button color-button--inverse">
+                Color
+              </button>
+            </div>
+          </div>
+        </div>
+        <style>
+          .block.color {
+            background: #2c2d33;
+          }
+
+          .color-button {
+            width: 12rem;
+            height: 4.5rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-size: 1.25rem;
+            color: #f7f7f7;
+            background: #d45759;
+            box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+          }
+
+          .color-button--inverse {
+            background: #ffffff;
+            color: #d45759;
+          }
+        </style>
+      </article>
+      <article class="block text-transform">
+        <div class="block-inner">
+          <h2 class="block-title">
+            text-transform
+          </h2>
+          <div class="block-component">
+            <div class="block-vs">
+              <button
+                class="text-transform-button text-transform-button--capitalize"
+              >
+                Get started
+              </button>
+              <button
+                class="text-transform-button text-transform-button--uppercase"
+              >
+                reload
+              </button>
+            </div>
+          </div>
+        </div>
+        <style>
+          .block.text-transform {
+            background: #f7f7fe;
+          }
+
+          .block.text-transform .block-title {
+            color: #4c4954;
+          }
+
+          .text-transform-button {
+            width: 12rem;
+            height: 4.5rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-size: 1.25rem;
+            letter-spacing: 3px;
+            color: #f7f7f7;
+            background: #8f44fd;
+            box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+          }
+
+          .text-transform-button--capitalize {
+            font-weight: 400;
+            text-transform: capitalize;
+          }
+
+          .text-transform-button--uppercase {
+            font-weight: 600;
+            text-transform: uppercase;
+          }
+        </style>
+      </article>
+      <article class="block text-indent">
+        <div class="block-inner">
+          <h2 class="block-title">
+            text-indent
+          </h2>
+          <div class="block-component">
+            <div class="block-vs">
+              <input class="text-indent-input" placeholder="Your name" />
+              <input
+                class="text-indent-input text-indent-input--correct"
+                placeholder="Your name"
+              />
+            </div>
+          </div>
+        </div>
+        <style>
+          .block.text-indent {
+            background: #222227;
+          }
+
+          .text-indent-input {
+            height: 4rem;
+            width: 12rem;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            background: #1d1b21;
+            color: #ffffff;
+          }
+
+          .text-indent-input--correct {
+            text-indent: 1rem;
+          }
+        </style>
+      </article>
+      <article class="block text-shadow">
+        <div class="block-inner">
+          <h2 class="block-title">
+            text-shadow
+          </h2>
+          <div class="block-component">
+            <div class="block-vs">
+              <button class="text-shadow-button">
+                <span class="text-shadow-icon uil uil-html3"></span>
+              </button>
+              <button class="text-shadow-button">
+                <span class="text-shadow-icon uil uil-blogger"></span>
+              </button>
+              <button class="text-shadow-button">
+                <span class="text-shadow-icon uil uil-windows"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <style>
+          .block.text-shadow {
+            background: #2c2d33;
+          }
+
+          .text-shadow-button {
+            --shadow-color: #1c72b1;
+            overflow: hidden;
+            display: grid;
+            place-items: center;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 0.75rem;
+            background: #218fdf;
+          }
+
+          .text-shadow-icon {
+            font-size: 2.5rem;
+            color: #ffffff;
+          }
+
+          .text-shadow-icon::before {
+            text-shadow: var(--shadow-color) 1px 1px,
+              var(--shadow-color) 2px 2px, var(--shadow-color) 3px 3px,
+              var(--shadow-color) 4px 4px, var(--shadow-color) 5px 5px,
+              var(--shadow-color) 6px 6px, var(--shadow-color) 7px 7px,
+              var(--shadow-color) 8px 8px, var(--shadow-color) 9px 9px,
+              var(--shadow-color) 10px 10px, var(--shadow-color) 11px 11px,
+              var(--shadow-color) 12px 12px, var(--shadow-color) 13px 13px,
+              var(--shadow-color) 14px 14px, var(--shadow-color) 15px 15px,
+              var(--shadow-color) 16px 16px, var(--shadow-color) 17px 17px,
+              var(--shadow-color) 18px 18px, var(--shadow-color) 19px 19px,
+              var(--shadow-color) 20px 20px, var(--shadow-color) 21px 21px,
+              var(--shadow-color) 22px 22px, var(--shadow-color) 23px 23px,
+              var(--shadow-color) 24px 24px, var(--shadow-color) 25px 25px,
+              var(--shadow-color) 26px 26px, var(--shadow-color) 27px 27px,
+              var(--shadow-color) 28px 28px, var(--shadow-color) 29px 29px,
+              var(--shadow-color) 30px 30px, var(--shadow-color) 31px 31px,
+              var(--shadow-color) 32px 32px, var(--shadow-color) 33px 33px,
+              var(--shadow-color) 34px 34px, var(--shadow-color) 35px 35px,
+              var(--shadow-color) 36px 36px, var(--shadow-color) 37px 37px,
+              var(--shadow-color) 38px 38px, var(--shadow-color) 39px 39px,
+              var(--shadow-color) 40px 40px, var(--shadow-color) 41px 41px;
+          }
+        </style>
+      </article>
+      <article class="block text-decoration">
+        <div class="block-inner">
+          <h2 class="block-title">
+            text-decoration
+          </h2>
+          <div class="block-component">
+            <div class="block-vs">
+              <div class="text-decoration-card">
+                <label for="name2" class="text-decoration-label">
+                  <input
+                    name="name2"
+                    id="name2"
+                    type="checkbox"
+                    class="checkbox-input"
+                  />
+                  <span class="checkbox-background">
+                    <i class="checkbox-icon uil uil-check"></i>
+                  </span>
+                  <span>
+                    You must agree to our
+                    <a
+                      class="text-decoration-a"
+                      href="https://frontendjoe.com"
+                      target="_blank"
+                      >terms and conditions</a
+                    >
+                    to access this application.
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <style>
+          .block.text-decoration {
+            background: #8f44fd;
+          }
+
+          .text-decoration-card {
+            width: 16rem;
+            padding: 1rem;
+            line-height: 1.3;
+            border-radius: 0.75rem;
+            background: #ffffff;
+            color: rgba(0, 0, 0, 0.75);
+          }
+
+          .text-decoration-a {
+            text-decoration: underline;
+            margin-right: 0.075rem;
+          }
+
+          .text-decoration-label {
+            display: flex;
+            column-gap: 1rem;
+            align-items: center;
+            font-size: 0.875rem;
+          }
+
+          .checkbox-input {
+            position: absolute;
+            transform: scale(0);
+          }
+
+          .checkbox-input:checked ~ .checkbox-background {
+            background: #e7e7e7;
+          }
+
+          .checkbox-input:checked ~ .checkbox-background .checkbox-icon {
+            opacity: 0;
+          }
+
+          .checkbox-background {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 0.25rem;
+            background: #8f44fd;
+          }
+
+          .checkbox-icon {
+            font-size: 1.5rem;
+            color: white;
+          }
+        </style>
+      </article>
+      <article class="block text-align">
+        <div class="block-inner">
+          <h2 class="block-title">
+            text-align
+          </h2>
+          <div class="block-component">
+            <div class="block-vs">
+              <nav class="text-align-nav">
+                <button class="text-align-button text-align-button--left">
+                  <span class="text-align-icon uil uil-bars"></span>
+                </button>
+                <h3 class="text-align-title">
+                  Dashboard
+                </h3>
+                <button class="text-align-button text-align-button--right">
+                  <span class="text-align-icon uil uil-ellipsis-h"></span>
+                </button>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <style>
+          .block.text-align {
+            background: #222227;
+          }
+
+          .text-align-nav {
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+            width: 26rem;
+            height: 4rem;
+            border-radius: 0.75rem;
+            font-size: 0.875rem;
+            text-align: justify;
+            color: white;
+            background: #000000;
+          }
+
+          .text-align-button {
+            width: 4rem;
+            color: white;
+            font-size: 1.5rem;
+          }
+
+          .text-align-button--left {
+            text-align: left;
+          }
+
+          .text-align-button--right {
+            text-align: right;
+          }
+
+          .text-align-title {
+            flex: 1 1 auto;
+            text-align: center;
+          }
+        </style>
+      </article>
+    </section>
+  </div>
+</html>

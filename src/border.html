@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Border</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/skeletons.css" />
+  </head>
+  <body>
+    <header class="page-header">Border</header>
+    <div class="container">
+      <section class="block-list">
+        <article class="block vertical-dividers">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Vertical dividers
+            </h2>
+            <div class="block-component">
+              <header class="vertical-header">
+                <div class="vertical-logo">
+                  <span class="vertical-logo-icon uil uil-estate"></span>
+                  <span class="vertical-logo-text">
+                    Home
+                  </span>
+                </div>
+                <nav class="vertical-nav">
+                  <a href="#" class="vertical-link active">Movies</a>
+                  <a href="#" class="vertical-link">Music</a>
+                  <a href="#" class="vertical-link">Apps</a>
+                </nav>
+              </header>
+            </div>
+          </div>
+          <style>
+            .block.vertical-dividers {
+              background: #1e1f27;
+            }
+
+            .vertical-header {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 25rem;
+              height: 4rem;
+              padding: 0 2rem;
+              border-radius: 0.5rem;
+              background: white;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .vertical-logo {
+              display: flex;
+              align-items: center;
+              font-size: 0.875rem;
+            }
+
+            .vertical-logo-text {
+              line-height: 1;
+              margin-left: 0.5rem;
+            }
+
+            .vertical-logo-icon {
+              font-size: 1.25rem;
+            }
+
+            .vertical-link {
+              padding-left: 0.5rem;
+              margin-left: 0.5rem;
+              border-left: 1px solid #d5d3da;
+              font-size: 0.875rem;
+            }
+
+            .vertical-link:link {
+              color: #d5d3da;
+            }
+
+            .vertical-link.active {
+              color: #45424d;
+            }
+
+            .vertical-link:first-child {
+              border: 0;
+            }
+          </style>
+        </article>
+        <article class="block horizontal-dividers">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Horizontal dividers
+            </h2>
+            <div class="block-component">
+              <div class="horizontal-wrapper">
+                <header class="horizontal-header">
+                  <span class="horizontal-header-text">Select an option</span>
+                  <span class="horizontal-header-icon uil uil-multiply"></span>
+                </header>
+                <label class="horizontal-label" for="checkbox">
+                  <input id="checkbox" type="checkbox" class="checkbox-input" />
+                  <span class="checkbox-background">
+                    <i class="checkbox-icon uil uil-check"></i>
+                  </span>
+                  <span class="horizontal-label-text">Cheeseburgers</span>
+                  <span class="horizontal-label-emoji">🍔</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.horizontal-dividers {
+              background: #6328b9;
+            }
+
+            .horizontal-wrapper {
+              width: 18rem;
+              height: 8rem;
+              border-radius: 0.5rem;
+              background: white;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .horizontal-header {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              height: 4rem;
+              padding: 0 2rem;
+              border-bottom: 1px solid #d5d3da;
+            }
+
+            .horizontal-header-text {
+              color: #9791a6;
+            }
+
+            .horizontal-header-icon {
+              font-size: 1.5rem;
+              color: #9791a6;
+            }
+
+            .horizontal-label {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              height: 4rem;
+              padding: 0 2rem;
+            }
+
+            .horizontal-label-text {
+              flex: 1 1 auto;
+              margin-left: 0.75rem;
+            }
+
+            .horizontal-label-emoji {
+              font-size: 1.25rem;
+            }
+
+            .checkbox-input {
+              position: absolute;
+              transform: scale(0);
+            }
+
+            .checkbox-input:checked ~ .checkbox-background {
+              background: #e7e7e7;
+            }
+
+            .checkbox-input:checked ~ .checkbox-background .checkbox-icon {
+              opacity: 0;
+            }
+
+            .checkbox-background {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 1.5rem;
+              height: 1.5rem;
+              border-radius: 0.25rem;
+              background: #8f44fd;
+            }
+
+            .checkbox-icon {
+              font-size: 1.5rem;
+              color: white;
+            }
+          </style>
+        </article>
+        <article class="block spinners">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Spinners
+            </h2>
+            <div class="block-component">
+              <span class="spinner"></span>
+            </div>
+          </div>
+          <style>
+            .block.spinners {
+              background: #17181d;
+            }
+
+            @keyframes spin {
+              0% {
+                transform: rotate(-360deg);
+              }
+            }
+
+            .spinner {
+              display: block;
+              width: 5rem;
+              height: 5rem;
+              border-radius: 50%;
+              border: 6px solid #1e1f27;
+              border-left-style: dotted;
+              border-left-color: rgba(255, 255, 255, 0.75);
+              animation: spin 1.25s linear infinite;
+            }
+          </style>
+        </article>
+        <article class="block outline-controls">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Outline controls
+            </h2>
+            <div class="block-component">
+              <div class="input-wrapper">
+                <span class="input-icon uil uil-search"> </span>
+                <input class="input" placeholder="Search by" />
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.outline-controls {
+              background: #1e1f27;
+            }
+
+            .input-wrapper {
+              display: flex;
+              align-items: center;
+              height: 4rem;
+              width: 15rem;
+              padding: 0 1rem;
+              border-radius: 0.5rem;
+              border: 2px solid rgba(255, 255, 255, 0.95);
+            }
+
+            .input-icon {
+              font-size: 1.5rem;
+              color: rgba(255, 255, 255, 0.95);
+            }
+
+            .input {
+              flex: 1 1 auto;
+              min-width: 1px;
+              text-indent: 0.75rem;
+              font-size: 1.25rem;
+              color: rgba(255, 255, 255, 0.95);
+            }
+
+            .input::placeholder {
+              color: rgba(255, 255, 255, 0.5);
+            }
+          </style>
+        </article>
+        <article class="block ticket-mockups">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Ticket mockups
+            </h2>
+            <div class="block-component">
+              <div class="ticket-wrapper">
+                <div class="ticket-content">
+                  <h3 class="ticket-content-title">
+                    React JS
+                  </h3>
+                  <h4 class="ticket-content-subtitle">
+                    Masterclass
+                  </h4>
+                  <time class="ticket-content-date">01/07/21</time>
+                </div>
+                <div class="ticket-stub"></div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.ticket-mockups {
+              background: #222227;
+            }
+
+            .ticket-wrapper {
+              display: flex;
+              justify-content: space-between;
+              width: 14rem;
+              height: 8rem;
+            }
+
+            .ticket-content {
+              display: flex;
+              flex: 1 1 auto;
+              justify-content: center;
+              align-items: flex-start;
+              flex-direction: column;
+              padding: 1rem 1.5rem;
+              background: #8f44fd;
+              border-top-left-radius: 1rem;
+              border-bottom-left-radius: 1rem;
+            }
+
+            .ticket-stub {
+              border-right: 6px dashed #8f44fd;
+            }
+
+            .ticket-content-title {
+              color: rgba(255, 255, 255, 0.95);
+              font-size: 1.5rem;
+              text-transform: uppercase;
+            }
+
+            .ticket-content-subtitle {
+              margin-bottom: 0.75rem;
+
+              color: rgba(255, 255, 255, 0.65);
+              font-size: 1rem;
+              text-transform: uppercase;
+            }
+
+            .ticket-content-date {
+              color: rgba(255, 255, 255, 0.5);
+              font-size: 0.75rem;
+              text-transform: uppercase;
+            }
+          </style>
+        </article>
+        <article class="block waves">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Waves
+            </h2>
+            <div class="block-component">
+              <div class="waves-wrapper">
+                <div class="waves-badge"></div>
+                <div class="waves-wave"></div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.waves {
+              background: #2c2d33;
+            }
+
+            .waves-wrapper {
+              position: relative;
+            }
+
+            .waves-badge {
+              display: block;
+              position: absolute;
+              z-index: 2;
+              top: 1.1rem;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 1rem;
+              height: 1rem;
+              border-radius: 50%;
+              background: #315cfc;
+            }
+
+            .waves-wave {
+              position: relative;
+              display: block;
+              width: 2.5rem;
+              height: 2.5rem;
+              border-radius: 50%;
+              border: 0.25rem solid transparent;
+              border-top: 0.25rem solid white;
+              animation: waves 1s infinite linear;
+            }
+
+            @keyframes waves {
+              0% {
+                transform: translateY(0) scale(0.75);
+                opacity: 1;
+              }
+              50% {
+                opacity: 1;
+              }
+              100% {
+                transform: translateY(-10px) scale(1.25);
+                opacity: 0;
+              }
+            }
+
+            .waves-wave::before {
+              content: "";
+              position: absolute;
+              top: 0.25rem;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 60%;
+              height: 60%;
+              border-radius: inherit;
+              border: inherit;
+              border-top: 0.25rem solid white;
+            }
+          </style>
+        </article>
+        <article class="block placeholders">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Placeholders
+            </h2>
+            <div class="block-component">
+              <div class="placeholder-card">
+                <img class="placeholder-img" src="assets/img/js.png" />
+                <img class="placeholder-img" src="assets/img/react.png" />
+                <div class="placeholder-box">
+                  <span class="placeholder-icon uil uil-plus"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.placeholders {
+              background: #373942;
+            }
+
+            .placeholder-card {
+              display: flex;
+              gap: 0.5rem;
+              padding: 1.375rem 0.75rem;
+              border-radius: 1rem;
+              background: white;
+            }
+
+            .placeholder-img {
+              width: 4rem;
+              height: 4rem;
+              border-radius: 0.75rem;
+            }
+
+            .placeholder-box {
+              display: grid;
+              place-items: center;
+              width: 4rem;
+              height: 4rem;
+              border: 3px dotted #e8e8e8;
+              border-radius: 0.75rem;
+            }
+
+            .placeholder-icon {
+              font-size: 2rem;
+              color: #e8e8e8;
+            }
+          </style>
+        </article>
+        <article class="block digital-signatures">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Digital signatures
+            </h2>
+            <div class="block-component">
+              <div class="signature-card">
+                <input class="signature-input" placeholder="Sign here" />
+                <time class="signature-date">09/05/2021</time>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.digital-signatures {
+              background: #222227;
+            }
+
+            .signature-card {
+              position: relative;
+              display: flex;
+              align-items: center;
+              width: 20rem;
+              height: 5rem;
+              padding: 0.5rem 1rem 1.5rem;
+              border-radius: 0.75rem;
+              background: #060607;
+            }
+
+            .signature-input {
+              flex: 1 1 auto;
+              height: 3rem;
+              min-width: 1px;
+              font-size: 1rem;
+              font-style: italic;
+              color: rgba(255, 255, 255, 0.95);
+              border-bottom: 2px dotted rgba(255, 255, 255, 0.5);
+            }
+
+            .signature-input::placeholder {
+              font-style: normal;
+              color: #69676d;
+            }
+
+            .signature-date {
+              position: absolute;
+              top: 1.635rem;
+              right: 1rem;
+              font-size: 0.75rem;
+              color: #69676d;
+            }
+          </style>
+        </article>
+        <article class="block status-indicators">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Status indicators
+            </h2>
+            <div class="block-component">
+              <div class="status-card">
+                <span class="status-text">
+                  Payment successful
+                </span>
+                <span class="status-icon uil uil-check"></span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.status-indicators {
+              background: #f7f7fe;
+            }
+
+            .status-indicators .block-title {
+              color: #45424d;
+            }
+
+            .status-card {
+              display: flex;
+              align-items: center;
+              width: 18rem;
+              height: 4.5rem;
+              padding: 0 1.5rem;
+              border-left: 0.5rem solid #56ae69;
+              background: white;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .status-text {
+              flex: 1 1 auto;
+              color: #56ae69;
+              font-size: 1.175rem;
+            }
+
+            .status-icon {
+              color: #56ae69;
+              font-size: 1.5rem;
+            }
+          </style>
+        </article>
+        <article class="block validation-errors">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Validation errors
+            </h2>
+            <div class="block-component">
+              <div class="validation-wrapper">
+                <input
+                  class="validation-input"
+                  type="password"
+                  value="Password"
+                />
+                <span class="validation-message">
+                  Password you entered is not valid
+                </span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.validation-errors {
+              background: #2c2d33;
+            }
+
+            .validation-wrapper {
+              display: flex;
+              flex-direction: column;
+              width: 16rem;
+            }
+
+            .validation-input {
+              height: 4rem;
+              margin-bottom: 1rem;
+              border-radius: 0.75rem;
+              border: 3px solid #d95050;
+              font-size: 2rem;
+              text-indent: 1rem;
+              color: rgba(255, 255, 255, 0.95);
+            }
+
+            .validation-message {
+              font-size: 0.875rem;
+              color: #d95050;
+            }
+          </style>
+        </article>
+        <article class="block triangles">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Triangles
+            </h2>
+            <div class="block-component">
+              <button class="arrow-button">
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+          <style>
+            .block.triangles {
+              background: #222227;
+            }
+
+            .arrow-button {
+              position: relative;
+              display: flex;
+              align-items: center;
+              height: 4rem;
+              width: 12rem;
+              font-size: 1.25rem;
+              text-indent: 1.5rem;
+              text-transform: uppercase;
+              letter-spacing: 2px;
+              background: #7e18ff;
+              color: rgba(255, 255, 255, 0.95);
+            }
+
+            .arrow-button::after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              right: -4rem;
+              border-top: 4rem solid transparent;
+              border-right: 4rem solid transparent;
+              border-bottom: 4rem solid #7e18ff;
+            }
+          </style>
+        </article>
+        <article class="block triangle-borders">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Bordered triangles
+            </h2>
+            <div class="block-component">
+              <div class="triangle-borders-card">
+                <img
+                  class="triangle-borders-smoke"
+                  src="assets/img/smoke.png"
+                />
+                <img
+                  class="triangle-borders-player-img"
+                  src="assets/img/football-player.png"
+                />
+                <div class="triangle-borders-top-block-wrapper">
+                  <div class="triangle-borders-top-block">
+                    <img
+                      class="triangle-borders-top-block-logo"
+                      src="assets/img/sport-logo.png"
+                    />
+                  </div>
+                </div>
+                <button class="triangle-borders-bottom-block-wrapper">
+                  <div class="triangle-borders-bottom-block">
+                    <span class="triangle-borders-bottom-block-text">
+                      PLAY NOW
+                    </span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.triangle-borders {
+              background: #3d1e6b;
+            }
+
+            .triangle-borders-card {
+              overflow: hidden;
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              width: 10rem;
+              height: 12rem;
+              background: linear-gradient(#17151b, #222227);
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .triangle-borders-smoke {
+              position: absolute;
+              z-index: 0;
+              top: 50%;
+              left: 40%;
+              width: 10rem;
+              opacity: 0.75;
+              transform: translate(-50%, -50%);
+            }
+
+            .triangle-borders-top-block-wrapper {
+              overflow: hidden;
+              position: relative;
+              width: 6rem;
+            }
+
+            .triangle-borders-top-block {
+              position: relative;
+              display: grid;
+              place-items: center;
+              width: 3rem;
+              height: 2rem;
+              background: #ffffff;
+            }
+
+            .triangle-borders-top-block::after {
+              content: "";
+              position: absolute;
+              top: -2.5rem;
+              right: 0;
+              width: 3rem;
+              height: 8rem;
+              transform: rotate(30deg);
+              border-right: 0.375rem solid #eae3f1;
+              background: inherit;
+            }
+
+            .triangle-borders-top-block-logo {
+              position: relative;
+              z-index: 1;
+              height: 1rem;
+            }
+
+            .triangle-borders-bottom-block-wrapper {
+              overflow: hidden;
+              position: relative;
+              display: flex;
+              justify-content: flex-end;
+              align-self: flex-end;
+              width: 8rem;
+              margin-bottom: 1rem;
+            }
+
+            .triangle-borders-bottom-block {
+              position: relative;
+              z-index: 2;
+              display: grid;
+              place-items: center;
+              width: 5rem;
+              height: 2rem;
+              background: #8f44fd;
+            }
+
+            .triangle-borders-bottom-block::after {
+              content: "";
+              position: absolute;
+              z-index: 2;
+              top: -3rem;
+              right: 3rem;
+              width: 3rem;
+              height: 8rem;
+              transform: rotate(30deg);
+              border-left: 0.375rem solid #7239c5;
+              background: inherit;
+            }
+
+            .triangle-borders-bottom-block-text {
+              position: relative;
+              z-index: 3;
+              min-width: 0;
+              margin-right: 1rem;
+              white-space: nowrap;
+              letter-spacing: 2px;
+              font-size: 0.8rem;
+              font-weight: 600;
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            .triangle-borders-player-img {
+              position: absolute;
+              z-index: 1;
+              right: -2rem;
+              bottom: -2rem;
+              width: 11rem;
+              opacity: 0.45;
+            }
+          </style>
+        </article>
+        <article class="block datatables">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Table gridlines
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <div class="datatable-card">
+                  <table class="datatable">
+                    <thead>
+                      <tr>
+                        <th>
+                          Language
+                        </th>
+                        <th>
+                          Price
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          CSS
+                        </td>
+                        <td>
+                          £9
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          React
+                        </td>
+                        <td>
+                          £3
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          HTML
+                        </td>
+                        <td>
+                          £6
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="datatable-card">
+                  <table class="datatable datatable--bordered">
+                    <thead>
+                      <tr>
+                        <th>
+                          Language
+                        </th>
+                        <th>
+                          Price
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          CSS
+                        </td>
+                        <td>
+                          £9
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          React
+                        </td>
+                        <td>
+                          £3
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          HTML
+                        </td>
+                        <td>
+                          £6
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.datatables {
+              background: #373942;
+            }
+
+            .datatable-card {
+              overflow: auto;
+              width: 14rem;
+              padding: 1rem;
+              border-radius: 0.75rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #17171b;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .datatable {
+              width: 100%;
+              border-collapse: collapse;
+            }
+
+            .datatable th,
+            .datatable td {
+              border: 1px solid transparent;
+            }
+
+            .datatable th {
+              font-weight: 400;
+              font-size: 0.875rem;
+              color: rgba(255, 255, 255, 0.45);
+              padding: 0.5rem;
+            }
+
+            .datatable td {
+              padding: 0.5rem;
+            }
+
+            .datatable--bordered td,
+            .datatable--bordered th {
+              border-color: #2a2a31;
+            }
+          </style>
+        </article>
+        <article class="block tabs">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Tabs
+            </h2>
+            <div class="block-component">
+              <div class="tab-wrapper">
+                <div class="tab-list">
+                  <button class="tab-button">Home</button>
+                  <button class="tab-button tab-button--active">About</button>
+                  <button class="tab-button">Work</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.tabs {
+              background: #301859;
+            }
+
+            .tab-list {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 4rem;
+              padding: 0 1rem;
+              border-radius: 0.75rem;
+              background: white;
+            }
+
+            .tab-button {
+              height: 3rem;
+              padding: 0 1.5rem;
+              font-size: 1rem;
+              border-bottom: 4px solid transparent;
+            }
+
+            .tab-button:hover:not(.tab-button--active) {
+              border-bottom-color: rgba(143, 68, 253, 0.2);
+            }
+
+            .tab-button--active {
+              border-bottom-color: #8f44fd;
+            }
+          </style>
+        </article>
+        <article class="block cutout">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Cut-out illusion
+            </h2>
+            <div class="block-component">
+              <img class="cutout-img" src="assets/img/eugene.png" />
+              <img class="cutout-img" src="assets/img/dan.png" />
+              <img class="cutout-img" src="assets/img/mike.png" />
+            </div>
+          </div>
+          <style>
+            .block.cutout {
+              background: #222227;
+            }
+
+            .cutout-img {
+              position: relative;
+              background-clip: content-box;
+              width: 5rem;
+              height: 5rem;
+              border-radius: 50%;
+              border: 7px solid #222227;
+            }
+
+            .cutout-img:nth-child(1) {
+              margin-left: 3.5rem;
+              z-index: 1;
+              transform: translateX(0);
+            }
+
+            .cutout-img:nth-child(2) {
+              z-index: 2;
+              transform: translateX(-1.5rem);
+            }
+
+            .cutout-img:nth-child(3) {
+              z-index: 3;
+              transform: translateX(-3rem);
+            }
+          </style>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>position: fixed</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/skeletons.css" />
+  </head>
+  <body>
+    <header class="fixed-topbar">
+      <div class="search-wrapper">
+        <input class="search-input" placeholder="Search" />
+        <button class="search-button uil uil-search"></button>
+      </div>
+    </header>
+
+    <label for="global-input" class="fixed-burger">
+      <input type="checkbox" id="global-input" name="global-input" />
+      <div class="fixed-overlay"></div>
+      <aside class="fixed-drawer">
+        Sidebar
+      </aside>
+      <span class="author-block">
+        <img class="author-img" src="assets/img/frontendjoe.png" />
+        <span class="author-stack">
+          <span class="author-title">
+            Joe Harrison
+          </span>
+          <span class="author-subtitle">
+            @frontendjoe
+          </span>
+        </span>
+        <span class="author-arrow-icon uil uil-angle-right"></span>
+      </span>
+    </label>
+
+    <aside class="fixed-navbar">
+      <header class="fixed-navbar-header">
+        <span class="fixed-navbar-logo uil uil-blogger"></span>
+      </header>
+      <nav class="fixed-navbar-nav">
+        <button class="fixed-navbar-button">
+          <span class="fixed-navbar-icon uil uil-pen"></span>
+        </button>
+        <button class="fixed-navbar-button">
+          <span class="fixed-navbar-icon uil uil-plus"></span>
+        </button>
+        <button class="fixed-navbar-button">
+          <span class="fixed-navbar-icon uil uil-setting"></span>
+        </button>
+      </nav>
+      <footer class="fixed-navbar-footer">
+        <button class="fixed-navbar-button">
+          <span class="fixed-navbar-icon uil uil-sign-out-alt"></span>
+        </button>
+      </footer>
+    </aside>
+
+    <div class="fixed-toast">
+      <span class="fixed-toast-icon uil uil-check-circle"></span>
+      <span class="fixed-toast-text">Changes are saved!</span>
+    </div>
+
+    <button class="fixed-settings">
+      <span class="fixed-settings-icon uil uil-wrench"></span>
+    </button>
+
+    <button class="fixed-scrolltop">
+      <span class="fixed-scrolltop-icon uil uil-arrow-up"></span>
+    </button>
+
+    <style>
+      body {
+        margin-left: 4rem;
+        padding: 1rem;
+        background: #f7f7fe;
+        color: rgba(255, 255, 255, 0.96);
+      }
+
+      #global-input {
+        position: absolute;
+        transform: scale(0);
+      }
+
+      .fixed-navbar {
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 4rem;
+        height: 100%;
+        background: #242424;
+      }
+
+      .fixed-navbar-header {
+        display: grid;
+        place-items: center;
+        width: 4rem;
+      }
+
+      .fixed-navbar-header,
+      .fixed-navbar-footer .fixed-navbar-button {
+        height: 5rem;
+      }
+
+      .fixed-navbar-logo {
+        font-size: 2rem;
+      }
+
+      .fixed-navbar-nav {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .fixed-navbar-button {
+        display: grid;
+        place-items: center;
+        height: 4rem;
+        width: 100%;
+        padding: 0;
+      }
+
+      .fixed-navbar-button:hover .fixed-navbar-icon {
+        color: rgba(255, 255, 255, 0.96);
+      }
+
+      .fixed-navbar-icon {
+        font-size: 1.5rem;
+        color: rgba(255, 255, 255, 0.57);
+        transition: color 0.35s;
+      }
+
+      .fixed-navbar-footer {
+        display: grid;
+        place-items: center;
+      }
+
+      .fixed-topbar {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 4rem;
+        display: flex;
+        align-items: center;
+        width: calc(100% - 4rem);
+        height: 5rem;
+        padding: 0 1rem;
+        background: white;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      }
+
+      .author-block {
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        gap: 0.625rem;
+        margin-right: 1rem;
+        height: 5rem;
+        border-radius: 0.5rem;
+        color: #4c4954;
+      }
+
+      .author-img {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+
+      .author-stack,
+      .author-title,
+      .author-subtitle {
+        display: block;
+      }
+
+      .author-title {
+        margin: 0 0 2px;
+        line-height: 1;
+        font-size: 0.925rem;
+      }
+
+      .author-subtitle {
+        margin: 0;
+        line-height: 1;
+        font-size: 0.85rem;
+        color: #a19eab;
+      }
+
+      .author-arrow-icon {
+        font-size: 1.75rem;
+      }
+
+      .fixed-drawer {
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        right: 0;
+        width: 16rem;
+        height: 100%;
+        background: white;
+        transform: translateX(100%);
+        transition: transform 0.5s;
+      }
+
+      #global-input:checked ~ .fixed-drawer {
+        transform: translateX(0);
+      }
+
+      .fixed-overlay {
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        visibility: hidden;
+        opacity: 0;
+        transition-property: visibility, opacity;
+        transition-duration: 0.5s;
+      }
+
+      #global-input:checked ~ .fixed-overlay {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .search-wrapper {
+        display: flex;
+        width: 16rem;
+        height: 3rem;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        color: #4c4954;
+        background: #e1e1e8;
+        box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+      }
+
+      .search-input {
+        width: 10rem;
+        flex: 1 1 auto;
+        font-size: 1rem;
+        padding: 0 1rem;
+      }
+
+      .search-button {
+        flex: 0 0 4rem;
+        font-size: 1.25rem;
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        background: #1ac0a2;
+        color: rgba(255, 255, 255, 0.96);
+      }
+
+      .fixed-toast {
+        position: fixed;
+        right: calc(50% - 2rem);
+        bottom: 0;
+        transform: translateX(50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        width: 20rem;
+        padding: 1rem;
+        border-bottom: 0.5rem solid #1ac0a2;
+        background: #242424;
+      }
+
+      .fixed-toast-icon {
+        font-size: 2rem;
+        color: #1ac0a2;
+      }
+
+      .fixed-toast-text {
+        margin-right: 4rem;
+        color: rgba(255, 255, 255, 0.96);
+      }
+
+      .fixed-settings {
+        position: fixed;
+        top: 50%;
+        right: 0;
+        display: grid;
+        place-items: center start;
+        padding-left: 1rem;
+        width: 4rem;
+        height: 3rem;
+        border-top-left-radius: 3rem;
+        border-bottom-left-radius: 3rem;
+        color: rgba(255, 255, 255, 0.96);
+        background: #242424;
+      }
+
+      @keyframes oscillate {
+        0% {
+          transform: rotate(-70deg);
+        }
+        50% {
+          transform: rotate(-20deg);
+        }
+        100% {
+          transform: rotate(-70deg);
+        }
+      }
+
+      .fixed-settings-icon {
+        font-size: 1.5rem;
+      }
+
+      .fixed-settings-icon::before {
+        animation: oscillate 2.25s infinite;
+      }
+
+      .fixed-scrolltop {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        display: grid;
+        place-items: center;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background: #1ac0a2;
+      }
+
+      .fixed-scrolltop:hover .fixed-scrolltop-icon {
+        transform: translateY(-0.25rem);
+      }
+
+      .fixed-scrolltop-icon {
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.96);
+        transition: transform 0.35s;
+      }
+    </style>
+  </body>
+</html>

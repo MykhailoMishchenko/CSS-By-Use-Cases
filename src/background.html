@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Background</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/skeletons.css" />
+  </head>
+  <body>
+    <header class="page-header">Background</header>
+    <div class="container">
+      <section class="block-list">
+        <article class="block solid-buttons">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Solid Buttons
+            </h2>
+            <div class="block-component">
+              <button class="solid-button">
+                <i class="solid-button-icon uil uil-sync"></i>
+                <span class="solid-button-text">
+                  Reload
+                </span>
+              </button>
+            </div>
+          </div>
+          <style>
+            .block.solid-buttons {
+              background: #222227;
+            }
+
+            .solid-button {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 12rem;
+              height: 4rem;
+              border-radius: 0.75rem;
+              background: #8f44fd;
+            }
+
+            .solid-button-icon {
+              font-size: 1.375rem;
+              margin-right: 1rem;
+              color: rgba(255, 255, 255, 0.95);
+            }
+
+            .solid-button-text {
+              margin-right: 0.5rem;
+              font-size: 1.25rem;
+              color: rgba(255, 255, 255, 0.95);
+            }
+          </style>
+        </article>
+        <article class="block gradient-buttons">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Gradient Buttons
+            </h2>
+            <div class="block-component">
+              <button class="gradient-button">
+                <i class="gradient-button-icon uil uil-sync"></i>
+                <span class="gradient-button-text">
+                  Reload
+                </span>
+              </button>
+            </div>
+          </div>
+          <style>
+            .block.gradient-buttons {
+              background: #48178c;
+            }
+
+            .gradient-button {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 12rem;
+              height: 4rem;
+              border-radius: 0.75rem;
+              background: linear-gradient(90deg, #732fdf, #bd00ff);
+            }
+
+            .gradient-button-icon {
+              font-size: 1.375rem;
+              margin-right: 1rem;
+              color: rgba(255, 255, 255, 0.95);
+            }
+
+            .gradient-button-text {
+              margin-right: 0.5rem;
+              font-size: 1.25rem;
+              color: rgba(255, 255, 255, 0.95);
+            }
+          </style>
+        </article>
+        <article class="block checkboxes">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Checkboxes
+            </h2>
+            <div class="block-component">
+              <label for="name">
+                <input
+                  name="name"
+                  id="name"
+                  type="checkbox"
+                  class="checkbox-input"
+                />
+                <span class="checkbox-background">
+                  <i class="checkbox-icon uil uil-check"></i>
+                </span>
+              </label>
+            </div>
+          </div>
+          <style>
+            .block.checkboxes {
+              background: #373942;
+            }
+
+            .checkbox-input {
+              position: absolute;
+              transform: scale(0);
+            }
+
+            .checkbox-input:checked ~ .checkbox-background {
+              background: #e7e7e7;
+            }
+
+            .checkbox-input:checked ~ .checkbox-background .checkbox-icon {
+              opacity: 0;
+            }
+
+            .checkbox-background {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 4rem;
+              height: 4rem;
+              border-radius: 0.75rem;
+              background: linear-gradient(45deg, #4ae491, #49aa75);
+            }
+
+            .checkbox-icon {
+              font-size: 2.75rem;
+              color: white;
+            }
+          </style>
+        </article>
+        <article class="block outlines">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Outlines
+            </h2>
+            <div class="block-component">
+              <span class="outline">
+                <img class="outline-img" src="assets/img/frontendjoe.png" />
+              </span>
+            </div>
+          </div>
+          <style>
+            .block.outlines {
+              background: #222227;
+            }
+
+            .outline {
+              display: block;
+              width: 5rem;
+              height: 5rem;
+              padding: 0.125rem;
+              border-radius: 50%;
+              background: linear-gradient(45deg, #732fdf, #bd00ff);
+            }
+
+            .outline-img {
+              width: 100%;
+              border-radius: 50%;
+              border: 0.25rem solid #1a1a1a;
+            }
+          </style>
+        </article>
+        <article class="block neumorphism">
+          <div class="block-inner">
+            <h2 class="block-title">Neumorphism</h2>
+            <div class="block-component">
+              <label class="neu-switch-label" for="neu-switch-input">
+                <input
+                  id="neu-switch-input"
+                  type="checkbox"
+                  class="neu-switch-input"
+                />
+                <span class="neu-switch-rail">
+                  <span class="neu-switch-handle"></span>
+                </span>
+                <span class="neu-switch-indicator"></span>
+              </label>
+            </div>
+          </div>
+          <style>
+            .block.neumorphism {
+              background: #6328b9;
+            }
+
+            .neu-switch-label {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 5rem;
+              padding: 0 1.5rem;
+              border-radius: 0.75rem;
+              background: rgba(255, 255, 255, 0.1);
+            }
+
+            .neu-switch-input {
+              position: absolute;
+              transform: scale(0);
+            }
+
+            .neu-switch-input:checked ~ .neu-switch-rail .neu-switch-handle {
+              transform: translate(3.75rem, -50%);
+            }
+
+            .neu-switch-input:checked ~ .neu-switch-indicator {
+              background: #46f608;
+            }
+
+            .neu-switch-rail {
+              position: relative;
+              display: block;
+              width: 6rem;
+              height: 1.75rem;
+              border-radius: 1rem;
+              background: rgba(255, 255, 255, 0.1);
+            }
+
+            .neu-switch-handle {
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+              display: block;
+              width: 2.25rem;
+              height: 2.25rem;
+              border-radius: 50%;
+              background: linear-gradient(45deg, #ffffff, #aeaeae);
+              transition: transform 0.45s;
+            }
+
+            .neu-switch-indicator {
+              width: 0.75rem;
+              height: 0.75rem;
+              margin-left: 1.5rem;
+              border-radius: 50%;
+              background: rgba(255, 255, 255, 0.1);
+              transition: background 0.45s;
+            }
+          </style>
+        </article>
+        <article class="block skeuomorphism">
+          <div class="block-inner">
+            <h2 class="block-title">Skeuomorphism</h2>
+            <div class="block-component">
+              <label class="skeuo-switch-label" for="skeuo-switch-input">
+                <input
+                  id="skeuo-switch-input"
+                  type="checkbox"
+                  class="skeuo-switch-input"
+                />
+                <span class="skeuo-switch-rail">
+                  <span class="skeuo-switch-handle"></span>
+                </span>
+                <span class="skeuo-switch-indicator"></span>
+              </label>
+            </div>
+          </div>
+          <style>
+            .block.skeuomorphism {
+              background: #2c2d33;
+            }
+
+            .skeuo-switch-label {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 5rem;
+              padding: 0 1.5rem;
+              border-radius: 0.75rem;
+              background: rgba(255, 255, 255, 0.1);
+            }
+
+            .skeuo-switch-input {
+              position: absolute;
+              transform: scale(0);
+            }
+
+            .skeuo-switch-input:checked
+              ~ .skeuo-switch-rail
+              .skeuo-switch-handle {
+              transform: translate(3.75rem, -50%);
+            }
+
+            .skeuo-switch-input:checked ~ .skeuo-switch-indicator {
+              background: #46f608;
+            }
+
+            .skeuo-switch-rail {
+              position: relative;
+              display: block;
+              width: 6rem;
+              height: 1.75rem;
+              border-radius: 1rem;
+              background: rgba(255, 255, 255, 0.05);
+            }
+
+            .skeuo-switch-handle {
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+              display: block;
+              width: 2.25rem;
+              height: 2.25rem;
+              border-radius: 50%;
+              background: radial-gradient(
+                circle at 20%,
+                #d8d7d7 0%,
+                #626262 50%,
+                rgba(255, 255, 255, 0) 100%
+              );
+              transition: transform 0.45s;
+            }
+
+            .skeuo-switch-indicator {
+              width: 0.75rem;
+              height: 0.75rem;
+              margin-left: 1.5rem;
+              border-radius: 50%;
+              background: rgba(255, 255, 255, 0.1);
+              transition: background 0.45s;
+            }
+          </style>
+        </article>
+        <article class="block stripes">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Stripes
+            </h2>
+            <div class="block-component">
+              <div class="card">
+                <h3 class="card-header">
+                  Striped list
+                </h3>
+                <div class="card-list">
+                  <div class="card-list-row">
+                    Frontend
+                  </div>
+                  <div class="card-list-row">
+                    Backend
+                  </div>
+                  <div class="card-list-row">
+                    Full stack
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.stripes {
+              background: #8f44fd;
+            }
+
+            .card {
+              width: 15rem;
+              padding: 1rem;
+              border-radius: 0.5rem;
+              background: white;
+            }
+
+            .card-header {
+              font-size: 0.875rem;
+              text-indent: 0.5rem;
+              margin-bottom: 1rem;
+              color: rgba(0, 0, 0, 0.5);
+            }
+
+            .card-list {
+              height: 7.5rem;
+              background: repeating-linear-gradient(
+                #ebebeb 0,
+                #ebebeb 1.5rem,
+                #ffffff 1.5rem,
+                #ffffff 3rem
+              );
+            }
+
+            .card-list-row {
+              display: flex;
+              align-items: center;
+              text-indent: 0.5rem;
+              height: 1.5rem;
+              font-size: 0.875rem;
+              color: #45424d;
+            }
+          </style>
+        </article>
+        <article class="block pie-charts">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Pie charts
+            </h2>
+            <div class="block-component">
+              <span class="pie-chart"></span>
+            </div>
+          </div>
+          <style>
+            .block.pie-charts {
+              background: #060607;
+            }
+
+            .pie-chart {
+              display: block;
+              width: 6rem;
+              height: 6rem;
+              border-radius: 50%;
+              background: conic-gradient(
+                #f0e7fe 0% 35%,
+                #6683eb 35% 60%,
+                #4f1e97 60% 100%
+              );
+            }
+          </style>
+        </article>
+        <article class="block loaders">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Loaders
+            </h2>
+            <div class="block-component">
+              <button class="loader-button" disabled>
+                <span class="loader-button-text">
+                  Loading
+                </span>
+              </button>
+            </div>
+          </div>
+          <style>
+            .block.loaders {
+              background: #195354;
+            }
+
+            .loader-button {
+              overflow: hidden;
+              -webkit-mask-image: -webkit-radial-gradient(white, black);
+              position: relative;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              height: 4rem;
+              padding: 0 3rem;
+              font-size: 1.125rem;
+              border-radius: 0.5rem;
+              color: #ffffff;
+              cursor: wait;
+            }
+
+            @keyframes load {
+              0% {
+                transform: translateX(0);
+              }
+              100% {
+                transform: translateX(-1.75rem);
+              }
+            }
+
+            .loader-button::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 120rem;
+              height: 100%;
+              border-radius: inherit;
+              background: #139059
+                repeating-linear-gradient(
+                  60deg,
+                  transparent,
+                  transparent 0.75rem,
+                  #05a067 0.75rem,
+                  #05a067 1.5rem
+                );
+
+              animation: load 1s infinite linear;
+            }
+
+            .loader-button-text {
+              position: relative;
+              z-index: 1;
+            }
+          </style>
+        </article>
+        <article class="block progress-bars">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Progress bars
+            </h2>
+            <div class="block-component">
+              <div class="progress-rail">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.progress-bars {
+              background: #1e1f27;
+            }
+
+            .progress-rail {
+              display: flex;
+              width: 16rem;
+              height: 1rem;
+              border-radius: 0.5rem;
+              background: rgba(255, 255, 255, 0.1);
+            }
+
+            @keyframes move {
+              0% {
+                width: 0%;
+              }
+              33% {
+                width: 33%;
+              }
+              66% {
+                width: 66%;
+              }
+              100% {
+                width: 100%;
+              }
+            }
+
+            .progress-bar {
+              width: 25%;
+              height: 1rem;
+              border-radius: 0.5rem;
+              background: linear-gradient(90deg, #da22ff, #9733ee);
+              animation: move 5s infinite;
+            }
+          </style>
+        </article>
+        <article class="block hero-banners">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Hero banners
+            </h2>
+            <div class="block-component">
+              <div class="block-page-xl">
+                <div class="hero-banner">
+                  <h3 class="hero-banner-text">
+                    My Blog Article
+                  </h3>
+                </div>
+                <div class="hero-content">
+                  <div class="skeleton-rect-xl"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.hero-banners {
+              background: #373942;
+            }
+
+            .hero-banner {
+              display: flex;
+              align-items: center;
+              height: 5rem;
+              padding-left: 2rem;
+              background: linear-gradient(90deg, #b24592, #f15f79);
+            }
+
+            .hero-banner-text {
+              color: rgba(255, 255, 255, 0.75);
+            }
+
+            .hero-content {
+              background: white;
+              padding: 1rem;
+            }
+          </style>
+        </article>
+        <article class="block sidebars">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Sidebars
+            </h2>
+            <div class="block-component">
+              <div class="block-page-xl">
+                <div class="sidebar"></div>
+                <div class="sidebar-content">
+                  <div class="skeleton-rect-xl"></div>
+                  <div class="skeleton-rect-md"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.sidebars {
+              background: #292a33;
+            }
+
+            .sidebar {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 7rem;
+              height: 100%;
+              background: linear-gradient(#0072ff, #00c6ff);
+            }
+
+            .sidebar-content {
+              margin-left: 7rem;
+              padding: 1rem;
+              background: white;
+            }
+          </style>
+        </article>
+        <article class="block navbars">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Navbars
+            </h2>
+            <div class="block-component">
+              <nav class="navbar">
+                <i class="navbar-icon navbar-icon--active material-icons">
+                  home
+                </i>
+                <i class="navbar-icon material-icons">
+                  star
+                </i>
+                <i class="navbar-icon material-icons">
+                  settings
+                </i>
+              </nav>
+            </div>
+          </div>
+          <style>
+            .block.navbars {
+              background: #1a3358;
+            }
+
+            .navbar {
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+              width: 14rem;
+              height: 4rem;
+              padding: 0 0.5rem;
+              border-bottom-right-radius: 1rem;
+              border-bottom-left-radius: 1rem;
+              background: linear-gradient(to right, #00b2ff, #0066ff);
+            }
+
+            .navbar-icon {
+              font-size: 2rem;
+              color: rgba(255, 255, 255, 0.5);
+            }
+
+            .navbar-icon--active {
+              color: rgba(255, 255, 255, 0.95);
+            }
+          </style>
+        </article>
+        <article class="block global-messages">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Global messages
+            </h2>
+            <div class="block-component">
+              <div class="block-page-xl">
+                <div class="global-message"></div>
+                <div class="global-content">
+                  <div class="skeleton-rect-xl"></div>
+                  <div class="skeleton-rect-md"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.global-messages {
+              background: #1e1f27;
+            }
+
+            .global-message {
+              background: linear-gradient(90deg, #ef6212, #fb3b3b);
+              height: 1rem;
+            }
+
+            .global-content {
+              padding: 1rem;
+              background: white;
+            }
+          </style>
+        </article>
+        <article class="block two-tone-badge">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Two-tone badges
+            </h2>
+            <div class="block-component">
+              <span class="badge">
+                <i class="badge-icon uil uil-check"></i>
+              </span>
+            </div>
+          </div>
+          <style>
+            .two-tone-badge.block {
+              background: #222227;
+            }
+
+            .badge {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 4rem;
+              height: 4rem;
+              border-radius: 50%;
+              background: repeating-linear-gradient(
+                90deg,
+                #30be8b 0 50%,
+                #29a377 50% 100%
+              );
+            }
+
+            .badge-icon {
+              font-size: 2.75rem;
+              color: rgba(255, 255, 255, 0.95);
+            }
+          </style>
+        </article>
+        <article class="block metallic-button">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Metallic Buttons
+            </h2>
+            <div class="block-component">
+              <button class="metal-button">
+                <i class="metal-button-icon uil uil-search"></i>
+                <span class="metal-button-text">
+                  Find Metal
+                </span>
+              </button>
+            </div>
+          </div>
+          <style>
+            .block.metallic-button {
+              background: #2c2d33;
+            }
+
+            .metal-button {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 12rem;
+              height: 4rem;
+              border-radius: 0.5rem;
+              background: linear-gradient(
+                #676b67 0%,
+                #e3e3e3 45%,
+                #fffcfc 50%,
+                #e3e3e3 55%,
+                #676b67 100%
+              );
+            }
+
+            .metal-button-icon {
+              font-size: 1.25rem;
+              margin-right: 1rem;
+            }
+
+            .metal-button-text {
+              margin-right: 0.5rem;
+              font-size: 1.25rem;
+              color: rgba(0, 0, 0, 0.95);
+            }
+          </style>
+        </article>
+        <article class="block cover-images">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Cover images
+            </h2>
+            <div class="block-component">
+              <div class="cover-card"></div>
+            </div>
+          </div>
+          <style>
+            .block.cover-images {
+              background: #373942;
+            }
+
+            .cover-card {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 15rem;
+              height: 8rem;
+              border-radius: 1rem;
+              background: url("assets/img/sunset.png");
+              background-position: center;
+              background-size: cover;
+            }
+          </style>
+        </article>
+        <article class="block faded-content">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Faded content
+            </h2>
+            <div class="block-component">
+              <figure class="faded-wrapper">
+                <span class="faded-overlay">
+                  <figcaption class="faded-caption">
+                    Image caption here
+                  </figcaption>
+                </span>
+              </figure>
+            </div>
+          </div>
+          <style>
+            .block.faded-content {
+              background: #222227;
+            }
+
+            .faded-wrapper {
+              position: relative;
+              overflow: hidden;
+              width: 16rem;
+              height: 9rem;
+              border-radius: 1rem;
+              background: url("assets/img/sunset.png") no-repeat;
+              background-size: cover;
+            }
+
+            .faded-overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              display: flex;
+              align-items: flex-end;
+              width: 100%;
+              height: 100%;
+              padding: 1rem;
+              color: rgba(255, 255, 255, 0.75);
+              background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+            }
+          </style>
+        </article>
+        <article class="block repeating-patterns">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Repeating patterns
+            </h2>
+            <div class="block-component">
+              <div class="pattern-card">
+                <h3 class="pattern-card-text">
+                  Expensive design
+                </h3>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.repeating-patterns {
+              background: #8f44fd;
+            }
+
+            .pattern-card {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 15rem;
+              height: 8rem;
+              border-radius: 1rem;
+              background: #222222 url("assets/img/dot-pattern.png");
+              background-position: center;
+            }
+
+            .pattern-card-text {
+              color: rgba(255, 255, 255, 0.75);
+            }
+          </style>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

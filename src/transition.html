@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>transition</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/skeletons.css" />
+  </head>
+  <body>
+    <header class="page-header">transition</header>
+    <div class="container">
+      <section class="block-list">
+        <article class="block collapsibles">
+          <div class="block-inner">
+            <h2 class="block-title">
+              max-height
+            </h2>
+            <div class="block-component">
+              <label for="collapse-input">
+                <input
+                  type="checkbox"
+                  id="collapse-input"
+                  class="collapsibles-input"
+                />
+                <span class="collapsibles-card">
+                  <h3 class="collabsibles-header">Expand/collapse</h3>
+                  <p>
+                    You have just built your first custom made collapsible panel
+                    in pure CSS.
+                  </p>
+                </span>
+              </label>
+            </div>
+          </div>
+          <style>
+            .block.collapsibles {
+              background: #8f44fd;
+            }
+
+            .collapsibles-input {
+              position: absolute;
+              transform: scale(0);
+            }
+
+            .collapsibles-input:checked + .collapsibles-card {
+              max-height: 10rem;
+            }
+
+            .collapsibles-card {
+              display: block;
+              overflow: hidden;
+              max-width: 16rem;
+              max-height: 3.5rem;
+              padding: 0 1rem;
+              border-radius: 0.5rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+              transition: max-height 0.35s;
+            }
+
+            .collabsibles-header {
+              display: flex;
+              align-items: center;
+              height: 3.5rem;
+            }
+          </style>
+        </article>
+        <article class="block opacity">
+          <div class="block-inner">
+            <h2 class="block-title">
+              opacity
+            </h2>
+            <div class="block-component">
+              <div class="opacity-card">
+                <label
+                  for="opacity-checkbox-input"
+                  class="opacity-checkbox-label"
+                >
+                  <input
+                    type="checkbox"
+                    id="opacity-checkbox-input"
+                    class="opacity-checkbox-input"
+                  />
+                  <span class="opacity-checkbox-background">
+                    <i class="opacity-checkbox-icon uil uil-check"></i>
+                  </span>
+                  <div class="opacity-checkbox-text">
+                    Agree to the terms & conditions?
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.opacity {
+              background: #f7f7fe;
+            }
+
+            .block.opacity .block-title {
+              color: #4c4954;
+            }
+
+            .opacity-card {
+              padding: 1rem;
+              border-radius: 0.5rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .opacity-checkbox-label {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+            }
+
+            .opacity-checkbox-input {
+              position: absolute;
+              transform: scale(0);
+            }
+
+            .opacity-checkbox-text {
+              transition: opacity 0.35s;
+            }
+
+            .opacity-checkbox-input:checked ~ .opacity-checkbox-background {
+              background: #e7e7e7;
+            }
+
+            .opacity-checkbox-input:checked ~ .opacity-checkbox-text {
+              opacity: 0.25;
+            }
+
+            .opacity-checkbox-input:checked
+              ~ .opacity-checkbox-background
+              .opacity-checkbox-icon {
+              opacity: 0;
+            }
+
+            .opacity-checkbox-background {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 2rem;
+              height: 2rem;
+              border-radius: 0.25rem;
+              background: #1ac0a2;
+            }
+
+            .opacity-checkbox-icon {
+              font-size: 1.75rem;
+              color: white;
+            }
+          </style>
+        </article>
+        <article class="block color">
+          <div class="block-inner">
+            <h2 class="block-title">
+              color
+            </h2>
+            <div class="block-component">
+              <nav class="color-nav">
+                <button class="color-button">
+                  Home
+                </button>
+                <button class="color-button">
+                  About
+                </button>
+                <button class="color-button">
+                  Contact
+                </button>
+              </nav>
+            </div>
+          </div>
+          <style>
+            .block.color {
+              background: #222227;
+            }
+
+            .color-nav {
+              display: flex;
+              padding: 1rem;
+              border-top-left-radius: 0.5rem;
+              border-top-right-radius: 0.5rem;
+              background: #8f44fd;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .color-button {
+              width: 8rem;
+              color: rgba(255, 255, 255, 0.57);
+              transition: color 0.35s;
+            }
+
+            .color-button:hover {
+              color: rgba(255, 255, 255, 0.96);
+            }
+          </style>
+        </article>
+        <article class="block transform-rotate">
+          <div class="block-inner">
+            <h2 class="block-title">
+              transform: rotate
+            </h2>
+            <div class="block-component">
+              <label for="transform-rotate-input">
+                <input
+                  type="checkbox"
+                  id="transform-rotate-input"
+                  class="transform-rotate-input"
+                />
+                <span class="transform-rotate-card">
+                  <header class="transform-rotate-header">
+                    Expand/collapse
+                    <span
+                      class="transform-rotate-icon uil uil-angle-down"
+                    ></span>
+                  </header>
+                  <p>
+                    You have just built your first custom made collapsible panel
+                    in pure CSS.
+                  </p>
+                </span>
+              </label>
+            </div>
+          </div>
+          <style>
+            .block.transform-rotate {
+              background: #8f44fd;
+            }
+
+            .block.transform-rotate .block-component {
+              padding-top: 4rem;
+              align-items: flex-start;
+            }
+
+            .transform-rotate-input {
+              position: absolute;
+              transform: scale(0);
+            }
+
+            .transform-rotate-input:checked + .transform-rotate-card {
+              max-height: 10rem;
+            }
+
+            .transform-rotate-input:checked
+              + .transform-rotate-card
+              .transform-rotate-icon {
+              transform: rotate(-180deg);
+            }
+
+            .transform-rotate-card {
+              display: block;
+              overflow: hidden;
+              max-width: 16rem;
+              max-height: 3.5rem;
+              padding: 0 1rem;
+              border-radius: 0.5rem;
+              color: #4c4954;
+              background: #ffffff;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+              transition: max-height 0.35s;
+            }
+
+            .transform-rotate-header {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              height: 3.5rem;
+            }
+
+            .transform-rotate-icon {
+              font-size: 1.575rem;
+              transition: transform 0.35s;
+            }
+          </style>
+        </article>
+        <article class="block background">
+          <div class="block-inner">
+            <h2 class="block-title">
+              background
+            </h2>
+            <div class="block-component">
+              <button class="background-button">
+                <span class="background-button-icon uil uil-envelope"></span>
+                <span class="background-button-text">
+                  Messages
+                </span>
+              </button>
+            </div>
+          </div>
+          <style>
+            .block.background {
+              background: #2c2d33;
+            }
+
+            .background-button {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+              justify-content: center;
+              width: 12rem;
+              height: 4rem;
+              padding: 1rem 1.5rem;
+              border-radius: 0.5rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #6c35bb;
+              transition: background 0.35s;
+            }
+
+            .background-button:hover {
+              background: #8f44fd;
+            }
+
+            .background-button-icon {
+              font-size: 1.5rem;
+            }
+
+            .background-button-text {
+              margin-right: 0.5rem;
+              font-size: 1.25rem;
+            }
+          </style>
+        </article>
+        <article class="block transform-translate">
+          <div class="block-inner">
+            <h2 class="block-title">
+              transform: translate
+            </h2>
+            <div class="block-component">
+              <button class="transform-translate-button">
+                <span class="transform-translate-button-text">
+                  Get Started
+                </span>
+                <span
+                  class="transform-translate-button-icon uil uil-angle-right"
+                ></span>
+              </button>
+            </div>
+          </div>
+          <style>
+            .block.transform-translate {
+              background: #222227;
+            }
+
+            .transform-translate-button {
+              display: flex;
+              gap: 0.5rem;
+              align-items: center;
+              justify-content: center;
+              height: 4.5rem;
+              padding: 1rem 1.25rem 1rem 1.5rem;
+              border-radius: 0.5rem;
+              color: rgba(255, 255, 255, 0.96);
+              background: #1ac0a2;
+            }
+
+            .transform-translate-button-icon {
+              font-size: 2rem;
+              transition: transform 0.35s;
+            }
+
+            .transform-translate-button:hover .transform-translate-button-icon {
+              transform: translateX(0.325rem);
+            }
+
+            .transform-translate-button-text {
+              font-size: 1.25rem;
+            }
+          </style>
+        </article>
+        <article class="block transform-scale">
+          <div class="block-inner">
+            <h2 class="block-title">
+              transform: scale
+            </h2>
+            <div class="block-component">
+              <nav class="transform-scale-nav">
+                <button class="transform-scale-button"></button>
+                <button class="transform-scale-button"></button>
+                <button class="transform-scale-button"></button>
+                <button class="transform-scale-button"></button>
+                <button class="transform-scale-button"></button>
+              </nav>
+            </div>
+          </div>
+          <style>
+            .block.transform-scale {
+              background: #373942;
+            }
+
+            .transform-scale-nav {
+              display: flex;
+              gap: 1rem;
+            }
+
+            .transform-scale-button {
+              width: 1.5rem;
+              height: 1.5rem;
+              border-radius: 50%;
+              color: rgba(255, 255, 255, 0.96);
+              background: #f7f7fe;
+              transition: transform 0.35s;
+            }
+
+            .transform-scale-button:hover {
+              transform: scale(1.5);
+            }
+          </style>
+        </article>
+        <article class="block box-shadow">
+          <div class="block-inner">
+            <h2 class="block-title">
+              box-shadow
+            </h2>
+            <div class="block-component">
+              <div class="block-vs">
+                <button class="box-shadow-button">
+                  <span class="box-shadow-button-icon uil uil-plus"></span>
+                  <span class="box-shadow-button-text">
+                    Click Me
+                  </span>
+                </button>
+                <input class="box-shadow-input" placeholder="Start Typing" />
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.box-shadow {
+              background: #2c2d33;
+            }
+
+            .box-shadow-button,
+            .box-shadow-input {
+              height: 4rem;
+              width: 11rem;
+              border-radius: 0.5rem;
+              background: #100f10;
+              transition: box-shadow 0.35s;
+            }
+
+            .box-shadow-button:focus,
+            .box-shadow-input:focus {
+              box-shadow: 0 0 0 3px #8f44fd;
+            }
+
+            .box-shadow-button {
+              display: flex;
+              gap: 1rem;
+              align-items: center;
+              justify-content: center;
+              height: 4rem;
+              padding: 1rem 1.75rem 1rem 1.5rem;
+              border-radius: 0.5rem;
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            .box-shadow-button-icon {
+              font-size: 1.5rem;
+            }
+
+            .box-shadow-button-text {
+              font-size: 1rem;
+            }
+
+            .box-shadow-input {
+              padding: 0 1.5rem;
+              color: rgba(255, 255, 255, 0.96);
+            }
+          </style>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

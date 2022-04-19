@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/skeletons.css" />
+  </head>
+  <body>
+    <header class="page-header">Grid</header>
+    <div class="container">
+      <section class="block-list">
+        <article class="block menus">
+          <div class="block-inner">
+            <h2 class="block-title">
+              App menus
+            </h2>
+            <div class="block-component">
+              <div class="menu">
+                <button class="menu-button">
+                  <span class="menu-icon uil uil-apps"> </span>
+                </button>
+                <button class="menu-button">
+                  <span class="menu-icon uil uil-estate"> </span>
+                </button>
+                <button class="menu-button">
+                  <span class="menu-icon uil uil-envelope"> </span>
+                </button>
+                <button class="menu-button">
+                  <span class="menu-icon uil uil-rocket"> </span>
+                </button>
+                <button class="menu-button">
+                  <span class="menu-icon uil uil-star"> </span>
+                </button>
+                <button class="menu-button">
+                  <span class="menu-icon uil uil-cog"> </span>
+                </button>
+                <button class="menu-button">
+                  <span class="menu-icon uil uil-user"> </span>
+                </button>
+                <button class="menu-button">
+                  <span class="menu-icon uil uil-bell"> </span>
+                </button>
+                <button class="menu-button">
+                  <span class="menu-icon uil uil-box"> </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.menus {
+              background: #f7f7fe;
+            }
+
+            .block.menus .block-title {
+              color: #45424d;
+            }
+
+            .menu {
+              display: grid;
+              grid-template-columns: repeat(3, 3rem);
+              gap: 0.5rem;
+              padding: 1rem;
+              border-radius: 0.5rem;
+              background: #ffffff;
+            }
+
+            .menu-button {
+              height: 3rem;
+              border-radius: 0.25rem;
+              background: #f6f6fd;
+              transition: background 0.25s;
+            }
+
+            .menu-button:hover {
+              background: #1bd5e1;
+            }
+
+            .menu-button:hover > .menu-icon {
+              color: #ffffff;
+            }
+
+            .menu-icon {
+              color: #68449e;
+              font-size: 1.5rem;
+            }
+          </style>
+        </article>
+        <article class="block micro-layouts-1d">
+          <div class="block-inner">
+            <h2 class="block-title">
+              1D Micro layouts
+            </h2>
+            <div class="block-component">
+              <div class="micro-1d-card">
+                <img class="micro-1d-img" src="assets/img/frontendjoe.png" />
+                <div>
+                  <h2 class="micro-1d-h2">
+                    Joe Harrison
+                  </h2>
+                  <h3 class="micro-1d-h3">
+                    5 July 2021 · 4pm
+                  </h3>
+                </div>
+                <i class="micro-1d-icon uil uil-ellipsis-v"></i>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.micro-layouts-1d {
+              background: #8f44fd;
+            }
+
+            .micro-1d-card {
+              display: grid;
+              grid-template-columns: 4.5rem auto auto;
+              align-items: center;
+              padding: 1.25rem;
+              border-radius: 0.5rem;
+              background: #100f10;
+            }
+
+            .micro-1d-img {
+              width: 3.75rem;
+              height: 3.75rem;
+            }
+
+            .micro-1d-h2 {
+              font-size: 1.25rem;
+              color: #f7f7f7;
+            }
+
+            .micro-1d-h3 {
+              font-size: 1rem;
+              color: #878787;
+            }
+
+            .micro-1d-icon {
+              margin-left: 1.5rem;
+              margin-right: 0.5rem;
+              font-size: 1.5rem;
+              color: #f7f7f7;
+            }
+          </style>
+        </article>
+        <article class="block micro-layouts-2d">
+          <div class="block-inner">
+            <h2 class="block-title">
+              2D Micro layouts
+            </h2>
+            <div class="block-component">
+              <div class="micro-2d-card">
+                <img class="micro-2d-img" src="assets/img/frontendjoe.png" />
+                <div class="micro-2d-more">
+                  <i class="micro-2d-more-i uil uil-ellipsis-v"></i>
+                </div>
+                <div class="micro-2d-text">
+                  <h2 class="micro-2d-h2">
+                    Joe Harrison
+                  </h2>
+                  <h3 class="micro-2d-h3">
+                    5 July 2021 · 4pm
+                  </h3>
+                </div>
+
+                <div class="micro-2d-icon" src="assets/img/star-icon.png">
+                  <img
+                    class="micro-2d-icon-img"
+                    src="assets/img/star-icon.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.micro-layouts-2d {
+              background: #242424;
+            }
+
+            .micro-2d-card {
+              display: grid;
+              grid-gap: 1rem 0;
+              grid-template-columns: auto 4.5rem;
+              grid-template-rows: 3.25rem auto;
+              padding: 1.5rem;
+              padding-right: 0;
+              width: 300px;
+              border-radius: 0.75rem;
+              background: #100f10;
+            }
+
+            .micro-2d-img {
+              width: 3.5rem;
+              height: 3.5rem;
+            }
+
+            .micro-2d-text {
+            }
+
+            .micro-2d-h2 {
+              font-size: 1rem;
+              color: #f7f7f7;
+            }
+
+            .micro-2d-h3 {
+              font-size: 0.75rem;
+              color: #878787;
+            }
+
+            .micro-2d-more {
+              display: grid;
+              place-items: center;
+            }
+
+            .micro-2d-more-i {
+              font-size: 1.75rem;
+              color: #f7f7f7;
+            }
+
+            .micro-2d-icon {
+              display: grid;
+              place-items: center;
+            }
+
+            .micro-2d-icon-img {
+              width: 2rem;
+            }
+          </style>
+        </article>
+        <article class="block page-layouts">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Page layouts
+            </h2>
+            <div class="block-component">
+              <div class="block-page-xl">
+                <div class="page-logo"></div>
+                <div class="page-topbar"></div>
+                <div class="page-sidebar"></div>
+                <div class="page-content"></div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.page-layouts {
+              background: #f7f7fe;
+            }
+
+            .block.page-layouts .block-title {
+              color: #45424d;
+            }
+
+            .block.page-layouts .block-page-xl {
+              display: grid;
+              grid-template-columns: 6rem auto;
+              grid-template-rows: 2rem auto;
+            }
+
+            .page-logo {
+              background: #5b26aa;
+            }
+
+            .page-topbar {
+              background: #000000;
+            }
+
+            .page-sidebar {
+              background: #8f44fd;
+            }
+
+            .page-content {
+              background: white;
+            }
+          </style>
+        </article>
+        <article class="block gallery-images">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Galleries
+            </h2>
+            <div class="block-component">
+              <div class="gallery">
+                <div class="gallery-img gallery-main"></div>
+                <div class="gallery-img gallery-thumb1"></div>
+                <div class="gallery-img gallery-thumb2"></div>
+                <div class="gallery-img gallery-thumb3"></div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.gallery-images {
+              background: #8f44fd;
+            }
+
+            .gallery-main {
+              grid-area: main;
+            }
+
+            .gallery-img {
+              background: #8f44fd;
+            }
+
+            .gallery-thumb1 {
+              grid-area: thumb1;
+            }
+
+            .gallery-thumb2 {
+              grid-area: thumb2;
+            }
+
+            .gallery-thumb3 {
+              grid-area: thumb3;
+            }
+
+            .gallery {
+              display: grid;
+              grid-gap: 0.5rem;
+              grid-template-areas:
+                "main main thumb1"
+                "main main thumb2"
+                "main main thumb3";
+              grid-template-columns: 6rem repeat(2, 3rem);
+              grid-template-rows: repeat(3, 3rem);
+              padding: 1rem;
+              border-radius: 0.75rem;
+              background: #ffffff;
+            }
+          </style>
+        </article>
+        <article class="block matrix">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Matrix
+            </h2>
+            <div class="block-component">
+              <div class="matrix-card">
+                <div class="matrix-grid">
+                  <div></div>
+                  <div class="matrix-header">
+                    Mon
+                  </div>
+                  <div class="matrix-header">
+                    Tue
+                  </div>
+                  <div class="matrix-header">
+                    Wed
+                  </div>
+                  <div class="matrix-header">
+                    Thu
+                  </div>
+                  <div class="matrix-header">
+                    Fri
+                  </div>
+                  <div class="matrix-header">
+                    Sat
+                  </div>
+                  <div class="matrix-header">
+                    Sun
+                  </div>
+                  <img class="matrix-img" src="assets/img/frontendjoe.png" />
+                  <div class="matrix-value">
+                    87
+                  </div>
+                  <div class="matrix-value">
+                    -
+                  </div>
+                  <div class="matrix-value">
+                    131
+                  </div>
+                  <div class="matrix-value">
+                    -
+                  </div>
+                  <div class="matrix-value">
+                    67
+                  </div>
+                  <div class="matrix-value">
+                    78
+                  </div>
+                  <div class="matrix-value">
+                    321
+                  </div>
+                  <img class="matrix-img" src="assets/img/mike.png" />
+                  <div class="matrix-value">
+                    -
+                  </div>
+                  <div class="matrix-value">
+                    -
+                  </div>
+                  <div class="matrix-value">
+                    78
+                  </div>
+                  <div class="matrix-value">
+                    -
+                  </div>
+                  <div class="matrix-value">
+                    56
+                  </div>
+                  <div class="matrix-value">
+                    -
+                  </div>
+                  <div class="matrix-value">
+                    124
+                  </div>
+                  <img class="matrix-img" src="assets/img/dan.png" />
+                  <div class="matrix-value">
+                    25
+                  </div>
+                  <div class="matrix-value">
+                    100
+                  </div>
+                  <div class="matrix-value">
+                    -
+                  </div>
+                  <div class="matrix-value">
+                    76
+                  </div>
+                  <div class="matrix-value">
+                    99
+                  </div>
+                  <div class="matrix-value">
+                    45
+                  </div>
+                  <div class="matrix-value">
+                    -
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.matrix {
+              background: #2c2d33;
+            }
+
+            .matrix-card {
+              padding: 0.5rem 1rem 1.25rem;
+              border-radius: 0.7rem;
+              color: #f7f7f7;
+              background: #100f10;
+            }
+
+            .matrix-grid {
+              display: grid;
+              grid-template-columns: 3rem repeat(7, 1fr);
+              grid-template-rows: auto repeat(3, 3rem);
+              align-items: center;
+              width: 24rem;
+            }
+
+            .matrix-header {
+              padding: 0.5rem 0;
+              text-align: center;
+              font-size: 0.75rem;
+              color: #808080;
+            }
+
+            .matrix-value {
+              display: grid;
+              place-items: center;
+              align-self: stretch;
+              font-size: 0.875rem;
+              color: #f7f7f7;
+              border: 1px solid #666666;
+            }
+
+            .matrix-img {
+              align-self: center;
+              width: 2rem;
+              height: 2rem;
+              margin: 0 auto;
+            }
+          </style>
+        </article>
+        <article class="block pickers">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Pickers
+            </h2>
+            <div class="block-component">
+              <div class="picker-grid">
+                <button class="picker-color-wrapper color-purple">
+                  <span class="picker-color-icon color-purple"></span>
+                </button>
+                <button class="picker-color-wrapper color-teal">
+                  <span class="picker-color-icon color-teal"></span>
+                </button>
+                <button class="picker-color-wrapper color-green">
+                  <span class="picker-color-icon color-green"></span>
+                </button>
+                <button class="picker-color-wrapper color-red">
+                  <span class="picker-color-icon color-red"></span>
+                </button>
+                <button class="picker-color-wrapper color-violet color-active">
+                  <span class="picker-color-icon color-violet"></span>
+                </button>
+                <button class="picker-color-wrapper color-orange">
+                  <span class="picker-color-icon color-orange"></span>
+                </button>
+                <button class="picker-color-wrapper color-blue">
+                  <span class="picker-color-icon color-blue"></span>
+                </button>
+                <button class="picker-color-wrapper color-pink">
+                  <span class="picker-color-icon color-pink"></span>
+                </button>
+                <button class="picker-color-wrapper color-silver">
+                  <span class="picker-color-icon color-silver"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.pickers {
+              background: #f7f7fe;
+            }
+
+            .block.pickers .block-title {
+              color: #45424d;
+            }
+
+            .picker-grid {
+              display: grid;
+              grid-gap: 0.75rem;
+              grid-template-columns: repeat(3, auto);
+              padding: 1.5rem;
+              border-radius: 0.5rem;
+              background: white;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .picker-color-wrapper {
+              display: grid;
+              place-items: center;
+              padding: 0;
+              width: 2.5rem;
+              height: 2.5rem;
+              border-radius: 50%;
+              opacity: 0.25;
+            }
+
+            .picker-color-wrapper.color-active {
+              opacity: 1;
+            }
+
+            .picker-color-wrapper:not(.color-active) {
+              background: transparent;
+            }
+
+            .picker-color-icon {
+              display: block;
+              height: 2.25rem;
+              width: 2.25rem;
+              border-radius: inherit;
+              background: inherit;
+              border: 5px solid #f7f7fe;
+            }
+
+            .color-purple {
+              background: #6f6fcf;
+            }
+
+            .color-teal {
+              background: #6fcfcf;
+            }
+
+            .color-green {
+              background: #88e479;
+            }
+
+            .color-red {
+              background: #db5959;
+            }
+
+            .color-violet {
+              background: #8f44fd;
+            }
+
+            .color-orange {
+              background: #ffb054;
+            }
+
+            .color-blue {
+              background: #69d7fa;
+            }
+
+            .color-pink {
+              background: #f564aa;
+            }
+
+            .color-silver {
+              background: #dbdbec;
+            }
+          </style>
+        </article>
+        <article class="block centering">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Centering
+            </h2>
+            <div class="block-component">
+              <button class="center-button">
+                <span class="center-icon uil uil-setting"></span>
+              </button>
+            </div>
+          </div>
+          <style>
+            .block.centering {
+              background: #222227;
+            }
+
+            .center-button {
+              display: grid;
+              place-items: center;
+              width: 5rem;
+              height: 5rem;
+              border-radius: 0.75rem;
+              background: #8f44fd;
+            }
+
+            .center-icon {
+              font-size: 2.5rem;
+              color: #f7f7f7;
+            }
+          </style>
+        </article>
+        <article class="block grid-column">
+          <div class="block-inner">
+            <h2 class="block-title">
+              Column span
+            </h2>
+            <div class="block-component">
+              <div class="grid-column-card">
+                <span class="grid-column-label">
+                  Deposit
+                </span>
+                <span class="grid-column-value">
+                  £250
+                </span>
+                <span class="grid-column-slider"></span>
+              </div>
+            </div>
+          </div>
+          <style>
+            .block.grid-column {
+              background: #222227;
+            }
+
+            .grid-column-card {
+              display: grid;
+              grid-template-columns: auto auto;
+              grid-template-rows: 2.5rem 1rem;
+              padding: 1rem;
+              width: 20rem;
+              border-radius: 0.5rem;
+              color: #4c4954;
+              background: #8f44fd;
+              box-shadow: 0 45px 75px rgba(58, 35, 91, 0.09);
+            }
+
+            .grid-column-label {
+              color: rgba(255, 255, 255, 0.57);
+            }
+
+            .grid-column-value {
+              display: flex;
+              justify-content: flex-end;
+              color: rgba(255, 255, 255, 0.96);
+            }
+
+            .grid-column-slider {
+              position: relative;
+              grid-column: 1 / span 2;
+              display: block;
+              width: 100%;
+              height: 6px;
+              border-radius: 3px;
+              background: rgba(255, 255, 255, 0.2);
+            }
+
+            .grid-column-slider::before,
+            .grid-column-slider::after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              border-radius: inherit;
+            }
+
+            .grid-column-slider::before {
+              left: 0;
+              width: 50%;
+              height: 100%;
+              background: white;
+            }
+
+            .grid-column-slider::after {
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 2rem;
+              height: 2rem;
+              border-radius: 50%;
+              background: #ffffff;
+              cursor: grid-column;
+              cursor: grid-columnbing;
+            }
+          </style>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>
